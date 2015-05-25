@@ -1,0 +1,152 @@
+/*============================List of all available fonts============================*/
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url('../../fonts/roboto.woff2') format('woff2'), url('../../fonts/roboto.woff') format('woff');
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: local('Comfortaa'), local('Comfortaa Regular'), url('../../fonts/Comfortaa.woff2') format('woff2'), url('../../fonts/Comfortaa.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Ubuntu'), url('../../fonts/ubuntu.woff2') format('woff2'), url('../../fonts/ubuntu.woff') format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url('../../fonts/OpenSans.woff2') format('woff2'), url('../../fonts/OpenSans.woff') format('woff'), url('../../fonts/OpenSans.ttf') format('truetype');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+	font-family: 'Libertine';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Libertine'), url('../../fonts/Libertine.woff') format('woff');
+}
+@font-face {
+	font-family: 'Alice';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Alice'), local('Alice-Regular'), url('../../fonts/Alice.woff') format('woff');
+}
+@font-face {
+	font-family: 'Acme';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Acme'), local('Acme-Regular'), url('../../fonts/acme.woff2') format('woff2'), url('../../fonts/acme.woff') format('woff');
+}
+@font-face {
+	font-family: 'GNUTypewriter';
+	src: local('GNUTypewriter'), url('../../fonts/gnome-typewriter.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PressStart';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Press Start 2P'), url('../../fonts/PressStart2P.woff') format('woff'), url('../../fonts/PressStart2P.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Web Symbols';
+	font-style: normal;
+	font-weight: 400;
+	src: local('WebSymbols-Regular'), url('../../fonts/WebSymbols-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Cookies';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Cookies'), url('../../fonts/Cookies.woff') format('woff');
+}
+@font-face {
+	font-family: 'EptKazoo';
+	font-weight: normal;
+	font-style: normal;
+	src: local('EptKazoo'), url('../../fonts/EptKazoo.woff') format('woff');
+}
+@font-face {
+	font-family: 'ConsolaMono';
+	font-weight: bold;
+	font-style: normal;
+	src: local('ConsolaMono'), url('../../fonts/ConsolaMono-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Hobby-of-night';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Hobby-of-night'), url('../../fonts/Hobby-of-night.woff') format('woff');
+}
+@font-face {
+	font-family: 'Beon';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Beon'), url('../../fonts/Beon.woff') format('woff');
+}
+@font-face {
+	font-family: 'Griffy';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Griffy'), url('../../fonts/Griffy.woff') format('woff');
+}
+@font-face {
+	font-family: 'Rye';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Rye'), url('../../fonts/Rye.woff') format('woff');
+}
+@font-face {
+	font-family: 'Essays';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Essays'), url('../../fonts/Essays1743.woff') format('woff');
+}
+@font-face {
+	font-family: 'Love Ya Like A Sister';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Love Ya Like A Sister'), url('../../fonts/sketch.woff') format('woff');
+}
+@font-face {
+	font-family: 'Outline';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Outline'), url('../../fonts/DouarOutline.woff') format('woff'), url('../../fonts/DouarOutline.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Earthbound';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Earthbound'), url('../../fonts/Earthbound-Regular.woff') format('woff'), url('../../fonts/Earthbound-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Intuitive';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Intuitive'), url('../../fonts/Intuitive.woff') format('woff'), url('../../fonts/Intuitive.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Droid Sans Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Droid Sans Mono'), local('DroidSansMono'), url('../../fonts/DroidSansMono.woff') format('woff');
+}
+@font-face {
+	font-family: 'HennyPenny';
+	font-weight: normal;
+	font-style: normal;
+	src: local('Henny Penny'), local('HennyPenny-Regular'), url('../../fonts/HennyPenny-Regular.woff') format('woff'), url('../../fonts/Intuitive.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Amarante';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Amarante'), url('../../fonts/DroidSansMono.woff') format('woff'), url('../../fonts/Amarante.ttf') format('truetype');
+}

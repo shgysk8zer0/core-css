@@ -1,0 +1,67 @@
+.resizeable {
+	resize: both;
+	overflow: auto;
+}
+.blur {
+	filter: blur(1px);
+}
+.grayscale {
+	filter: grayscale(1);
+}
+.blur.grayscale {
+	filter: blur(1px) grayscale(1)
+}
+.flex {
+	display: flex;
+}
+.currentColor {
+	fill: currentColor;
+}
+:root.hidden * {
+	animation-play-state: paused;
+}
+:root.offline {
+	pointer-events: none;
+}
+:root.loading {
+	cursor: progress;
+}
+.logo svg {
+	width: 100%;
+	height: 100%;
+}
+.logo {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 3rem;
+	height: 3rem;
+	overflow: visible;
+	transition: all 1s;
+}
+.logo svg,
+.logo img
+{
+	overflow: visible;
+}
+footer .logo{
+	color: #333;
+}
+.icon svg {
+	color: inherit;
+	fill: currentColor;
+}
+.logo:hover {
+	transform: scale(2)rotateZ(360deg);
+}
+.copyleft {
+	color: var(--alt-color);
+	font-size: 3rem;
+}
+.copyleft::before {
+	content: '©';
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	transform: rotateY(180deg);
+}

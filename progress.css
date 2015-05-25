@@ -1,0 +1,29 @@
+progress {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+}
+progress:not([value])::-moz-progress-bar {
+	width: auto;
+}
+progress:not([value])::-webkit-progress-value {
+	width: auto;
+}
+progress[value]::-webkit-progress-value {
+	background-image: var(--progress-grad);;
+}
+progress[value]::-moz-progress-bar {
+	background-image: var(--progress-grad);
+}
+body > progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
