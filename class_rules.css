@@ -2,6 +2,11 @@
 	resize: both;
 	overflow: auto;
 }
+@media screen and (min-width: 800px) {
+	.sticky {
+		position: sticky;
+	}
+}
 .blur {
 	filter: blur(1px);
 }
@@ -13,6 +18,15 @@
 }
 .flex {
 	display: flex;
+}
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.inline-block {
+	display: inline-block;
 }
 .currentColor {
 	fill: currentColor;
