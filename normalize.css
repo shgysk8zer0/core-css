@@ -1,64 +1,4 @@
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
-@-moz-viewport{
-	width:auto;
-	width:100%;
-	width:device-width;
-	height:auto;
-	height:100%;
-	height:device-height;
-	zoom:1;
-	min-zoom:1;
-	max-zoom:1;
-	user-zoom:fixed;
-}
-@-webkit-viewport{
-	width:auto;
-	width:100%;
-	width:device-width;
-	height:auto;
-	height:100%;
-	height:device-height;
-	zoom:1;
-	min-zoom:1;
-	max-zoom:1;
-	user-zoom:fixed;
-}
-@-o-viewport{
-	width:auto;
-	width:100%;
-	width:device-width;
-	height:auto;
-	height:100%;
-	height:device-height;
-	zoom:1;
-	min-zoom:1;
-	max-zoom:1;
-	user-zoom:fixed;
-}
-@-ms-viewport{
-	width:auto;
-	width:100%;
-	width:device-width;
-	height:auto;
-	height:100%;
-	height:device-height;
-	zoom:1;
-	min-zoom:1;
-	max-zoom:1;
-	user-zoom:fixed;
-}
-@viewport{
-	width:auto;
-	width:100%;
-	width:device-width;
-	height:auto;
-	height:100%;
-	height:device-height;
-	zoom:1;
-	min-zoom:1;
-	max-zoom:1;
-	user-zoom:fixed;
-}
 body{
 	min-height:100%;
 	min-height:100vh;
@@ -221,30 +161,6 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{
 	border:0;
 	padding:0;
-}
-dialog:not([open]){
-	display:none;
-}
-dialog {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	width: -moz-fit-content;
-	width: -webkit-fit-content;
-	width: fit-content;
-	height: -moz-fit-content;
-	height: -webkit-fit-content;
-	height: -fit-content;
-	margin: auto;
-	border: solid;
-	border-image-source: initial;
-	border-image-slice: initial;
-	border-image-width: initial;
-	border-image-outset: initial;
-	border-image-repeat: initial;
-	padding: 1em;
-	background: white;
-	color: black;
 }
 textarea{
 	overflow:auto;

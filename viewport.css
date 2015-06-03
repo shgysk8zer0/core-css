@@ -1,0 +1,60 @@
+@-moz-viewport{
+	width:auto;
+	width:100%;
+	width:device-width;
+	height:auto;
+	height:100%;
+	height:device-height;
+	zoom:1;
+	min-zoom:1;
+	max-zoom:1;
+	user-zoom:fixed;
+}
+@-webkit-viewport{
+	width:auto;
+	width:100%;
+	width:device-width;
+	height:auto;
+	height:100%;
+	height:device-height;
+	zoom:1;
+	min-zoom:1;
+	max-zoom:1;
+	user-zoom:fixed;
+}
+@-o-viewport{
+	width:auto;
+	width:100%;
+	width:device-width;
+	height:auto;
+	height:100%;
+	height:device-height;
+	zoom:1;
+	min-zoom:1;
+	max-zoom:1;
+	user-zoom:fixed;
+}
+@-ms-viewport{
+	width:auto;
+	width:100%;
+	width:device-width;
+	height:auto;
+	height:100%;
+	height:device-height;
+	zoom:1;
+	min-zoom:1;
+	max-zoom:1;
+	user-zoom:fixed;
+}
+@viewport{
+	width:auto;
+	width:100%;
+	width:device-width;
+	height:auto;
+	height:100%;
+	height:device-height;
+	zoom:1;
+	min-zoom:1;
+	max-zoom:1;
+	user-zoom:fixed;
+}

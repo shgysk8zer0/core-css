@@ -1,3 +1,27 @@
+dialog:not([open]){
+	display:none;
+}
+dialog {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	height: -fit-content;
+	margin: auto;
+	border: solid;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	padding: 1em;
+	background: white;
+	color: black;
+}
 .no-js dialog {
 	display: none;
 }
