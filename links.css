@@ -1,18 +1,21 @@
-a[rel=tag]::after {
+a[rel="tag"]::after {
 	content: var(--tag-icon);
 }
-[rel=next]::after {
+a[rel="next"]::after {
 	font-size: 1rem;
 	font-family: var(--icon-font);
 	color: var(--default-color);
 	content: var(--next-icon);
 }
-[rel=prev]::after {
+a[rel="prev"]::after {
 	font-size: 1rem;
 	font-family: var(--icon-font);
 	color: var(--default-color);
 	content: var(--prev-icon);
 }
-a[rel=bookmark]::after {
+a[rel="bookmark"]::after {
 	content: '';
+}
+a:not([rel="bookmark"]):hover:visited {
+	color: var(--visited-color);
 }
