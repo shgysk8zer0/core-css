@@ -95,6 +95,22 @@ input[type=image],
 	content: ' 'attr(data-icon)' ';
 	vertical-align: baseline;
 }
+[data-caption] {
+	position: relative;
+}
+[data-caption]:hover::before {
+	all: initial;
+	display: block;
+	min-width: 100%;
+	position: absolute;
+	bottom: 0;
+	content: attr(data-caption);
+	font-size: 0.8rem;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid #333;
+	overflow: visible;
+}
 [data-close]::after,
 [data-delete]::after
 {
