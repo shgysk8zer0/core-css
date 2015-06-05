@@ -6,6 +6,12 @@
 	background-color: var(--primary-color);
 	text-shadow: none;
 }
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+menu[type="context"] {
+	display: none;
+}
 a[target="_blank"]::after {
 	content: var(--new-tab-icon);
 }
@@ -13,7 +19,7 @@ a[target="_blank"]::after {
 	content: var(--download-icon);
 }
 button,
-[role=button]
+[role="button"]
 {
 	min-width: 2rem;
 	padding: 0.2rem;
@@ -42,9 +48,6 @@ a,
 }
 a::after {
 	font-family: var(--icon-font);
-}
-menu[type=list] li {
-	display: inline;
 }
 img {
 	max-width: 100%;
@@ -75,10 +78,10 @@ blockquote cite::before {
 }
 a,
 button:not(:disabled),
-[role=button],
-input[type=submit],
-input[type=reset],
-input[type=image],
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"],
 [data-show],
 [data-show-modal],
 [data-close],

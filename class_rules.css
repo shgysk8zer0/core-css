@@ -5,6 +5,7 @@
 @media screen and (min-width: 800px) {
 	.sticky {
 		position: sticky;
+		margin-top: 0;
 	}
 }
 .blur {
