@@ -9,7 +9,6 @@
 *, *:after, *:before {
 	box-sizing: inherit;
 	max-width: 100%;
-	overflow-x: auto;
 }
 :root {
 	box-sizing: border-box;
