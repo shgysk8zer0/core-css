@@ -79,6 +79,9 @@
 footer .logo{
 	color: #333;
 }
+.icon {
+	color: inherit;
+}
 .icon svg {
 	color: inherit;
 	fill: currentColor;

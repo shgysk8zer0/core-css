@@ -125,11 +125,14 @@ input[type="image"],
 	content: var(--close-icon);
 }
 code {
-	font-size: 0.9rem;
-	padding: 0.1rem;
-	background-color: hsl(0, 0%, 93%);
-	border-radius: 0.2rem;
 	display: inline-block;
+	padding: 0.1rem;
+	background-color: #F5F5F5;
+	background-color: rgba(0, 0, 0, 0.04);
+	color: #333;
+	font-size: 0.9rem;
+	font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	border-radius: 0.2rem;
 	white-space: pre;
 }
 pre > code {
