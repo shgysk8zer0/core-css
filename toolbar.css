@@ -5,7 +5,10 @@ menu[type="toolbar"] {
 	margin: 0;
 	padding: 0;
 }
-menu[type="toolbar"] menu[label]::before {
+menu[type="toolbar"] a::after {
+	all: unset;
+}
+menu[type="toolbar"] menu[label]::before, menu[type="toolbar"] menuitem[label]::before {
 	content: attr(label);
 	color: inherit;
 }
@@ -15,12 +18,15 @@ menu[type="toolbar"] menu {
 menu[type="toolbar"] menu:not(:hover) > * {
 	display: none;
 }
-menu[type="toolbar"] button {
-	background: linear-gradient(gainsboro, whitesmoke);
-	border: 0.15em outset #333;
-	color: #333;
+menu[type="toolbar"] menuitem[label]::before {
+	content: attr(label);
+}
+menu[type="toolbar"] button, menu[type="toolbar"] [role="button"] {
 	margin: 0 0;
 	padding: 0.3em;
+	color: inherit;
+	background: linear-gradient(gainsboro, whitesmoke);
+	border: 0.15em outset currentcolor;
 }
 menu[type="toolbar"] svg {
 	fill: currentcolor;
