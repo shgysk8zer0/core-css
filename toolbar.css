@@ -37,3 +37,6 @@ menu[type="toolbar"] svg:not([width]) {
 	width: 1em;
 	height: 1em;
 }
+.flex > menu[type="toolbar"]{
+	flex: 0 0 auto;
+}
