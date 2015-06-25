@@ -124,6 +124,10 @@ input[type="image"],
 	font-family: var(--icon-font);
 	content: var(--close-icon);
 }
+[data-fullscreen]:empty::after {
+	content: var(--fullscreen-icon);
+	font-family: var(--icon-font);
+}
 code {
 	display: inline-block;
 	padding: 0.1rem;
