@@ -81,6 +81,10 @@ footer .logo{
 }
 .icon {
 	color: inherit;
+	max-width: 100%;
+	max-height: 100%;
+	width: 1em;
+	height: 1em;
 }
 .icon svg {
 	color: inherit;
