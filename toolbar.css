@@ -4,6 +4,9 @@ menu[type="toolbar"] {
 	margin: 0;
 	padding: 0;
 }
+menu[type="toolbar"] li {
+	list-style-type: none;
+}
 .flex > menu[type="toolbar"]{
 	flex: 0 0 auto;
 }
