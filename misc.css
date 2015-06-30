@@ -147,9 +147,12 @@ pre > code {
 	border-radius: 0.3rem;
 	overflow-x: auto;
 }
-[contenteditable=true]:empty {
+[contenteditable="true"]:empty {
 	min-height: 1.3rem;
 	border: 1px dotted dimgray;
+}
+[contenteditable="true"] img {
+	resize: both;
 }
 ol > ol {
 	list-style-type: upper-alpha;
