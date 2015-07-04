@@ -6,6 +6,9 @@
 	margin: 0 0.5em;
 	border-right: 2px solid currentColor;
 }
+.center {
+	text-align: center;
+}
 .resizeable {
 	resize: both;
 	overflow: auto;
