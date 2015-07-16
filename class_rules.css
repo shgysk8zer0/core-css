@@ -72,7 +72,7 @@
 	width: 3rem;
 	height: 3rem;
 	overflow: visible;
-	transition: all 1s;
+	transition: all 1s cubic-bezier(.68,-0.55,.27,1.55) 0s;
 }
 .logo svg,
 .logo img
