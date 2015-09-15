@@ -6,6 +6,12 @@
 	src: url('../../images/octicons/octicons/octicons.eot?#iefix') format('embedded-opentype'), local('octicons'), url('../../images/octicons/octicons/octicons.woff') format('woff'), url('../../images/octicons/octicons/octicons.ttf') format('truetype'), url('../../images/octicons/octicons/octicons.svg#octicons') format('svg');
 }
 @font-face {
+  font-family: 'Hack';
+  src: url('../../fonts/hack-regular-latin-webfont.eot?#iefix&v=2.013') format('embedded-opentype'), url('../../fonts/hack-regular-latin-webfont.woff2') format('woff2'), url('../../fonts/hack-regular-latin-webfont.woff') format('woff'), url('../../fonts/hack-regular-latin-webfont.ttf') format('truetype'), url('../../fonts/hack-regular-latin-webfont.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
