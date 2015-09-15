@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: 'Hack';
-  src: url('../../fonts/hack-regular-webfont.eot?#iefix&v=2.013') format('embedded-opentype'), url('../../fonts/hack-regular-webfont.woff2') format('woff2'), url('../../fonts/hack-regular-webfont.woff') format('woff'), url('../../fonts/hack-regular-webfont.ttf') format('truetype'), url('../../fonts/hack-regular-webfont.svg') format('svg');
+  src: url('../../fonts/hack-regular-webfont.eot?#iefix&v=2.013') format('embedded-opentype'), local('hack'), url('../../fonts/hack-regular-webfont.woff2') format('woff2'), url('../../fonts/hack-regular-webfont.woff') format('woff'), url('../../fonts/hack-regular-webfont.ttf') format('truetype'), url('../../fonts/hack-regular-webfont.svg') format('svg');
   font-weight: 400;
   font-style: normal;
 }
