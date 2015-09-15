@@ -53,7 +53,7 @@
  */
 @font-face {
 	font-family: 'GNUTypewriter';
-	src: local('GNUTypewriter'), url('../../fonts/gnome-typewriter.woff') format('woff');
+	src: local('GNUTypewriter'), url('../../fonts/gnome-typewriter.woff') format('woff'), url('../../fonts/gnome-typewriter.ttf') format('truetype'), url('../../fonts/gnome-typewriter.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
