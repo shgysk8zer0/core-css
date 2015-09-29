@@ -70,6 +70,12 @@
 	src: local('Press Start 2P'), url('../../fonts/PressStart2P.woff') format('woff'), url('../../fonts/PressStart2P.ttf') format('truetype');
 }
 @font-face {
+	font-family: 'Mister Pixel';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../../fonts/MisterPixel.woff') format('woff'), url('../../fonts/MisterPixel.ttf') format('truetype'), url('../../fonts/MisterPixel.svg') format('svg');
+}
+@font-face {
 	font-family: 'Web Symbols';
 	font-style: normal;
 	font-weight: 400;
