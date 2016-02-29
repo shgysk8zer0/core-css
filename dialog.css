@@ -25,7 +25,7 @@ dialog {
 .no-js dialog {
 	display: none;
 }
-.no-js dialog {
+.no-js dialog[open] {
 	display: inline-block;
 }
 dialog {
