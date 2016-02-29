@@ -25,6 +25,9 @@ dialog {
 .no-js dialog {
 	display: none;
 }
+.no-js dialog {
+	display: inline-block;
+}
 dialog {
 	border: 0.4rem outset var(--primary-color);
 	border-radius: 1rem;
