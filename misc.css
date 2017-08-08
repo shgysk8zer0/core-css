@@ -1,64 +1,57 @@
-::-moz-selection {
-	background-color: var(--primary-color);
-	text-shadow: none;
-}
-::selection {
-	background-color: var(--primary-color);
-	text-shadow: none;
-}
-*, *:after, *:before {
-	box-sizing: inherit;
-	max-width: 100%;
-}
 :root {
 	box-sizing: border-box;
 }
-menu[type="context"] {
+*, *::after, *::before {
+	box-sizing: inherit;
+	max-width: 100%;
+}
+::-moz-selection {
+	background-color: var(--primary-color, initial);
+	text-shadow: none;
+}
+::selection {
+	background-color: var(--primary-color, initial);
+	text-shadow: none;
+}
+menu[type="context"], template {
 	display: none;
-}
-a[target="_blank"]::after {
-	content: var(--new-tab-icon);
-}
-[download]::after {
-	content: var(--download-icon);
 }
 button,
 [role="button"]
 {
 	min-width: 2rem;
 	padding: 0.2rem;
-	background-color: var(--primary-color);
-	background-image: url('../../images/gradients/header_links.png');
-	background-image: linear-gradient(var(--primary-color), var(--highlight-color));
+	background-color: var(--primary-color, #E7E7E7);
+	background-image: linear-gradient(var(--primary-color, #E7E7E7), var(--highlight-color, #D0D0D0));
 	font-family: inherit;
-	color: var(--default-color);
-	border: 0.2rem outset var(--primary-color);
+	color: var(--default-color, initial);
+	border: 0.2rem outset var(--primary-color, initial);
 }
 button:disabled,
-button:active
+button:active,
+[role="button"]
 {
-	background-color: var(--highlight-color);
-	background-image: linear-gradient(var(--highlight-color), var(--primary-color));
-	border: 0.2rem inset var(--primary-color);
-	box-shadow: 0 0 0.3rem var(--shadow) inset;
+	background-color: var(--highlight-color, #D0D0D0);
+	background-image: linear-gradient(var(--highlight-color, #D0D0D0), var(--primary-color, #E7E7E7));
+	border: 0.2rem inset var(--primary-color, black);
+	box-shadow: 0 0 0.3rem var(--shadow-color, #222) inset;
 	cursor: not-allowed;
 }
 a,
-[download]
-{
+[download] {
 	font-family: inherit;
-	color: var(--link-color);
+	color: var(--link-color, blue);
 	text-decoration: none;
 }
-a::after {
-	font-family: var(--icon-font);
+a:not([rel="bookmark"]):hover:visited {
+	color: var(--visited-color, purple);
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
 figure {
-	border: 0.1em solid dimgray;
+	border: var(--border-radius, 0.1em) solid dimgray;
 	text-align: center;
 }
 figure figcaption {
@@ -78,29 +71,14 @@ blockquote cite {
 }
 blockquote cite::before {
 	content: ' — ';
-
 }
 a,
 button:not(:disabled),
 [role="button"],
 input[type="submit"],
 input[type="reset"],
-input[type="image"],
-[data-show],
-[data-show-modal],
-[data-close],
-[data-delete]
-{
-	cursor: var(--pointer);
-}
-[data-icon]::after  {
-	display: inline;
-	font-family: var(--icon-font);
-	font-size: inherit;
-	font-size-adjust: none;
-	font-stretch: none;
-	content: ' 'attr(data-icon)' ';
-	vertical-align: baseline;
+input[type="image"] {
+	cursor: var(--pointer, pointer);
 }
 [data-caption] {
 	position: relative;
@@ -118,16 +96,6 @@ input[type="image"],
 	border: 1px solid #333;
 	overflow: visible;
 }
-[data-close]::after,
-[data-delete]::after
-{
-	font-family: var(--icon-font);
-	content: var(--close-icon);
-}
-[data-fullscreen]:empty::after {
-	content: var(--fullscreen-icon);
-	font-family: var(--icon-font);
-}
 code {
 	display: inline-block;
 	padding: 0.1rem;
@@ -136,7 +104,7 @@ code {
 	color: #333;
 	font-size: 0.9rem;
 	font-family: hack, Courier, monospace;
-	border-radius: 0.2rem;
+	border-radius: 0.2em;
 	white-space: pre;
 }
 pre > code {

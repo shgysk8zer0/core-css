@@ -97,7 +97,7 @@ footer .logo{
 	transform: scale(2)rotateZ(360deg);
 }
 .copyleft {
-	color: var(--alt-color);
+	color: var(--alt-color, #333);
 	font-size: 3rem;
 }
 .copyleft::before {

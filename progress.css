@@ -14,10 +14,10 @@ progress:not([value])::-webkit-progress-value {
 	width: auto;
 }
 progress[value]::-webkit-progress-value {
-	background-image: var(--progress-grad);;
+	background-image: var(--progress-grad, linear-gradient(green, lightgreen, green));
 }
 progress[value]::-moz-progress-bar {
-	background-image: var(--progress-grad);
+	background-image: var(--progress-grad, linear-gradient(green, lightgreen, green);
 }
 body > progress {
 	position: fixed;
