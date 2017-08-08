@@ -1,16 +1,9 @@
-dialog:not([open]){
-	display:none;
-}
 dialog {
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	width: -moz-fit-content;
-	width: -webkit-fit-content;
 	width: fit-content;
-	height: -moz-fit-content;
-	height: -webkit-fit-content;
-	height: -fit-content;
+	height: fit-content;
 	margin: auto;
 	border: solid;
 	border-image-source: initial;
@@ -29,9 +22,9 @@ dialog {
 	display: inline-block;
 }
 dialog {
-	border: 0.4rem outset var(--primary-color);
-	border-radius: 1rem;
-	box-shadow: 1rem 1rem 1rem black;
+	border: var(--border-width, 0.4rem) outset var(--primary-color, black);
+	border-radius: var(--border-radius, 1rem);
+	box-shadow: var(--shadow, 1rem 1rem 1rem rgba(0, 0, 0, 0.7));
 }
 .no-dialog dialog {
 	z-index: 9;
@@ -44,8 +37,7 @@ dialog.modal {
 	overflow: auto;
 }
 dialog.modal + .backdrop {
-	background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.7);
+	background: var(--backdrop-bg, rgba(0, 0, 0, 0.7));
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -54,7 +46,7 @@ dialog.modal + .backdrop {
 	z-index: 8;
 }
 dialog[open]::backdrop {
-	background-color: rgba(0, 0, 0, 0.7);
+	background: var(--backdrop-bg, rgba(0, 0, 0, 0.7));
 	position: fixed;
 	top: 0;
 	left: 0;

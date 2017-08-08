@@ -1,25 +1,6 @@
 /*==============================Collection of Simple CSS3 Animations=================================*/
-@-webkit-keyframes slide {
-	from {
-		left: 100%;
-	}
-
-	to {
-		left: 0;
-	}
-}
-@-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-}
 @keyframes fadeIn {
 	from {
-		opacity: 0;
-	}
-}
-@-webkit-keyframes fadeOut {
-	to {
 		opacity: 0;
 	}
 }
@@ -37,143 +18,52 @@
 		left: 0;
 	}
 }
-@-webkit-keyframes progress {
-	to {
-		background-position: right;
-	}
-}
 @keyframes progress {
 	to {
 		background-position: right;
 	}
 }
-@-webkit-keyframes scale {
-	from {
-		-webkit-transform: scale(0);
-		transform: scale(0);
-	}
-}
 @keyframes scale {
 	from {
-		-webkit-transform: scale(0);
-		-ms-transform: scale(0);
 		transform: scale(0);
-	}
-}
-@-webkit-keyframes hanger {
-	from {
-		-webkit-transform: rotateX(-90deg);
-		transform: rotateX(-90deg);
-		-webkit-transform-origin: center -40%;
-		transform-origin: center -40%;
-	}
-	to {
-		-webkit-transform: none;
-		transform: none;
 	}
 }
 @keyframes hanger {
 	from {
-		-webkit-transform: rotateX(-90deg);
-		-ms-transform: rotateX(-90deg);
 		transform: rotateX(-90deg);
-		-webkit-transform-origin: center -40%;
-		-ms-transform-origin: center -40%;
 		transform-origin: center -40%;
 	}
 
 	to {
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-	}
-}
-@-webkit-keyframes door {
-	from {
-		-webkit-transform: rotateY(90deg);
-		transform: rotateY(90deg);
-		-webkit-transform-origin: -40% center;
-		transform-origin: -40% center;
-	}
-	to {
-		-webkit-transform: none;
 		transform: none;
 	}
 }
 @keyframes door {
 	from {
-		-webkit-transform: rotateY(90deg);
-		-ms-transform: rotateY(90deg);
 		transform: rotateY(90deg);
-		-webkit-transform-origin: -40% center;
-		-ms-transform-origin: -40% center;
-		transform-origin: -40% center;
 	}
 	to {
 		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-	}
-}
-@-webkit-keyframes sidekick {
-	from {
-		left: 100%;
-		-webkit-transform: rotate(270deg) scale(0);
-		transform: rotate(270deg) scale(0);
-	}
-
-	to {
-		left: 0%;
-		-webkit-transform: none;
-		transform: none;
 	}
 }
 @keyframes sidekick {
 	from {
 		left: 100%;
-		-webkit-transform: rotate(270deg) scale(0);
-		-ms-transform: rotate(270deg) scale(0);
 		transform: rotate(270deg) scale(0);
 	}
 	to {
 		left: 0%;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-	}
-}
-@-webkit-keyframes cube {
-	from {
-		left: 100%;
-		-webkit-transform: matrix(0.133,-0.489,-0.200,2.489,-100.667,80.000);
-		transform: matrix(0.133,-0.489,-0.200,2.489,-100.667,80.000);
-	}
-	to {
-		left: 0%;
-		-webkit-transform: none;
 		transform: none;
 	}
 }
 @keyframes cube {
 	from {
 		left: 100%;
-		-webkit-transform: matrix(0.133,-0.489,-0.200,2.489,-100.667,80.000);
-		-ms-transform: matrix(0.133,-0.489,-0.200,2.489,-100.667,80.000);
 		transform: matrix(0.133,-0.489,-0.200,2.489,-100.667,80.000);
 	}
 	to {
 		left: 0%;
-		-webkit-transform: none;
-		-ms-transform: none;
 		transform: none;
-	}
-}
-@-webkit-keyframes scrolldown {
-	from {
-		max-height: 0px;
-	}
-	to {
-		max-height: 500px;
 	}
 }
 @keyframes scrolldown {
@@ -184,43 +74,12 @@
 		max-height: 500px;
 	}
 }
-@-webkit-keyframes spin {
-	from {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	to {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
 @keyframes spin {
 	from {
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
 	to {
-		-webkit-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
 		transform: rotate(360deg);
-	}
-}
-@-webkit-keyframes shine {
-	0% {
-		text-shadow: 4px 8px 2px #ddd;
-	}
-	25% {
-		text-shadow: 4px -8px 2px #ddd;
-	}
-	50% {
-		text-shadow: -2px -8px 2px #ddd;
-	}
-	75% {
-		text-shadow: -2px 8px 2px #ddd;
-	}
-	100% {
-		text-shadow: 4px 8px 2px #ddd;
 	}
 }
 @keyframes shine {

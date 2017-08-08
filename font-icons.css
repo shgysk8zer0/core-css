@@ -1,0 +1,45 @@
+[data-icon]::after,
+[data-close]:empty::after,
+[data-delete]:empty::after,
+[data-remove]:empty::after,
+[data-fullscreen]:empty::after,
+a::after {
+	font-family: var(--icon-font, 'Web Symbols');
+}
+[data-icon]::after  {
+	display: inline;
+	font-size: inherit;
+	font-size-adjust: none;
+	font-stretch: none;
+	content: ' 'attr(data-icon)' ';
+	vertical-align: baseline;
+}
+[data-close]:empty::after,
+[data-delete]:empty::after,
+[data-remove]:empty::after
+{
+	content: var(--close-icon, "'");
+}
+[data-fullscreen]:empty::after {
+	content: var(--fullscreen-icon, "%");
+}
+
+a[target="_blank"]::after {
+	content: var(--new-tab-icon, " D");
+}
+a[rel="tag"]::after {
+	content: var(--tag-icon, " ,");
+}
+a[rel="next"]::after {
+	content: var(--next-icon, ")");
+}
+a[rel="prev"]::after {
+	color: var(--default-color, initial);
+	content: var(--prev-icon, "(");
+}
+a[rel="bookmark"]::after {
+	content: '';
+}
+[download]::after {
+	content: var(--download-icon, " A");
+}
