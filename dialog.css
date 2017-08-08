@@ -22,7 +22,7 @@ dialog {
 	display: inline-block;
 }
 dialog {
-	border: var(--border-width 0.4rem) outset var(--primary-color, black);
+	border: var(--border-width, 0.4rem) outset var(--primary-color, black);
 	border-radius: var(--border-radius, 1rem);
 	box-shadow: var(--shadow, 1rem 1rem 1rem rgba(0, 0, 0, 0.7));
 }
