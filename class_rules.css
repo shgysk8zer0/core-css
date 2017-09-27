@@ -17,6 +17,12 @@
 	width: var(--icon-size, 1em);
 	height: var(--icon-size, 1em);
 }
+.bg-fixed {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 .spacer {
 	display: inline-block;
 	height: 100%;
