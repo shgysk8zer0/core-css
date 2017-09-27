@@ -50,7 +50,7 @@
 .inline-block {
 	display: inline-block;
 }
-.gird {
+.grid {
 	display: grid;
 }
 @supports (display: flex) {
