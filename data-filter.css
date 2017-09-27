@@ -1,21 +1,39 @@
 @supports(filter: none) {
 	[data-filter="blur"] {filter: blur(0.15em);}
+
 	[data-filter="brightness"] {filter: brightness(50%);}
+
 	[data-filter="contrast"] {filter: contrast(50%);}
+
 	[data-filter="drop-shadow"] {filter: drop-shadow(.5em .5em 1em #222);}
+
 	[data-filter="grayscale"] {filter: grayscale(50%);}
+
 	[data-filter="invert"]  {filter: invert(50%);}
+
 	[data-filter="opacity"] {filter: opacity(50%);}
+
 	[data-filter="sepia"] {filter: sepia(50%);}
+
 	[data-filter="saturate"] {filter: saturate(50%);}
+
 	[data-hover-filter="blur"]:hover {filter: blur(0.15em);}
+
 	[data-hover-filter="brightness"]:hover {filter: brightness(50%);}
+
 	[data-hover-filter="contrast"]:hover {filter: contrast(50%);}
+
 	[data-hover-filter="drop-shadow"]:hover {filter: drop-shadow(.5em .5em 1em #222);}
+
 	[data-hover-filter="grayscale"]:hover {filter: grayscale(50%);}
+
 	[data-hover-filter="invert"]:hover  {filter: invert(50%);}
+
 	[data-hover-filter="opacity"]:hover {filter: opacity(50%);}
+
 	[data-hover-filter="sepia"]:hover {filter: sepia(50%);}
+
 	[data-hover-filter="saturate"]:hover {filter: saturate(50%);}
+
 	[data-hover-filter] {transition: filter 800ms;}
 }

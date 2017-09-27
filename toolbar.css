@@ -4,25 +4,33 @@ menu[type="toolbar"] {
 	margin: 0;
 	padding: 0;
 }
+
 menu[type="toolbar"] li {
-	list-style-type: none;
+	l
+	ist-style-type: none;
 }
+
 .flex > menu[type="toolbar"]{
 	flex: 0 0 auto;
 }
+
 menu[type="toolbar"] a::after {
 	all: unset;
 }
+
 menu[type="toolbar"] menu[label]::before, menu[type="toolbar"] menuitem[label]::before {
 	content: attr(label);
 	color: inherit;
 }
+
 menu[type="toolbar"] menu {
 	background: inherit;
 }
+
 menu[type="toolbar"] menu:not(:hover) > * {
 	display: none;
 }
+
 menu[type="toolbar"] button, menu[type="toolbar"] [role="button"] {
 	margin: 0 0;
 	padding: 0.3em;
@@ -31,15 +39,19 @@ menu[type="toolbar"] button, menu[type="toolbar"] [role="button"] {
 	background: linear-gradient(gainsboro, whitesmoke);
 	border: 0.15em outset currentcolor;
 }
+
 menu[type="toolbar"] svg {
 	fill: currentcolor;
 }
+
 menu[type="toolbar"] svg[width]:not([height]) {
 	height: auto;
 }
+
 menu[type="toolbar"] svg[height]:not([width]) {
 	width: auto;
 }
+
 menu[type="toolbar"] svg:not([width]):not([height]) {
 	max-width: 100%;
 	max-height: 100%;

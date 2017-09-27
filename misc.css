@@ -1,21 +1,26 @@
 :root {
 	box-sizing: border-box;
 }
+
 *, *::after, *::before {
 	box-sizing: inherit;
 	max-width: 100%;
 }
+
 ::-moz-selection {
 	background-color: var(--primary-color, initial);
 	text-shadow: none;
 }
+
 ::selection {
 	background-color: var(--primary-color, initial);
 	text-shadow: none;
 }
+
 menu[type="context"], template {
 	display: none;
 }
+
 button,
 [role="button"]
 {
@@ -27,6 +32,7 @@ button,
 	color: var(--default-color, initial);
 	border: 0.2rem outset var(--primary-color, initial);
 }
+
 button:disabled,
 button:active,
 [role="button"]
@@ -37,28 +43,34 @@ button:active,
 	box-shadow: 0 0 0.3rem var(--shadow-color, #222) inset;
 	cursor: not-allowed;
 }
+
 a,
 [download] {
 	font-family: inherit;
 	color: var(--link-color, blue);
 	text-decoration: none;
 }
+
 a:not([rel="bookmark"]):hover:visited {
 	color: var(--visited-color, purple);
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 figure {
 	border: var(--border-radius, 0.1em) solid dimgray;
 	text-align: center;
 }
+
 figure figcaption {
 	color: dimgray;
 	text-decoration: underline;
 	font-style: italic;
 }
+
 blockquote {
 	color: #777;
 	font-family: 'Libertine';
@@ -66,12 +78,15 @@ blockquote {
 	padding: 0px 15px;
 	border-left: 4px solid #DDD;
 }
+
 blockquote cite {
 	display: block;
 }
+
 blockquote cite::before {
 	content: ' — ';
 }
+
 a,
 button:not(:disabled),
 [role="button"],
@@ -80,9 +95,11 @@ input[type="reset"],
 input[type="image"] {
 	cursor: var(--pointer, pointer);
 }
+
 [data-caption] {
 	position: relative;
 }
+
 [data-caption]:hover::before {
 	all: initial;
 	display: block;
@@ -96,6 +113,7 @@ input[type="image"] {
 	border: 1px solid #333;
 	overflow: visible;
 }
+
 code {
 	display: inline-block;
 	padding: 0.1rem;
@@ -107,6 +125,7 @@ code {
 	border-radius: 0.2em;
 	white-space: pre;
 }
+
 pre > code {
 	display: block;
 	padding: 1rem;
@@ -115,22 +134,28 @@ pre > code {
 	border-radius: 0.3rem;
 	overflow-x: auto;
 }
+
 [contenteditable="true"]:empty {
 	min-height: 1.3rem;
 	border: 1px dotted dimgray;
 }
+
 [contenteditable="true"] img {
 	resize: both;
 }
+
 ol > ol {
 	list-style-type: upper-alpha;
 }
+
 ol > ol > ol {
 	list-style-type: upper-roman;
 }
+
 ol > ol > ol > ol {
 	list-style-type: lower-alpha;
 }
+
 ol > ol > ol > ol > ol {
 	list-style-type: lower-roman;
 }
