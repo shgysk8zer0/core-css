@@ -1,3 +1,359 @@
+.color-default {
+	color: var(--default-color);
+}
+
+.color-highlight {
+	color: var(--highlight-color);
+}
+
+.color-primary {
+	color: var(--primary-color);
+}
+
+.color-alt {
+	color: var(--alt-color);
+}
+
+.background-primary {
+	background-color: var(--primary-color);
+}
+
+.background-highlight {
+	background-color: var(--highlight-color);
+}
+
+.background-alt {
+	background-color: var(--alt-color);
+}
+
+.font-main {
+	font-family: var(--main-font);
+}
+
+.font-article {
+	font-family: var(--article-font);
+}
+
+.font-title {
+	font-family: var(--title-font);
+}
+
+.big {
+	font-size: 2em;
+}
+
+.bigger {
+	font-size: 3em;
+}
+
+/*=================== Border rules =================================*/
+.border-width-1 {
+	border-width: 1px;
+}
+
+.border-width-2 {
+	border-width: 2px;
+}
+
+.border-width-3 {
+	border-width: 3px;
+}
+
+.border-width-4 {
+	border-width: 4px;
+}
+
+.border-solid {
+	border-style: solid;
+}
+
+.border-hidden {
+	border-style: hidden;
+}
+
+.border-double {
+	border-style: double;
+}
+
+.border-dotted {
+	border-style: dotted;
+}
+
+.border-dashed {
+	border-style: dashed;
+}
+
+.border-inset {
+	border-style: inset;
+}
+
+.border-outset {
+	border-style: outset;
+}
+
+.border-grooved {
+	border-style: groove;
+}
+
+.border-ridge {
+	border-style: ridge;
+}
+
+.border-color-current {
+	border-color: currentColor;
+}
+
+/*============================ Box-sizing =================================*/
+.border-box {
+	box-sizing: border-box;
+}
+
+.content-box {
+	box-sizing: content-box;
+}
+
+/*========================= Scroll Behavior =================================*/
+.scroll-auto {
+	scroll-behavior: auto;
+}
+
+.scroll-smooth {
+	scroll-behavior: smooth;
+}
+
+.flex .justify-space-around {
+	justify-content: space-around;
+}
+
+/*============================= Background rules ========================*/
+.background-scroll {
+	background-attachment: scroll;
+}
+
+.background-fixed {
+	background-attachment: fixed;
+}
+
+.background-local {
+	background-attachment: local;
+}
+
+.background-repeat {
+	background-repeat: repeat;
+}
+
+.background-repeat-x {
+	background-repeat: repeat-x;
+}
+
+.background-repeat-y {
+	background-repeat: repeat-y;
+}
+
+.background-no-repeat {
+	background-repeat: no-repeat;
+}
+
+.background-contain {
+	background-size: contain;
+}
+
+.background-cover {
+	background-size: cover;
+}
+
+/*============================= Float rules =======================*/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+/*=========================== Overflow rules =============================*/
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.overflow-visible {
+	overflow: visible;
+}
+
+.overflow-scroll {
+	overflow: scroll;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
+.overflow-x-visible {
+	overflow-x: visible;
+}
+
+.overflow-x-scroll {
+	overflow-x: scroll;
+}
+
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+
+.overflow-y-visible {
+	overflow-y: visible;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+/*=========================== Opacity rules ========================*/
+.opacity-100 {
+	opacity: 1;
+}
+
+.opacity-90 {
+	opacity: 0.9;
+}
+
+.opacity-80 {
+	opacity: 0.8;
+}
+
+.opacity-70 {
+	opacity: 0.7;
+}
+
+.opacity-60 {
+	opacity: 0.6;
+}
+
+.opacity-50 {
+	opacity: 0.5;
+}
+
+.opacity-40 {
+	opacity: 0.4;
+}
+
+.opacity-30 {
+	opacity: 0.3;
+}
+
+.opacity-20 {
+	opacity: 0.2;
+}
+
+.opacity-10 {
+	opacity: .01;
+}
+
+.opacity-0, .transparent {
+	opacity: 0;
+}
+
+/*================================== Text rules ==========================*/
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-justify {
+	text-align: justify;
+}
+
+.text-align-justify-all {
+	text-align: justify-all;
+}
+
+.text-align-start {
+	text-align: start;
+}
+
+.text-align-end {
+	text-align: end;
+}
+
+.text-decoration-solid {
+	text-decoration-style: solid;
+}
+
+.text-decoration-wavy {
+	text-decoration-style: wavy;
+}
+
+.text-decoration-dotted {
+	text-decoration-style: dotted;
+}
+
+.text-decoration-dashed {
+	text-decoration-style: dashed;
+}
+
+.text-decoration-double {
+	text-decoration-style: double;
+}
+
+.no-text-decoration, .no-text-decoration * {
+	text-decoration: none;
+}
+
+.underline {
+	text-decoration-line: underline;
+}
+
+.overline {
+	text-decoration-line: overline;
+}
+
+.line-through {
+	text-decoration-line: line-through;
+}
+
+.optimize-speed {
+	text-rendering: optimizeSpeed;
+}
+
+.optimize-legibility {
+	text-rendering: optimizeLegibility;
+}
+
+.geometric-precision {
+	text-rendering: geometricPrecision;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
 .card {
 	border: var(--card-border, 1px solid #ccc);
 	border-radius: var(--card-radius, 2px);
