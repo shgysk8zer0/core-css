@@ -14,6 +14,59 @@
 	color: var(--alt-color);
 }
 
+.color-initial {
+	color: initial;
+}
+
+.color-inherit {
+	color: inherit;
+}
+
+/*============================= Background rules ========================*/
+.background-scroll {
+	background-attachment: scroll;
+}
+
+.background-fixed {
+	background-attachment: fixed;
+}
+
+.background-local {
+	background-attachment: local;
+}
+
+.background-repeat {
+	background-repeat: repeat;
+}
+
+.background-repeat-x {
+	background-repeat: repeat-x;
+}
+
+.background-repeat-y {
+	background-repeat: repeat-y;
+}
+
+.background-no-repeat {
+	background-repeat: no-repeat;
+}
+
+.background-contain {
+	background-size: contain;
+}
+
+.background-cover {
+	background-size: cover;
+}
+
+.background-none {
+	background: none;
+}
+
+.background-inherit {
+	background: inherit;
+}
+
 .background-primary {
 	background-color: var(--primary-color);
 }
@@ -26,6 +79,7 @@
 	background-color: var(--alt-color);
 }
 
+/*=================== Font rules =================================*/
 .font-main {
 	font-family: var(--main-font);
 }
@@ -125,43 +179,6 @@
 	justify-content: space-around;
 }
 
-/*============================= Background rules ========================*/
-.background-scroll {
-	background-attachment: scroll;
-}
-
-.background-fixed {
-	background-attachment: fixed;
-}
-
-.background-local {
-	background-attachment: local;
-}
-
-.background-repeat {
-	background-repeat: repeat;
-}
-
-.background-repeat-x {
-	background-repeat: repeat-x;
-}
-
-.background-repeat-y {
-	background-repeat: repeat-y;
-}
-
-.background-no-repeat {
-	background-repeat: no-repeat;
-}
-
-.background-contain {
-	background-size: contain;
-}
-
-.background-cover {
-	background-size: cover;
-}
-
 /*============================= Float rules =======================*/
 .left {
 	float: left;
@@ -169,6 +186,10 @@
 
 .right {
 	float: right;
+}
+
+.float-none {
+	float: none;
 }
 
 .clear-left {
@@ -487,6 +508,139 @@
 
 :root.loading {
 	cursor: progress;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+.cursor-auto {
+	cursor: auto;
+}
+
+.cursor-default {
+	cursor: var(--default-cursor, default);
+}
+
+.cursor-none {
+	cursor: none;
+}
+
+.cursor-context-menu {
+	cursor: context-menu;
+}
+
+.cursor-help {
+	cursor: help;
+}
+
+.cursor-pointer {
+	cursor: var(--pointer-cursor, pointer);
+}
+
+.cursor-progress {
+	cursor: var(--progress-cursor, progress);
+}
+
+.cursor-wait {
+	cursor: var(--wait-cursor, wait);
+}
+
+.cursor-cell {
+	cursor: cell;
+}
+
+.cursor-crosshair {
+	cursor: crosshair;
+}
+
+.cursor-text {
+	cursor: text;
+}
+
+.cursor-vertical-text, .cursor-text-vertical {
+	cursor: vertical-text;
+}
+
+.cursor-alias {
+	cursor: alias;
+}
+
+.cursor-copy {
+	cursor: copy;
+}
+
+.cursor-move {
+	cursor: move;
+}
+
+.cursor-do-drop {
+	cursor: no-drop;
+}
+
+.cursor-not-allowed {
+	cursor: not-allowed;
+}
+
+.cursor-all-scroll {
+	cursor: all-scroll;
+}
+
+.cursor-col-resize {
+	cursor: col-resize;
+}
+
+.cursor-row-resize {
+	cursor: row-resize;
+}
+
+.cursor-n-resize {
+	cursor: n-resize;
+}
+
+.cursor-e-resize {
+	cursor: e-resize;
+}
+
+.cursor-s-resize {
+	cursor: s-resize;
+}
+
+.cursor-w-resize {
+	cursor: w-resize;
+}
+
+.cursor-ne-resize {
+	cursor: ne-resize;
+}
+
+.cursor-nw-resize {
+	cursor: nw-resize;
+}
+
+.cursor-se-resize {
+	cursor: se-resize;
+}
+
+.cursor-sw-resize {
+	cursor: sw-resize;
+}
+
+.cursor-zoom-in {
+	cursor: zoom-in;
+}
+
+.cursor-zoom-out {
+	cursor: zoom-out;
+}
+
+.cursor-grab {
+	cursor: grab;
+}
+
+.cursor-grabbing {
+	cursor: grabbing;
 }
 
 .logo {
