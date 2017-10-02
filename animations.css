@@ -1,5 +1,11 @@
+:root {
+	transition-duration: var(--animation-duration, 400ms);
+	animation-duration: var(--animation-duration, 400ms);
+}
+
 *, *::before, *::after {
 	transform-origin: inherit;
+	transition-duration: inherit;
 	animation-play-state: inherit;
 	animation-iteration-count: inherit;
 	animation-timing-function: inherit;
