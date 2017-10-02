@@ -1,3 +1,14 @@
+
+*, *::before, *::after {
+	transform-origin: inherit;
+	animation-play-state: inherit;
+	animation-iteration-count: inherit;
+	animation-timing-function: inherit;
+	animation-direction: inherit;
+	animation-duration: inherit;
+	animation-fill-mode: inherit;
+}
+
 .transform-origin-center {
 	transform-origin: center;
 }
@@ -125,14 +136,6 @@
 }
 
 /*================== Collection of Simple CSS3 transitions ===================*/
-* {
-	animation-play-state: inherit;
-	animation-iteration-count: inherit;
-	animation-timing-function: inherit;
-	animation-direction: inherit;
-	animation-duration: inherit;
-	animation-fill-mode: inherit;
-}
 
 .bounce {
 	animation-name: bounce;
