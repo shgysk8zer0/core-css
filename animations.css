@@ -120,24 +120,24 @@
 	transition-timing-function: ease-in-out;
 }
 
-.transition-stagger > :nth-child(0n+1) {
-	transition-delay: 0ms;
+.transition-stagger > :nth-child(5n+1) {
+	animation-delay: calc(1 * var(--animation-stagger, 200ms));
 }
 
-.transition-stagger > :nth-child(0n+2) {
-	transition-delay: 200ms;
+.transition-stagger > :nth-child(5n+2) {
+	animation-delay: calc(2 * var(--animation-stagger, 200ms));
 }
 
-.transition-stagger > :nth-child(0n+3) {
-	transition-delay: 400ms;
+.transition-stagger > :nth-child(5n+3) {
+	animation-delay: calc(3 * var(--animation-stagger, 200ms));
 }
 
-.transition-stagger > :nth-child(0n+4) {
-	transition-delay: 600ms;
+.transition-stagger > :nth-child(5n+4) {
+	animation-delay: calc(4 * var(--animation-stagger, 200ms));
 }
 
-.transition-stagger > :nth-child(0n+5) {
-	transition-delay: 800ms;
+.transition-stagger > :nth-child(5n+5) {
+	animation-delay: calc(5 * var(--animation-stagger, 200ms));
 }
 
 /*================== Collection of Simple CSS3 transitions ===================*/
@@ -214,24 +214,24 @@
 	animation-timing-function: ease-in-out;
 }
 
-.animation-stagger > :nth-child(0n+1) {
-	animation-delay: 0ms;
+.animation-stagger > :nth-child(5n+1) {
+	animation-delay: calc(1 * var(--animation-stagger, 200ms));
 }
 
-.animation-stagger > :nth-child(0n+2) {
-	animation-delay: 200ms;
+.animation-stagger > :nth-child(5n+2) {
+	animation-delay: calc(2 * var(--animation-stagger, 200ms));
 }
 
-.animation-stagger > :nth-child(0n+3) {
-	animation-delay: 400ms;
+.animation-stagger > :nth-child(5n+3) {
+	animation-delay: calc(3 * var(--animation-stagger, 200ms));
 }
 
-.animation-stagger > :nth-child(0n+4) {
-	animation-delay: 600ms;
+.animation-stagger > :nth-child(5n+4) {
+	animation-delay: calc(4 * var(--animation-stagger, 200ms));
 }
 
-.animation-stagger > :nth-child(0n+5) {
-	animation-delay: 800ms;
+.animation-stagger > :nth-child(5n+5) {
+	animation-delay: calc(5 * var(--animation-stagger, 200ms));
 }
 
 @keyframes bounce {
