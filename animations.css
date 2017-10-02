@@ -1,14 +1,274 @@
-/*==============================Collection of Simple CSS3 Animations=================================*/
-@keyframes fadeIn {
+*, *::before, *::after {
+	transform-origin: inherit;
+	animation-play-state: inherit;
+	animation-iteration-count: inherit;
+	animation-timing-function: inherit;
+	animation-direction: inherit;
+	animation-duration: inherit;
+	animation-fill-mode: inherit;
+}
+
+.transform-origin-center {
+	transform-origin: center;
+}
+
+.transform-origin-top {
+	transform-origin: top;
+}
+
+.transform-origin-bottom {
+	transform-origin: bottom;
+}
+
+.transform-origin-left {
+	transform-origin: left;
+}
+
+.transform-origin-right {
+	transform-origin: right;
+}
+
+.transform-origin-top-center {
+	transform-origin: top center;
+}
+
+.transform-origin-top-left {
+	transform-origin: top left;
+}
+
+.transform-origin-top-right {
+	transform-origin: top right;
+}
+
+.transform-origin-bottom-left {
+	transform-origin: bottom left;
+}
+
+.transform-origin-bottom-right {
+	transform-origin: bottom right;
+}
+
+/*======================== Transition Rules =================================*/
+
+.transition-all {
+	transition-property: all;
+}
+
+.transition-transform {
+	transition-property: transform;
+}
+
+.transition-opacity {
+	transition-property: opacity;
+}
+
+.transition-color {
+	transition-property: color;
+}
+
+.transition-background {
+	transition-property: background;
+}
+
+.transition-background-position {
+	transition-property: background-position;
+}
+
+.transition-height {
+	transition-property: height;
+}
+
+.transition-width {
+	transition-property: width;
+}
+
+.transition-margin {
+	transition-property: margin;
+}
+
+.transition-padding {
+	transition-property: padding;
+}
+
+.transition-linear {
+	transition-timing-function: linear;
+}
+
+.transition-ease {
+	transition-timing-function: ease;
+}
+
+.transition-ease-in {
+	transition-timing-function: ease-in;
+}
+
+.transition-ease-out {
+	transition-timing-function: ease-out;
+}
+
+.transition-ease-in-out {
+	transition-timing-function: ease-in-out;
+}
+
+.transition-ease-in-out {
+	transition-timing-function: ease-in-out;
+}
+
+.transition-stagger > :nth-child(0n+1) {
+	transition-delay: 0ms;
+}
+
+.transition-stagger > :nth-child(0n+2) {
+	transition-delay: 200ms;
+}
+
+.transition-stagger > :nth-child(0n+3) {
+	transition-delay: 400ms;
+}
+
+.transition-stagger > :nth-child(0n+4) {
+	transition-delay: 600ms;
+}
+
+.transition-stagger > :nth-child(0n+5) {
+	transition-delay: 800ms;
+}
+
+/*================== Collection of Simple CSS3 transitions ===================*/
+
+.bounce {
+	animation-name: bounce;
+}
+
+.fade-in {
+	animation-name: fade-in;
+}
+
+.fade-out {
+	animation-name: fade-out;
+}
+
+.shrink {
+	animation-name: shrink;
+}
+
+.grow {
+	animation-name: grow;
+}
+
+.fly-in {
+	animation-name: fly-in;
+}
+
+.animation-infinite {
+	animation-iteration-count: infinite;
+}
+
+.animation-alternate {
+	animation-direction: alternate;
+}
+
+.animation-normal {
+	animation-direction: normal;
+}
+
+.animation-fill-forwards {
+	animation-fill-mode: forwards;
+}
+
+.animation-fill-backwards {
+	animation-fill-mode: backwards;
+}
+
+.animation-fill-both {
+	animation-fill-mode: both;
+}
+
+.animation-fill-none {
+	animation-fill-mode: none;
+}
+
+.animation-linear {
+	animation-timing-function: linear;
+}
+
+.animation-ease {
+	animation-timing-function: ease;
+}
+
+.animation-ease-in {
+	animation-timing-function: ease-in;
+}
+
+.animation-ease-out {
+	animation-timing-function: ease-out;
+}
+
+.animation-ease-in-out {
+	animation-timing-function: ease-in-out;
+}
+
+.animation-stagger > :nth-child(0n+1) {
+	animation-delay: 0ms;
+}
+
+.animation-stagger > :nth-child(0n+2) {
+	animation-delay: 200ms;
+}
+
+.animation-stagger > :nth-child(0n+3) {
+	animation-delay: 400ms;
+}
+
+.animation-stagger > :nth-child(0n+4) {
+	animation-delay: 600ms;
+}
+
+.animation-stagger > :nth-child(0n+5) {
+	animation-delay: 800ms;
+}
+
+@keyframes bounce {
+	from {
+		transform: scaleY(.85);
+	}
+
+	to {
+		filter: drop-shadow(0 0.3em 0.1em rgba(0,0,0,0.7));
+		transform: translateY(-1.2em);
+	}
+}
+
+@keyframes fade-in {
 	from {
 		opacity: 0;
 	}
 }
-@keyframes fadeOut {
+
+@keyframes fade-out {
 	to {
 		opacity: 0;
 	}
 }
+
+@keyframes shrink {
+	to {
+		transform: scale(0);
+	}
+}
+
+@keyframes grow {
+	from {
+		transform: scale(0);
+	}
+}
+
+@keyframes fly-in {
+	from {
+		transform: scale(0) translate(-50vw, -50vh);
+	}
+}
+
 @keyframes slide {
 	from {
 		left: 100%;
@@ -18,75 +278,40 @@
 		left: 0;
 	}
 }
+
 @keyframes progress {
 	to {
 		background-position: right;
 	}
 }
-@keyframes scale {
-	from {
-		transform: scale(0);
-	}
-}
+
 @keyframes hanger {
 	from {
 		transform: rotateX(-90deg);
 		transform-origin: center -40%;
 	}
-
-	to {
-		transform: none;
-	}
 }
+
 @keyframes door {
 	from {
 		transform: rotateY(90deg);
 	}
-
-	to {
-		-webkit-transform: none;
-	}
 }
+
 @keyframes sidekick {
 	from {
 		left: 100%;
 		transform: rotate(270deg) scale(0);
 	}
-
-	to {
-		left: 0%;
-		transform: none;
-	}
 }
+
 @keyframes cube {
 	from {
 		left: 100%;
 		transform: matrix(0.133,-0.489,-0.200,2.489,-100.667,80.000);
 	}
-
-	to {
-		left: 0%;
-		transform: none;
-	}
 }
-@keyframes scrolldown {
-	from {
-		max-height: 0px;
-	}
 
-	to {
-		max-height: 500px;
-	}
-}
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
 @keyframes shine {
 	0% {
 		text-shadow: 4px 8px 2px #ddd;
