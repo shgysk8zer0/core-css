@@ -3,7 +3,7 @@
 	animation-duration: var(--animation-duration, 400ms);
 }
 
-*:not(svg *), *::before, *::after {
+*:not(svg *) {
 	transform-origin: inherit;
 	transition-duration: inherit;
 	animation-play-state: inherit;
