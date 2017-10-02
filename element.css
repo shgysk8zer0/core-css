@@ -1,0 +1,132 @@
+a,
+button:not(:disabled),
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+	cursor: var(--pointer, pointer);
+}
+
+button,
+[role="button"]
+{
+	min-width: 2rem;
+	padding: 0.2rem;
+	background: var(--button-background, initial);
+	font-family: var(--button-font, inherit);
+	color: var(--button-color, initial);
+	border: var(--button-border, 0.2rem outset black);
+}
+
+:disabled, .disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+button:disabled,
+[role="button"]:disabled,
+[role="button"].disabled
+{
+	background: var(--button-disabled-background, initial);
+	color: var(--button-disabled-color, initial);
+	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
+	border: var(--button-disabled-border, 0.2rem inset black);
+}
+
+button:active,
+[role="button"]:active,
+[role="button"].active
+{
+	background: var(--button-active-background, initial);
+	color: var(--button-active-color, initial);
+	border: var(--button-active-border, 0.2rem inset black);
+}
+
+a,
+[download] {
+	font-family: var(--link-font, inherit);
+	color: var(--link-color, initial);
+	text-decoration: var(--link-decoration, none);
+}
+
+a:visited:hover:not([rel="bookmark"]) {
+	color: var(--visited-color, initial);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	border: var(--border-radius, 0.1em) solid dimgray;
+	text-align: center;
+}
+
+figure figcaption {
+	color: dimgray;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+blockquote {
+	color: #777;
+	font-family: 'Libertine';
+	font-style: italic;
+	padding: 0px 15px;
+	border-left: 4px solid #DDD;
+}
+
+blockquote cite {
+	display: block;
+}
+
+blockquote cite::before {
+	content: ' — ';
+}
+
+code {
+	display: inline-block;
+	padding: 0.1rem;
+	background-color: #F5F5F5;
+	background-color: rgba(0, 0, 0, 0.04);
+	color: #333;
+	font-size: 0.9rem;
+	font-family: hack, Courier, monospace;
+	border-radius: 0.2em;
+	white-space: pre;
+}
+
+pre > code {
+	display: block;
+	padding: 1rem;
+	background-color: rgb(51, 51, 51);
+	color: rgb(255, 249, 217);
+	border-radius: 0.3rem;
+	overflow-x: auto;
+}
+
+[contenteditable="true"]:empty {
+	min-height: 1.3rem;
+	border: 1px dotted dimgray;
+}
+
+[contenteditable="true"] img {
+	resize: both;
+}
+
+ol > ol {
+	list-style-type: upper-alpha;
+}
+
+ol > ol > ol {
+	list-style-type: upper-roman;
+}
+
+ol > ol > ol > ol {
+	list-style-type: lower-alpha;
+}
+
+ol > ol > ol > ol > ol {
+	list-style-type: lower-roman;
+}

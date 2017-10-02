@@ -159,3 +159,67 @@ ol > ol > ol > ol {
 ol > ol > ol > ol > ol {
 	list-style-type: lower-roman;
 }
+
+:root.hidden * {
+	animation-play-state: paused;
+}
+
+:root.offline {
+	pointer-events: none;
+}
+
+:root.loading {
+	cursor: progress;
+}
+
+.bg-fixed {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.spacer {
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	padding: 0;
+	margin: 0 0.5em;
+	border-right: 2px solid currentColor;
+}
+
+.logo {
+	display: inline-block;
+	width: var(--logo-width, 3rem);
+	height: var(--logo-height, 3rem);
+	overflow: visible;
+	transition: all 1s cubic-bezier(.68,-0.55,.27,1.55) 0s;
+}
+
+.logo svg {
+	width: 100%;
+	height: 100%;
+}
+
+.logo svg, .logo img {
+	overflow: visible;
+}
+
+.logo:hover {
+	transform: scale(2) rotateZ(360deg);
+}
+
+footer .logo{
+	color: #333;
+}
+
+.copyleft {
+	color: var(--alt-color, #333);
+	font-size: 3rem;
+}
+
+.copyleft::before {
+	content: '©';
+	display: inline-block;
+	transform: rotateY(180deg);
+}
