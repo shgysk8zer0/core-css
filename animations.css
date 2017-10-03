@@ -237,10 +237,11 @@
 @keyframes bounce {
 	from {
 		transform: scaleY(.85);
+		filter: drop-shadow(0 0.3em 0.1em rgba(0,0,0,0.7));
 	}
 
 	to {
-		filter: drop-shadow(0 0.3em 0.1em rgba(0,0,0,0.7));
+		filter: drop-shadow(0 0.7em 0.3em rgba(0,0,0,0.7));
 		transform: translateY(-1.2em);
 	}
 }
