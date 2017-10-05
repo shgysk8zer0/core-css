@@ -3,6 +3,10 @@
 	max-width: 100%;
 }
 
+[hidden], template, dialog:not([open]), details:not([open]) > :not(summary) {
+	display: none;
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -13,8 +17,7 @@ input[type="reset"], input[type="image"] {
 	cursor: var(--pointer, pointer);
 }
 
-button, [role="button"]
-{
+button, [role="button"] {
 	min-width: 2rem;
 	padding: 0.2rem;
 	background: var(--button-background, initial);
