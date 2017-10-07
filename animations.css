@@ -3,6 +3,18 @@
 	animation-duration: var(--animation-duration, 400ms);
 }
 
+.transition-speed-fast {
+	transition-duration: 200ms;
+}
+
+.transition-speed-normal {
+	transition-duration: 400ms;
+}
+
+.transition-speed-slow {
+	transition-duration: 800ms;
+}
+
 *:not(use) {
 	transform-origin: inherit;
 	transition-duration: inherit;
@@ -164,6 +176,18 @@
 
 .fly-in {
 	animation-name: fly-in;
+}
+
+.animation-speed-fast {
+	animation-duration: 200ms;
+}
+
+.animation-speed-normal {
+	animation-duration: 400ms;
+}
+
+.animation-speed-slow {
+	animation-duration: 800ms;
 }
 
 .animation-infinite {
