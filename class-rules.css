@@ -1,3 +1,7 @@
+.clearfix::after {
+	clear: both;
+}
+
 .shadow {
 	box-shadow: 0 2px 10px var(--shadow-color, rgba(0,0,0,.2));
 }
