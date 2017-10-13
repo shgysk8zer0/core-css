@@ -108,6 +108,15 @@ pre > code {
 	background: var(--backdrop-background, none);
 }
 
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 3;
+}
+
 [contenteditable="true"]:empty {
 	min-height: 1.3rem;
 	border: 1px dotted dimgray;
