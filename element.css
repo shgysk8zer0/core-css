@@ -104,6 +104,10 @@ pre > code {
 	overflow-x: auto;
 }
 
+::backdrop, .backdrop {
+	background: var(--backdrop-background, none);
+}
+
 [contenteditable="true"]:empty {
 	min-height: 1.3rem;
 	border: 1px dotted dimgray;
