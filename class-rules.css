@@ -1,5 +1,7 @@
 .clearfix::after {
 	clear: both;
+	content: '';
+	display: block;
 }
 
 .shadow {
@@ -31,6 +33,14 @@
 
 .hidden {
 	visibility: hidden;
+}
+
+.viewport-width {
+	width: 100vw;
+}
+
+.viewport-height {
+	height: 100vh;
 }
 
 /*============================= Color rules ========================*/
