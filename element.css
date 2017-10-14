@@ -7,8 +7,76 @@
 	display: none;
 }
 
+dialog {
+	position: absolute;
+	left: 0; right: 0;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	height: fit-content;
+	margin: auto;
+	border: solid;
+	padding: 1em;
+	background: white;
+	color: black;
+	display: block;
+	z-index: 100;
+}
+
+dialog + .backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+}
+
+dialog + .backdrop, dialog::backdrop {
+	background: var(--backdrop-background, rgba(0,0,0.1));
+}
+
+/*._dialog_overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}*/
+
+dialog.modal {
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.no-details details > summary::before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	box-sizing: content-box;
+	border: 0.4em solid transparent;
+	vertical-align: middle;
+}
+
+.no-details details[open] > summary::before {
+	border-top-color: currentColor;
+}
+
+.no-details details:not([open]) > summary::before {
+	border-left-color: currentColor;
+}
+
+.no-details details:not([open]) > :not(summary) {
+	display: none;
+}
+
 body {
 	margin: 0;
+	padding: 0;
 	min-height: 100vh;
 }
 
@@ -44,6 +112,16 @@ button:active, [role="button"]:active, [role="button"].active
 	background: var(--button-active-background, initial);
 	color: var(--button-active-color, initial);
 	border: var(--button-active-border, 0.2rem inset black);
+}
+
+details > summary:only-child,
+details > summary:only-child::before,
+details > summary:only-child::after {
+	display: none;
+}
+
+details > summary {
+	cursor: var(--pointer, pointer);
 }
 
 a, [download] {
