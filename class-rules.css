@@ -35,12 +35,36 @@
 	visibility: hidden;
 }
 
-.viewport-width {
+.width-viewport {
 	width: 100vw;
 }
 
-.viewport-height {
+.height-viewport {
 	height: 100vh;
+}
+
+.width-min-content {
+	width: min-content;
+}
+
+.width-max-content {
+	width: max-content;
+}
+
+.width-fit-content {
+	width: fit-content;
+}
+
+.height-min-content {
+	height: min-content;
+}
+
+.height-max-content {
+	height: max-content;
+}
+
+.height-fit-content {
+	height: fit-content;
 }
 
 /*============================= Color rules ========================*/
@@ -59,6 +83,14 @@
 
 .color-primary {
 	color: var(--primary-color);
+}
+
+.color-accent {
+	color: var(--accent-color);
+}
+
+.color-compliment {
+	color: var(--compliment-color);
 }
 
 .color-alt {
@@ -130,6 +162,78 @@
 	background-color: var(--alt-color);
 }
 
+.background-accent {
+	background-color: var(--accent-color);
+}
+
+.background-compliment {
+	background-color: var(--compliment-color);
+}
+
+.blend-mode-normal {
+	background-blend-mode: normal;
+}
+
+.blend-mode-multiply {
+	background-blend-mode: multiply;
+}
+
+.blend-mode-screen {
+	background-blend-mode: screen;
+}
+
+.blend-mode-overlay {
+	background-blend-mode: overlay;
+}
+
+.blend-mode-darken {
+	background-blend-mode: darken;
+}
+
+.blend-mode-lighten {
+	background-blend-mode: lighten;
+}
+
+.blend-mode-dodge {
+	background-blend-mode: color-dodge;
+}
+
+.blend-mode-burn {
+	background-blend-mode: color-burn;
+}
+
+.blend-mode-hard {
+	background-blend-mode: hard-light;
+}
+
+.blend-mode-soft {
+	background-blend-mode: soft-light;
+}
+
+.blend-mode-difference {
+	background-blend-mode: difference;
+}
+
+.blend-mode-exclusion {
+	background-blend-mode: exclusion;
+}
+
+.blend-mode-hue {
+	background-blend-mode: hue;
+}
+
+.blend-mode-saturation {
+	background-blend-mode: saturation;
+}
+
+.blend-mode-color {
+	background-blend-mode: color;
+}
+
+.blend-mode-luminosity {
+	background-blend-mode: luminosity;
+}
+
 /*=================== Font rules =================================*/
 .font-main {
 	font-family: var(--main-font);
@@ -141,6 +245,14 @@
 
 .font-title {
 	font-family: var(--title-font);
+}
+
+.small {
+	font-size: 0.75em;
+}
+
+.smaller {
+	font-size: 0.5em;
 }
 
 .big {
@@ -226,9 +338,26 @@
 	scroll-behavior: smooth;
 }
 
-.flex .justify-space-around {
-	justify-content: space-around;
+.scroll-snap, .scroll-snap-mandatory {
+	-webkit-scroll-snap-type: mandatory;
+	scroll-snap-type: mandatory;
 }
+
+.scroll-snap-proximity {
+	-webkit-scroll-snap-type: proximity;
+	scroll-snap-type: proximity;
+}
+
+.scroll-snap-vertical {
+	-webkit-scroll-snap-points-y: repeat(100vh);
+	scroll-snap-points-y: repeat(100vh);
+}
+
+.scroll-snap-horizontal {
+	-webkit-scroll-snap-points-x: repeat(100vw);
+	scroll-snap-points-x: repeat(100vw);
+}
+
 
 /*============================= Float rules =======================*/
 .left {
@@ -546,6 +675,10 @@
 
 	.flex .center {
 		align-self: center;
+	}
+
+	.flex .justify-space-around {
+		justify-content: space-around;
 	}
 }
 
