@@ -151,9 +151,6 @@ blockquote cite::before {
 code {
 	display: inline-block;
 	padding: 0.1rem;
-	background-color: #F5F5F5;
-	background-color: rgba(0, 0, 0, 0.04);
-	color: #333;
 	font-size: 0.9rem;
 	font-family: hack, Courier, monospace;
 	border-radius: 0.2em;
@@ -163,8 +160,6 @@ code {
 pre > code {
 	display: block;
 	padding: 1rem;
-	background-color: rgb(51, 51, 51);
-	color: rgb(255, 249, 217);
 	border-radius: 0.3rem;
 	overflow-x: auto;
 }
