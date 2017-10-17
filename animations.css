@@ -105,23 +105,23 @@
 }
 
 .transition-speed-blink {
-	animation-duration: var(--blink-speed, 200ms);
+	transition-duration: var(--blink-speed, 200ms);
 }
 
 .transition-speed-fast {
-	animation-duration: var(--fast-speed, 400ms);
+	transition-duration: var(--fast-speed, 400ms);
 }
 
 .transtion-speed-normal {
-	animation-duration: var(--nomral-speed, 600ms);
+	transition-duration: var(--nomral-speed, 600ms);
 }
 
 .transition-speed-slow {
-	animation-duration: var(--slow-speed, 800ms);
+	transition-duration: var(--slow-speed, 800ms);
 }
 
 .transition-speed-crawl {
-	animation-duration: var(--crawl-speed, 1600ms);
+	transition-duration: var(--crawl-speed, 1600ms);
 }
 
 .transition-none {
@@ -210,7 +210,7 @@
 
 /*================== Collection of Simple CSS3 transitions ===================*/
 
-.bounce {
+.trampoline {
 	animation-name: bounce;
 }
 
@@ -350,7 +350,7 @@
 	animation-delay: calc(5 * var(--animation-stagger, 200ms));
 }
 
-@keyframes bounce {
+@keyframes trampoline {
 	from {
 		transform: scaleY(.85);
 		filter: drop-shadow(0 0.3em 0.1em rgba(0,0,0,0.7));
