@@ -1,31 +1,3 @@
-:root {
-	transition-duration: var(--animation-duration, 400ms);
-	animation-duration: var(--animation-duration, 400ms);
-}
-
-.transition-speed-fast {
-	transition-duration: 200ms;
-}
-
-.transition-speed-normal {
-	transition-duration: 400ms;
-}
-
-.transition-speed-slow {
-	transition-duration: 800ms;
-}
-
-*:not(use) {
-	transform-origin: inherit;
-	transition-duration: inherit;
-	animation-play-state: inherit;
-	animation-iteration-count: inherit;
-	animation-timing-function: inherit;
-	animation-direction: inherit;
-	animation-duration: inherit;
-	animation-fill-mode: inherit;
-}
-
 .transform-origin-center {
 	transform-origin: center;
 }
@@ -132,24 +104,108 @@
 	transition-timing-function: ease-in-out;
 }
 
+.transition-speed-blink {
+	animation-duration: var(--blink-speed, 200ms);
+}
+
+.transition-speed-fast {
+	animation-duration: var(--fast-speed, 400ms);
+}
+
+.transtion-speed-normal {
+	animation-duration: var(--nomral-speed, 600ms);
+}
+
+.transition-speed-slow {
+	animation-duration: var(--slow-speed, 800ms);
+}
+
+.transition-speed-crawl {
+	animation-duration: var(--crawl-speed, 1600ms);
+}
+
+.transition-none {
+	transition-property: none;
+}
+
+.transition-all {
+	transition-property: all;
+}
+
+.transition-transform {
+	transition-property: transform;
+}
+
+.transition-opacity {
+	transition-property: opacity;
+}
+
+.transition-filter {
+	transition-property: filter;
+}
+
+.transition-background-position {
+	transition-property: background-position;
+}
+
+.transition-top {
+	transition-property: top;
+}
+
+.transition-right {
+	transition-property: right;
+}
+
+.transition-bottom {
+	transition-property: bottom;
+}
+
+.transition-left {
+	transition-property: left;
+}
+
+.transtion-color {
+	transition-property: color;
+}
+
+.transition-background-color {
+	transition-property: background-color;
+}
+
+.transition-width {
+	transition-property: width;
+}
+
+.transition-height {
+	transition-property: height;
+}
+
+.transition-max-width {
+	transition-property: max-width;
+}
+
+.transition-max-height {
+	transition-property: max-height;
+}
+
 .transition-stagger > :nth-child(5n+1) {
-	animation-delay: calc(1 * var(--animation-stagger, 200ms));
+	transition-delay: calc(1 * var(--transition-stagger, 200ms));
 }
 
 .transition-stagger > :nth-child(5n+2) {
-	animation-delay: calc(2 * var(--animation-stagger, 200ms));
+	transition-delay: calc(2 * var(--transition-stagger, 200ms));
 }
 
 .transition-stagger > :nth-child(5n+3) {
-	animation-delay: calc(3 * var(--animation-stagger, 200ms));
+	transition-delay: calc(3 * var(--transition-stagger, 200ms));
 }
 
 .transition-stagger > :nth-child(5n+4) {
-	animation-delay: calc(4 * var(--animation-stagger, 200ms));
+	transition-delay: calc(4 * var(--transition-stagger, 200ms));
 }
 
 .transition-stagger > :nth-child(5n+5) {
-	animation-delay: calc(5 * var(--animation-stagger, 200ms));
+	transition-delay: calc(5 * var(--transition-stagger, 200ms));
 }
 
 /*================== Collection of Simple CSS3 transitions ===================*/
@@ -178,16 +234,48 @@
 	animation-name: fly-in;
 }
 
+.slide-up {
+	animation-name: slide-up;
+}
+
+.flip-down {
+	animation-name: flip-down;
+}
+
+.tear-off {
+	animation-name: tear-off;
+}
+
+.blink {
+	animation-name: blink;
+}
+
+.animation-paused {
+	animation-play-state: paused;
+}
+
+.animation-running {
+	animation-play-state: running;
+}
+
+.animation-speed-blink {
+	animation-duration: var(--blink-speed, 200ms);
+}
+
 .animation-speed-fast {
-	animation-duration: 200ms;
+	animation-duration: var(--fast-speed, 400ms);
 }
 
 .animation-speed-normal {
-	animation-duration: 400ms;
+	animation-duration: var(--normal-speed, 600ms);
 }
 
 .animation-speed-slow {
-	animation-duration: 800ms;
+	animation-duration: var(--slow-speed, 800ms);
+}
+
+.animation-speed-crawl {
+	animation-duration: var(--crawl-speed, 1600ms);
 }
 
 .animation-infinite {
@@ -236,6 +324,10 @@
 
 .animation-ease-in-out {
 	animation-timing-function: ease-in-out;
+}
+
+.animation-overshoot {
+	animation-timing-function: cubic-bezier(.59,1.16,.83,1.11);
 }
 
 .animation-stagger > :nth-child(5n+1) {
@@ -296,7 +388,28 @@
 
 @keyframes fly-in {
 	from {
-		transform: scale(0) translate(-50vw, -50vh);
+		transform: translate(100vw, -3vh) scaleX(0.1) skew(-20deg);
+	}
+}
+
+@keyframes flip-down {
+	from {
+		transform: rotateX(-90deg);
+	}
+}
+
+@keyframes tear-off {
+	40% {
+		transform: rotateZ(30deg) rotateX(40deg) skew(-20deg);
+	}
+
+	99% {
+		transform: rotateZ(40deg)  translate(-30vw, 120vh) skew(20deg);
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
 	}
 }
 
@@ -307,6 +420,16 @@
 
 	to {
 		left: 0;
+	}
+}
+
+@keyframes slide-up {
+	from {
+		top: 100%;
+	}
+
+	to {
+		top: 0%;
 	}
 }
 
@@ -362,5 +485,11 @@
 
 	100% {
 		text-shadow: 4px 8px 2px #ddd;
+	}
+}
+
+@keyframes blink {
+	from {
+		opacity: 0;
 	}
 }
