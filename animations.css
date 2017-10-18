@@ -113,7 +113,7 @@
 }
 
 .transition-speed-normal {
-	transition-duration: var(--nomral-speed, 600ms);
+	transition-duration: var(--normal-speed, 600ms);
 }
 
 .transition-speed-slow {
