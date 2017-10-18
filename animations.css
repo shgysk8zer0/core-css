@@ -100,10 +100,6 @@
 	transition-timing-function: ease-in-out;
 }
 
-.transition-ease-in-out {
-	transition-timing-function: ease-in-out;
-}
-
 .transition-speed-blink {
 	transition-duration: var(--blink-speed, 200ms);
 }
@@ -134,6 +130,10 @@
 
 .transition-transform {
 	transition-property: transform;
+}
+
+.transition-box-shadow {
+	transition-property: box-shadow:
 }
 
 .transition-opacity {
