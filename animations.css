@@ -39,47 +39,6 @@
 }
 
 /*======================== Transition Rules =================================*/
-
-.transition-all {
-	transition-property: all;
-}
-
-.transition-transform {
-	transition-property: transform;
-}
-
-.transition-opacity {
-	transition-property: opacity;
-}
-
-.transition-color {
-	transition-property: color;
-}
-
-.transition-background {
-	transition-property: background;
-}
-
-.transition-background-position {
-	transition-property: background-position;
-}
-
-.transition-height {
-	transition-property: height;
-}
-
-.transition-width {
-	transition-property: width;
-}
-
-.transition-margin {
-	transition-property: margin;
-}
-
-.transition-padding {
-	transition-property: padding;
-}
-
 .transition-linear {
 	transition-timing-function: linear;
 }
@@ -164,6 +123,14 @@
 	transition-property: left;
 }
 
+.transition-margin {
+	transition-property: margin;
+}
+
+.transition-padding {
+	transition-property: padding;
+}
+
 .transtion-color {
 	transition-property: color;
 }
@@ -171,6 +138,15 @@
 .transition-background-color {
 	transition-property: background-color;
 }
+
+.transition-color {
+	transition-property: color;
+}
+
+.transition-background {
+	transition-property: background;
+}
+
 
 .transition-width {
 	transition-property: width;
