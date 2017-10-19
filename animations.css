@@ -211,7 +211,7 @@
 /*================== Collection of Simple CSS3 transitions ===================*/
 
 .trampoline {
-	animation-name: bounce;
+	animation-name: trampoline;
 }
 
 .fade-in {
