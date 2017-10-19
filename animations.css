@@ -91,10 +91,6 @@
 	transition-property: transform;
 }
 
-.transition-box-shadow {
-	transition-property: box-shadow:
-}
-
 .transition-opacity {
 	transition-property: opacity;
 }
