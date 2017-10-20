@@ -258,6 +258,14 @@
 	animation-direction: alternate;
 }
 
+.animation-reverse {
+	animation-direction: reverse;
+}
+
+.animation-alternate-reverse {
+	animation-direction: alternate-reverse;
+}
+
 .animation-normal {
 	animation-direction: normal;
 }
