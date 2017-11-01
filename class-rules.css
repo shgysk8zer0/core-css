@@ -929,3 +929,27 @@
 .will-change-right {
 	will-change: right;
 }
+
+.shape-margin {
+	shape-outside: margin-box;
+}
+
+.shape-content {
+	shape-outside: content-box;
+}
+
+.shape-border {
+	shape-outside: border-box;
+}
+
+.shape-padding {
+	shape-outside: padding-box;
+}
+
+.shape-circle {
+	shape-outside: circle();
+}
+
+.shape-ellipse {
+	shape-outside: ellipse();
+}
