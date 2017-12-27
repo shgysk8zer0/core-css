@@ -3,7 +3,7 @@
 	max-width: 100%;
 }
 
-[hidden], template, dialog:not([open]), details:not([open]) > :not(summary) {
+[hidden], template, dialog:not([open]), details:not([open]) > :not(summary), menu[type="context"] {
 	display: none;
 }
 
