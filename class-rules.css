@@ -152,23 +152,23 @@
 }
 
 .background-primary {
-	background-color: var(--primary-color);
+	background: var(--primary-color);
 }
 
 .background-highlight {
-	background-color: var(--highlight-color);
+	background: var(--highlight-color);
 }
 
 .background-alt {
-	background-color: var(--alt-color);
+	background: var(--alt-color);
 }
 
 .background-accent {
-	background-color: var(--accent-color);
+	background: var(--accent-color);
 }
 
 .background-compliment {
-	background-color: var(--compliment-color);
+	background: var(--compliment-color);
 }
 
 .blend-mode-normal {
@@ -317,6 +317,10 @@
 	border-style: ridge;
 }
 
+.border-none, .no-border {
+	border: none;
+}
+
 .border-color-current {
 	border-color: currentColor;
 }
@@ -361,11 +365,11 @@
 
 
 /*============================= Float rules =======================*/
-.left {
+.float-left {
 	float: left;
 }
 
-.right {
+.float-right {
 	float: right;
 }
 

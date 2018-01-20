@@ -3,7 +3,16 @@
 	max-width: 100%;
 }
 
-[hidden], template, dialog:not([open]), details:not([open]) > :not(summary), menu[type="context"] {
+[data-before] {
+	content: attr(data-before);
+}
+
+[data-after] {
+	content: attr(data-after);
+}
+
+[hidden], template, dialog:not([open]), details:not([open]) > :not(summary),
+menu[type="context"] {
 	display: none;
 }
 
@@ -93,18 +102,16 @@ button, [role="button"] {
 	pointer-events: none;
 }
 
-button:disabled, [role="button"]:disabled, [role="button"].disabled
-{
+button:disabled, [role="button"]:disabled, [role="button"].disabled {
 	background: var(--button-disabled-background, initial);
-	color: var(--button-disabled-color, initial);
+	color: var(--button-disabled-color, inherit);
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
 	border: var(--button-disabled-border, 0.2rem inset black);
 }
 
-button:active, [role="button"]:active, [role="button"].active
-{
+button:active, [role="button"]:active, [role="button"].active {
 	background: var(--button-active-background, initial);
-	color: var(--button-active-color, initial);
+	color: var(--button-active-color, inherit);
 	border: var(--button-active-border, 0.2rem inset black);
 }
 
@@ -113,13 +120,12 @@ details > summary {
 }
 
 a, [download] {
-	font-family: var(--link-font, inherit);
-	color: var(--link-color, initial);
+	color: var(--link-color, inherit);
 	text-decoration: var(--link-decoration, none);
 }
 
 a:visited:hover:not([rel="bookmark"]) {
-	color: var(--visited-color, initial);
+	color: var(--visited-color, inherit);
 }
 
 img {
@@ -135,7 +141,7 @@ figure figcaption {
 
 blockquote {
 	color: #777;
-	font-family: 'Libertine';
+	font-family: var(--blockquote-font, inherit);
 	font-style: italic;
 	padding: 0px 15px;
 	border-left: 4px solid #DDD;
@@ -146,14 +152,14 @@ blockquote cite {
 }
 
 blockquote cite::before {
-	content: ' — ';
+	content: var(--cite-prefix, ' — ');
 }
 
 code {
 	display: inline-block;
 	padding: 0.1rem;
 	font-size: 0.9rem;
-	font-family: hack, Courier, monospace;
+	font-family: var(--code-font, monospace);
 	border-radius: 0.2em;
 	white-space: pre;
 }
