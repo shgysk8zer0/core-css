@@ -3,11 +3,11 @@
 	max-width: 100%;
 }
 
-[data-before] {
+[data-before]::before {
 	content: attr(data-before);
 }
 
-[data-after] {
+[data-after]::after {
 	content: attr(data-after);
 }
 
