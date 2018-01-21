@@ -71,10 +71,22 @@ dialog.modal {
 	content: '\25BC';
 }
 
-details > summary:only-child,
-details > summary:only-child::before,
-details > summary:only-child::after {
+.no-details details > summary:only-child,
+.no-details details > summary:only-child::before,
+.no-details details > summary:only-child::after {
 	display: none;
+}
+
+.no-details details > summary:empty::after {
+	content: 'Details';
+}
+
+.no-details summary.block::before {
+	content: '';
+}
+
+summary.block::-webkit-details-marker {
+	display:none;
 }
 
 body {
