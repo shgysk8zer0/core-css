@@ -101,8 +101,7 @@ input[type="reset"], input[type="image"] {
 }
 
 button, [role="button"] {
-	min-width: 2rem;
-	padding: 0.2rem;
+	padding: 0.3rem;
 	background: var(--button-background, initial);
 	font-family: var(--button-font, inherit);
 	color: var(--button-color, initial);
