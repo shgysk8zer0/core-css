@@ -86,7 +86,7 @@ dialog.modal {
 }
 
 summary.block::-webkit-details-marker {
-	display:none;
+	display: none;
 }
 
 body {
@@ -96,7 +96,9 @@ body {
 }
 
 a, button:not(:disabled), [role="button"], input[type="submit"],
-input[type="reset"], input[type="image"] {
+input[type="reset"], input[type="image"], [data-share], [data-click],
+[data-close], [data-remove], [data-show], [data-show-modal], [data-scroll-to],
+[data-toggle-hidden], [data-fullscreen] {
 	cursor: var(--pointer, pointer);
 }
 
