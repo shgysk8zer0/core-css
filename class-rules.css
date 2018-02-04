@@ -860,6 +860,10 @@
 }
 
 /*============================= Cursor rules ==============================*/
+.no-pointer-events {
+	pointer-events: none;
+}
+
 .cursor-auto {
 	cursor: auto;
 }
