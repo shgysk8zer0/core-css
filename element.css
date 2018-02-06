@@ -93,6 +93,8 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 a, button:not(:disabled), [role="button"], input[type="submit"],
@@ -175,6 +177,7 @@ code {
 	font-family: var(--code-font, monospace);
 	border-radius: 0.2em;
 	white-space: pre;
+	background-color: var(--code-background, inherit);
 }
 
 pre > code {
@@ -185,7 +188,7 @@ pre > code {
 }
 
 ::backdrop, .backdrop {
-	background: var(--backdrop-background, none);
+	background: var(--backdrop-background, rgba(0,0,0,0.7));
 }
 
 .backdrop {
