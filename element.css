@@ -105,11 +105,12 @@ input[type="reset"], input[type="image"], [data-share], [data-click],
 }
 
 button, [role="button"] {
-	padding: 0.3rem;
+	padding: var(--button-padding, 0.3em);
 	background: var(--button-background, initial);
 	font-family: var(--button-font, inherit);
 	color: var(--button-color, initial);
-	border: var(--button-border, 0.2rem outset black);
+	border: var(--button-border, 1px solid #aaa);
+	border-radius: var(--button-border-radius, initial);
 }
 
 :disabled, .disabled {
