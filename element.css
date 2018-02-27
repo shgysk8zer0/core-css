@@ -3,13 +3,23 @@
 	max-width: 100%;
 }
 
-[hidden], template, dialog:not([open]), details:not([open]) > :not(summary) {
+[data-before]::before {
+	content: attr(data-before);
+}
+
+[data-after]::after {
+	content: attr(data-after);
+}
+
+[hidden], template, dialog:not([open]), details:not([open]) > :not(summary),
+menu[type="context"] {
 	display: none;
 }
 
 dialog {
 	position: absolute;
-	left: 0; right: 0;
+	left: 0;
+	right: 0;
 	width: -moz-fit-content;
 	width: -webkit-fit-content;
 	width: fit-content;
@@ -35,7 +45,7 @@ dialog + .backdrop {
 }
 
 dialog + .backdrop, dialog::backdrop {
-	background: var(--backdrop-background, rgba(0,0,0.1));
+	background: var(--backdrop-background, rgba(0,0,0,0.7));
 }
 
 /*._dialog_overlay {
@@ -61,9 +71,21 @@ dialog.modal {
 	content: '\25BC';
 }
 
-details > summary:only-child,
-details > summary:only-child::before,
-details > summary:only-child::after {
+.no-details details > summary:only-child,
+.no-details details > summary:only-child::before,
+.no-details details > summary:only-child::after {
+	display: none;
+}
+
+.no-details details > summary:empty::after {
+	content: 'Details';
+}
+
+.no-details summary.block::before {
+	content: '';
+}
+
+summary.block::-webkit-details-marker {
 	display: none;
 }
 
@@ -71,20 +93,24 @@ body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 a, button:not(:disabled), [role="button"], input[type="submit"],
-input[type="reset"], input[type="image"] {
+input[type="reset"], input[type="image"], [data-share], [data-click],
+[data-close], [data-remove], [data-show], [data-show-modal], [data-scroll-to],
+[data-toggle-hidden], [data-fullscreen] {
 	cursor: var(--pointer, pointer);
 }
 
 button, [role="button"] {
-	min-width: 2rem;
-	padding: 0.2rem;
+	padding: var(--button-padding, 0.3em);
 	background: var(--button-background, initial);
 	font-family: var(--button-font, inherit);
 	color: var(--button-color, initial);
-	border: var(--button-border, 0.2rem outset black);
+	border: var(--button-border, 1px solid #aaa);
+	border-radius: var(--button-border-radius, initial);
 }
 
 :disabled, .disabled {
@@ -92,18 +118,16 @@ button, [role="button"] {
 	pointer-events: none;
 }
 
-button:disabled, [role="button"]:disabled, [role="button"].disabled
-{
+button:disabled, [role="button"]:disabled, [role="button"].disabled {
 	background: var(--button-disabled-background, initial);
-	color: var(--button-disabled-color, initial);
+	color: var(--button-disabled-color, inherit);
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
 	border: var(--button-disabled-border, 0.2rem inset black);
 }
 
-button:active, [role="button"]:active, [role="button"].active
-{
+button:active, [role="button"]:active, [role="button"].active {
 	background: var(--button-active-background, initial);
-	color: var(--button-active-color, initial);
+	color: var(--button-active-color, inherit);
 	border: var(--button-active-border, 0.2rem inset black);
 }
 
@@ -112,13 +136,12 @@ details > summary {
 }
 
 a, [download] {
-	font-family: var(--link-font, inherit);
-	color: var(--link-color, initial);
+	color: var(--link-color, inherit);
 	text-decoration: var(--link-decoration, none);
 }
 
 a:visited:hover:not([rel="bookmark"]) {
-	color: var(--visited-color, initial);
+	color: var(--visited-color, inherit);
 }
 
 img {
@@ -134,7 +157,7 @@ figure figcaption {
 
 blockquote {
 	color: #777;
-	font-family: 'Libertine';
+	font-family: var(--blockquote-font, inherit);
 	font-style: italic;
 	padding: 0px 15px;
 	border-left: 4px solid #DDD;
@@ -145,16 +168,17 @@ blockquote cite {
 }
 
 blockquote cite::before {
-	content: ' — ';
+	content: var(--cite-prefix, ' — ');
 }
 
 code {
 	display: inline-block;
 	padding: 0.1rem;
 	font-size: 0.9rem;
-	font-family: hack, Courier, monospace;
+	font-family: var(--code-font, monospace);
 	border-radius: 0.2em;
 	white-space: pre;
+	background-color: var(--code-background, inherit);
 }
 
 pre > code {
@@ -165,7 +189,7 @@ pre > code {
 }
 
 ::backdrop, .backdrop {
-	background: var(--backdrop-background, none);
+	background: var(--backdrop-background, rgba(0,0,0,0.7));
 }
 
 .backdrop {
