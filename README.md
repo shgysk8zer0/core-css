@@ -2,6 +2,10 @@
 A collection of stylesheets that enable quick and easy styling with customization
 
 [![Build Status](https://travis-ci.org/shgysk8zer0/core-css.svg?branch=master)](https://travis-ci.org/shgysk8zer0/core-css)
+[![GitHub issues](https://img.shields.io/github/issues/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/issues)
+[![GitHub stars](https://img.shields.io/github/stars/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/stargazers)
+![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)
+[![GitHub license](https://img.shields.io/github/license/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/blob/master/LICENSE)
 
 ## Helpful Links
 - [Overview](#overview)
