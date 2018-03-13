@@ -607,28 +607,28 @@
 
 /*========================= Layout & display rules ==========================*/
 
-.block {
+.block:not([hidden]) {
 	display: block;
 }
 
-.inline {
+.inline:not([hidden]) {
 	display: inline;
 }
 
-.inline-block {
+.inline-block:not([hidden]) {
 	display: inline-block;
 }
 
-.grid {
+.grid:not([hidden]) {
 	display: grid;
 }
 
-.inline-grid {
+.inline-grid:not([hidden]) {
 	display: inline-grid;
 }
 
 @supports (display: flex) {
-	.flex {
+	.flex:not([hidden]) {
 		display: flex;
 	}
 
