@@ -105,6 +105,7 @@ input[type="reset"], input[type="image"], [data-share], [data-click],
 }
 
 button, [role="button"] {
+	display: inline-block;
 	padding: var(--button-padding, 0.3em);
 	background: var(--button-background, initial);
 	font-family: var(--button-font, inherit);
