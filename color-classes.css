@@ -1,0 +1,75 @@
+.black {
+	color: var(--black, black);
+}
+
+.background-black {
+	background-color: var(--black, black);
+}
+
+.gray {
+	color: var(--gray, gray);
+}
+
+.background-gray {
+	background-color: var(--gray, gray);
+}
+
+.lightgray {
+	color: var(--lightgray, lightgray);
+}
+
+.background-lighgray {
+	background-color: var(--lighgray, lightgray);
+}
+
+.darkgray {
+	color: var(--darkgray, darkgray);
+}
+
+.red {
+	color: var(--red, red);
+}
+
+.background-red {
+	background-color: var(--red, red);
+}
+
+.blue {
+	color: var(--blue, blue);
+}
+
+.background-blue {
+	background-color: var(--blue, blue);
+}
+
+.green {
+	color: var(--green, green);
+}
+
+.bakground-green {
+	background-color: var(--green, green);
+}
+
+.yellow {
+	color: var(--yellow, yellow);
+}
+
+.background-yellow {
+	background-color: var(--yellow, yellow);
+}
+
+.purple {
+	color: var(--purple, purple);
+}
+
+.background-purple {
+	background-color: var(--purple, purple);
+}
+
+.orange {
+	color: var(--orange, orange);
+}
+
+.background-orange {
+	background-color: var(--orange, orange);
+}
