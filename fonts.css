@@ -53,7 +53,8 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: var(--font-display, fallback);
-	src: local("Alice"), local("Alice-Regular"), url("../../fonts/Alice.woff") format("woff"), url("../../fonts/Alice.ttf") format("truetype");
+	src: local("Alice"), local("Alice-Regular"), url("../../fonts/Alice.woff2") format("woff2"), url("../../fonts/Alice.woff") format("woff"), url("../../fonts/Alice.ttf") format("truetype");
+	 unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116;
 }
 
 @font-face {
