@@ -117,6 +117,42 @@
 	background: inherit;
 }
 
+.background-center {
+	background-position: center;
+}
+
+.background-top {
+	background-position: top;
+}
+
+.background-bottom {
+	background-position: bottom;
+}
+
+.background-left {
+	background-positon: left;
+}
+
+.background-right {
+	background-position: right;
+}
+
+.background-top-left {
+	background-position: top left;
+}
+
+.background-top-right {
+	background-position: top right;
+}
+
+.background-bottom-left {
+	background-position: bottom left;
+}
+
+.background-bottom-right {
+	background-position: bottom right;
+}
+
 .background-primary {
 	background: var(--primary-color);
 }
@@ -890,7 +926,7 @@
 	cursor: move;
 }
 
-.cursor-do-drop {
+.cursor-no-drop {
 	cursor: no-drop;
 }
 
@@ -1029,4 +1065,14 @@
 
 .shape-ellipse {
 	shape-outside: ellipse();
+}
+
+.btn.btn-accept {
+	background: var(--button-accept-background, var(--button-background, initial));
+	color: var(--button-accept-color, var(--button-color, initial));
+}
+
+.btn.btn-reject {
+	background: var(--button-reject-background, var(--button-background, initial));
+	color: var(--button-reject-color, var(--button-color, initial));
 }
