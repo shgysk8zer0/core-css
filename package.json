@@ -1,7 +1,7 @@
 {
   "name": "core-css",
   "version": "2.0.0",
-  "description": "A collection of CSS styles, categorized by files, which are useful on common projects",
+  "description": "A collection of stylesheets that enable quick and easy styling with customization",
   "private": true,
   "scripts": {
     "test": "stylelint *.css",
@@ -16,7 +16,9 @@
     "postcss",
     "style",
     "native-css",
-    "css3"
+    "css3",
+    "custom-properties",
+    "css-vars"
   ],
   "author": "Chris Zuber <shgysk8zer0@gmail.com>",
   "license": "MIT",

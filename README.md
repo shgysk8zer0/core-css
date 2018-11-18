@@ -24,12 +24,12 @@ this is native CSS, you can edit these **in your browser and see the results liv
 For best results, namely in production, you should transpile your CSS using PostCSS
 using:
 - `cssnano`
+- `cssnano-preset-default`
 - `postcss`
-- `postcss-calc`
-- `postcss-cssnext`
-- `postcss-custom-properties`
-- `postcss-discard-comments`
+- `postcss-cli`
 - `postcss-import`
+- `postcss-preset-env`
+- `postcss-url`
 
 It is intended to be used with  [shgysk8zer0/fonts](https://github.com/shgysk8zer0/fonts),
 but that is completely optional. Simply don't use `fonts.css` and use whatever
@@ -50,10 +50,10 @@ font stylesheet(s) you want instead.
   --desktop-rem: 1.3vw;
 	--tablet-rem: 1.5vw;
 	--mobile-rem: 3.3vw;
-	--main-font: 'Roboto';
-	--title-font: 'Ubuntu';
-	--header-font: 'Alice';
-	--article-font: 'Ubuntu';
+	--main-font: "Roboto";
+	--title-font: "Ubuntu";
+	--header-font: "Alice";
+	--article-font: "Ubuntu";
 	--article-header-font: var(--header-font);
 	--font-display: optional;
 
@@ -76,6 +76,8 @@ font stylesheet(s) you want instead.
 	--button-color: var(--alt-color);
 	--button-active-color: var(--button-color);
   --button-border-radius: 4px;
+  --button-accept-background: #1e8709;
+  --button-reject-background: #b41e1e;
 
 	/*================== Animation properties ==================*/
 	--animation-stagger: 150ms;
