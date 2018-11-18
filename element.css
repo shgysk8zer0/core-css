@@ -34,8 +34,11 @@ dialog {
 	height: fit-content;
 	margin: auto;
 	padding: 1em;
-	display: block;
 	z-index: 100;
+}
+
+.no-dialog dialog[open] {
+	display: block;
 }
 
 dialog + .backdrop {
@@ -108,7 +111,7 @@ input[type="reset"], input[type="image"], [data-share], [data-click],
 	cursor: var(--pointer, pointer);
 }
 
-button, [role="button"], .btn {
+button:not([hidden]), [role="button"]:not([hidden]), .btn:not([hidden]) {
 	display: inline-block;
 	padding: var(--button-padding, 0.3em);
 	background: var(--button-background, initial);
@@ -124,16 +127,16 @@ button, [role="button"], .btn {
 }
 
 button:disabled, [role="button"]:disabled, [role="button"].disabled {
-	background: var(--button-disabled-background, initial);
-	color: var(--button-disabled-color, inherit);
+	background: var(--button-disabled-background, var(--button-background, initial));
+	color: var(--button-disabled-color, var(--button-color, inherit));
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
-	border: var(--button-disabled-border, 0.2rem inset black);
+	border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
 }
 
 button:active, [role="button"]:active, [role="button"].active {
-	background: var(--button-active-background, initial);
-	color: var(--button-active-color, inherit);
-	border: var(--button-active-border, 0.2rem inset black);
+	background: var(--button-active-background, var(--button-background, initial));
+	color: var(--button-active-color, var(--button-color, inherit));
+	border: var(--button-active-border, var(--button-border, 0.2rem inset black));
 }
 
 details > summary {
@@ -168,7 +171,7 @@ blockquote {
 	border-left: 4px solid #DDD;
 }
 
-blockquote cite {
+blockquote cite:not([hidden]) {
 	display: block;
 }
 
@@ -176,7 +179,7 @@ blockquote cite::before {
 	content: var(--cite-prefix, ' — ');
 }
 
-code {
+code:not([hidden]) {
 	display: inline-block;
 	padding: 0.1rem;
 	font-size: 0.9rem;
@@ -186,7 +189,7 @@ code {
 	background-color: var(--code-background, inherit);
 }
 
-pre > code {
+pre > code:not([hidden]) {
 	display: block;
 	padding: 1rem;
 	border-radius: 0.3rem;
