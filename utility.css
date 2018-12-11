@@ -1022,7 +1022,11 @@
 }
 
 .scrollbar-light {
-	.scrollbar-color: light;
+	scrollbar-color: light;
+}
+
+.scrollbar-current-color {
+	scrollbar-color: currentColor;
 }
 
 /*========================== 3D & Transform rules ===========================*/
