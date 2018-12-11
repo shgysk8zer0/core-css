@@ -994,6 +994,37 @@
 	cursor: grabbing;
 }
 
+.scrollbar-auto {
+	scrollbar-width: auto;
+	scrollbar-color: auto;
+}
+
+.scrollbar-inherit {
+	scrollbar-width: inherit;
+	scrollbar-color: inherit;
+}
+
+.scrollbar-initial {
+	scrollbar-width: initial;
+	scrollbar-color: initial;
+}
+
+.scrollbar-thin {
+	scrollbar-width: thin;
+}
+
+.scrollbar-none {
+	scrollbar-width: none;
+}
+
+.scrollbar-dark {
+	scrollbar-color: dark;
+}
+
+.scrollbar-light {
+	.scrollbar-color: light;
+}
+
 /*========================== 3D & Transform rules ===========================*/
 .perspective {
 	perspective: var(--perspective, 250px);
