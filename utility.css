@@ -1026,7 +1026,7 @@
 }
 
 .scrollbar-current-color {
-	scrollbar-color: currentColor;
+	scrollbar-color: currentColor transparent;
 }
 
 /*========================== 3D & Transform rules ===========================*/
