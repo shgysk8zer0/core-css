@@ -1,6 +1,6 @@
 {
   "name": "core-css",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A collection of stylesheets that enable quick and easy styling with customization",
   "private": true,
   "scripts": {
