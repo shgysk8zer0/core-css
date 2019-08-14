@@ -16,10 +16,13 @@ menu[type="context"] {
 	display: none;
 }
 
-dialog {
+dialog[open] {
 	border: var(--dialog-border, solid);
 	background: var(--dialog-background, white);
 	color: var(--dialog-color, black);
+	max-height: var(--dialog-max-height, 95vh);
+	max-width: var(--dialog-max-width, 95vw);
+	overflow: var(--dialog-overflow, auto);
 }
 
 .no-dialog dialog {
