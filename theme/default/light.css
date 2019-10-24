@@ -1,0 +1,24 @@
+:root {
+	--default-color-light: #343434;
+	--primary-color-light: #fafafa;
+	--accent-color-light: #4688f4;
+	--contrast-color-light: #4c4c4c;
+	--alt-color-light: #fefefe;
+
+	--button-background-light: var(--accent-color-light);
+	--button-color-light: var(--alt-color-light-light);
+
+	--button-active-background-light: #5C93EA;
+	--button-active-color-light: var(--button-color-light);
+	--button-active-border-light: var(--button-border-light);
+
+	--button-disabled-background-light: #787878;
+	--button-disabled-color-light: #4e4e4e;
+	--button-disabled-border-light: var(--button-border-light);
+
+	--button-accept-background-light: #1FA214;
+	--button-accept-active-background-light: #157a0c;
+
+	--button-reject-background-light: #B31414;
+	--button-reject-active-background-light: #7a0c0c;
+}

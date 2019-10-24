@@ -1,0 +1,24 @@
+:root {
+	--default-color-dark: #BBBBBB;
+	--primary-color-dark: #2a2a2e;
+	--accent-color-dark: #185A93;
+	--contrast-color-dark: #AAAAAA;
+	--alt-color-dark: #DCDCDC;
+
+	--button-background-dark: var(--accent-color-dark);
+	--button-color-dark: var(--alt-color-dark);
+
+	--button-active-background-dark: #2660BC;
+	--button-active-color-dark: var(--button-color-dark);
+	--button-active-border-dark: var(--button-border-dark);
+
+	--button-disabled-background-dark: #787878;
+	--button-disabled-color-dark: #4e4e4e;
+	--button-disabled-border-dark: var(--button-border-dark);
+
+	--button-accept-background-dark: #138909;
+	--button-accept-active-background-dark: #157a0c;
+
+	--button-reject-background-dark: #B31414;
+	--button-reject-active-background-dark: #7a0c0c;
+}

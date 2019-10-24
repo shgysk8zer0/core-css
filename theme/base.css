@@ -1,0 +1,18 @@
+:root {
+	--main-font: "Roboto";
+	--title-font: "Libertine";
+	--font-display: swap;
+	--line-height: 1.3;
+	--default-cursor: auto;
+	--link-color: inherit;
+
+	--desktop-rem: 1.3vmax;
+	--tablet-rem: 1.6vmax;
+	--mobile-rem: 20px;
+
+	--button-border: none;
+	--button-border-radius: 0.15rem;
+	--button-padding: 0.4rem;
+
+	--dialog-border: none;
+}

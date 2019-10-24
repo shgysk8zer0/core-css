@@ -1,3 +1,10 @@
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition: none !important;
+		animation: none !important;
+	}
+}
+
 .transform-origin-center {
 	transform-origin: center;
 }
