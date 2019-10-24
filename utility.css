@@ -169,6 +169,10 @@
 	background: var(--accent-color);
 }
 
+.background-contrast {
+	background: var(--contrast-color);
+}
+
 .background-compliment {
 	background: var(--compliment-color);
 }

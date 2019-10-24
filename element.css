@@ -18,8 +18,8 @@ menu[type="context"] {
 
 dialog[open] {
 	border: var(--dialog-border, solid);
-	background: var(--dialog-background, white);
-	color: var(--dialog-color, black);
+	background: var(--dialog-background, var(--primary-color, white));
+	color: var(--dialog-color, var(--default-color, black));
 	max-height: var(--dialog-max-height, 95vh);
 	max-width: var(--dialog-max-width, 95vw);
 	overflow: var(--dialog-overflow, auto);
@@ -54,7 +54,7 @@ dialog + .backdrop {
 }
 
 dialog + .backdrop, dialog::backdrop {
-	background: var(--backdrop-background, rgba(0,0,0,0.7));
+	background: var(--backdrop-background, rgba(0, 0, 0, 0.7));
 }
 
 /*._dialog_overlay {
@@ -167,7 +167,7 @@ figure figcaption {
 }
 
 blockquote {
-	color: #777;
+	color: var(--blockquote-color, #777);
 	font-family: var(--blockquote-font, inherit);
 	font-style: italic;
 	padding: 0px 15px;
@@ -200,7 +200,7 @@ pre > code:not([hidden]) {
 }
 
 ::backdrop, .backdrop {
-	background: var(--backdrop-background, rgba(0,0,0,0.7));
+	background: var(--backdrop-background, rgba(0, 0, 0, 0.7));
 }
 
 .backdrop {

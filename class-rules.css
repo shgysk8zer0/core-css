@@ -30,6 +30,6 @@
 .card {
 	border: var(--card-border, 1px solid #ccc);
 	border-radius: var(--card-radius, 2px);
-	background: var(--card-bg, white);
+	background: var(--card-bg, var(--primary-color, white));
 	padding: var(--card-padding, 0.7em);
 }

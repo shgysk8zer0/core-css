@@ -1,11 +1,22 @@
 {
   "name": "core-css",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "A collection of stylesheets that enable quick and easy styling with customization",
   "private": true,
+  "config": {
+    "serve": {
+      "domain": "localhost",
+      "path": "./",
+      "port": 8080
+    },
+    "dir": {
+      "css": "./*.css"
+    }
+  },
   "scripts": {
-    "test": "stylelint *.css",
-    "fix": "stylelint *.css --fix"
+    "start": "http-server ${npm_package_config_serve_path} -p ${npm_package_config_serve_port} -a ${npm_package_config_serve_domain} -o",
+    "test": "stylelint ${npm_package_config_dir_css}",
+    "fix": "stylelint ${npm_package_config_dir_css} --fix"
   },
   "repository": {
     "type": "git",
@@ -27,6 +38,7 @@
   },
   "homepage": "https://github.com/shgysk8zer0/core-css#readme",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "stylelint": "^8.1.1",
     "stylelint-config-recommended": "^1.0.0",
     "stylelint-config-standard": "^17.0.0"

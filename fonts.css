@@ -3,7 +3,7 @@
 	font-family: "Hack";
 	font-weight: 400;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: url("../../fonts/hack-regular-webfont.eot?#iefix&v=2.013") format("embedded-opentype"), local("hack"), url("../../fonts/hack-regular-webfont.woff2") format("woff2"), url("../../fonts/hack-regular-webfont.woff") format("woff"), url("../../fonts/hack-regular-webfont.ttf") format("truetype"), url("../../fonts/hack-regular-webfont.svg") format("svg");
 }
 
@@ -11,7 +11,7 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto.woff2") format("woff2"), url("../../fonts/roboto.woff") format("woff"), url("../../fonts/roboto.ttf") format("truetype");
 }
 
@@ -19,7 +19,7 @@
 	font-family: "Comfortaa";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Comfortaa"), local("Comfortaa Regular"), url("../../fonts/Comfortaa.woff2") format("woff2"), url("../../fonts/Comfortaa.woff") format("woff"), url("../../fonts/Comfortaa.ttf") format("truetype");
 }
 
@@ -27,7 +27,7 @@
 	font-family: "Ubuntu";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Ubuntu"), url("../../fonts/ubuntu.woff2") format("woff2"), url("../../fonts/ubuntu.woff") format("woff"), url("../../fonts/ubuntu.ttf") format("truetype");
 }
 
@@ -35,7 +35,7 @@
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Open Sans"), local("OpenSans"), url("../../fonts/OpenSans.woff2") format("woff2"), url("../../fonts/OpenSans.woff") format("woff"), url("../../fonts/OpenSans.ttf") format("truetype");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
@@ -44,7 +44,7 @@
 	font-family: "Libertine";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Libertine"), url("../../fonts/Libertine.woff") format("woff"), url("../../fonts/Libertine.ttf") format("truetype");
 }
 
@@ -52,7 +52,7 @@
 	font-family: "Alice";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Alice"), local("Alice-Regular"), url("../../fonts/Alice.woff2") format("woff2"), url("../../fonts/Alice.woff") format("woff"), url("../../fonts/Alice.ttf") format("truetype");
 	unicode-range: U+400-45F, U+490-491, U+4B0-4B1, U+2116;
 }
@@ -61,7 +61,7 @@
 	font-family: "Acme";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Acme"), local("Acme-Regular"), url("../../fonts/acme.woff2") format("woff2"), url("../../fonts/acme.woff") format("woff"), url("../../fonts/acme.ttf") format("truetype");;
 }
 
@@ -72,14 +72,14 @@
 	font-family: "GNUTypewriter";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("GNUTypewriter"), url("../../fonts/gnome-typewriter.woff") format("woff"), url("../../fonts/gnome-typewriter.ttf") format("truetype"), url("../../fonts/gnome-typewriter.otf") format("opentype");
 }
 @font-face {
 	font-family: "PressStart";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Press Start 2P"), url("../../fonts/PressStart2P.woff") format("woff"), url("../../fonts/PressStart2P.ttf") format("truetype");
 }
 
@@ -87,7 +87,7 @@
 	font-family: "Mister Pixel";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: url("../../fonts/MisterPixel.woff") format("woff"), url("../../fonts/MisterPixel.ttf") format("truetype"), url("../../fonts/MisterPixel.svg") format("svg");
 }
 
@@ -103,7 +103,7 @@
 	font-family: "Outline";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Outline"), url("../../fonts/DouarOutline.woff") format("woff"), url("../../fonts/DouarOutline.ttf") format("truetype");
 }
 
@@ -111,7 +111,7 @@
 	font-family: "Intuitive";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Intuitive"), url("../../fonts/Intuitive.woff") format("woff"), url("../../fonts/Intuitive.ttf") format("truetype");
 }
 
@@ -119,7 +119,7 @@
 	font-family: "Droid Sans Mono";
 	font-style: normal;
 	font-weight: 400;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Droid Sans Mono"), local("DroidSansMono"), url("../../fonts/DroidSansMono-regular.woff") format("woff"), url("../../fonts/DroidSansMono-regular.woff2") format("woff2"), url("../../fonts/DroidSansMono-regular/ttf") format("truetype");
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
@@ -128,6 +128,6 @@
 	font-family: "HennyPenny";
 	font-weight: normal;
 	font-style: normal;
-	font-display: var(--font-display, fallback);
+	font-display: swap;
 	src: local("Henny Penny"), local("HennyPenny-Regular"), url("../../fonts/HennyPenny-Regular.woff") format("woff"), url("../../fonts/HennnyPenny-Regular.ttf") format("truetype");
 }

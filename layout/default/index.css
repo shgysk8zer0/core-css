@@ -1,0 +1,41 @@
+@import url("../shared.css");
+
+:root {
+	--nav-height: 5rem;
+}
+
+body.grid {
+	grid-template-areas: 'header header header' 'nav nav nav' '. main sidebar' 'footer footer sidebar';
+	grid-template-rows: calc(100vh - var(--nav-height)) var(--nav-height) minmax(75vh, auto) minmax(300px, auto);
+	grid-template-columns: auto minmax(500px, 1200px) minmax(300px, 400px);
+	grid-column-gap: 1.2em;
+}
+
+@media (max-width: 800px) {
+	body.grid {
+		grid-template-areas: 'header' 'nav' 'main' 'sidebar' 'footer';
+		grid-template-rows: calc(100vh - var(--nav-height)) var(--nav-height) minmax(75vh, auto) minmax(200px, auto) minmax(300px, auto);
+		grid-template-columns: auto;
+		grid-column-gap: none;
+	}
+}
+
+#header {
+	grid-area: header;
+}
+
+#nav {
+	grid-area: nav;
+}
+
+#sidebar {
+	grid-area: sidebar;
+}
+
+#main {
+	grid-area: main;
+}
+
+#footer {
+	grid-area: footer;
+}
