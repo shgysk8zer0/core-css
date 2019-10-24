@@ -6,7 +6,7 @@
 	--alt-color-light: #fefefe;
 
 	--button-background-light: var(--accent-color-light);
-	--button-color-light: var(--alt-color-light-light);
+	--button-color-light: var(--alt-color-light);
 
 	--button-active-background-light: #5C93EA;
 	--button-active-color-light: var(--button-color-light);
