@@ -1,41 +1,17 @@
 @import url("../shared.css");
 
-:root {
-	--nav-height: 5rem;
-}
-
-body.grid {
-	grid-template-areas: 'header header header' 'nav nav nav' '. main sidebar' 'footer footer sidebar';
-	grid-template-rows: calc(100vh - var(--nav-height)) var(--nav-height) minmax(75vh, auto) minmax(300px, auto);
-	grid-template-columns: auto minmax(500px, 1200px) minmax(300px, 400px);
+:root:not([data-layout]) > body.grid, :root[data-layout="default"] > body.grid {
+	grid-template-areas: 'header header header' 'nav nav nav' '. main sidebar' 'footer footer footer';
+	grid-template-rows: calc(100vh - var(--nav-height, 4rem)) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
+	grid-template-columns: auto minmax(var(--main-min-width, 500px), var(--main-max-width, 1200px)) minmax(var(--sidebar-min-width, 300px), var(--sidebar-max-width, 400px));
 	grid-column-gap: 1.2em;
 }
 
 @media (max-width: 800px) {
-	body.grid {
+	:root:not([data-layout]) > body.grid, :root[data-layout="default"] > body.grid, body.grid {
 		grid-template-areas: 'header' 'nav' 'main' 'sidebar' 'footer';
-		grid-template-rows: calc(100vh - var(--nav-height)) var(--nav-height) minmax(75vh, auto) minmax(200px, auto) minmax(300px, auto);
+		grid-template-rows: calc(100vh - var(--nav-height, 4rem)) var(--nav-height, 4rem) minmax(75vh, auto) minmax(200px, auto) minmax(300px, auto);
 		grid-template-columns: auto;
-		grid-column-gap: none;
+		grid-column-gap: 0;
 	}
-}
-
-#header {
-	grid-area: header;
-}
-
-#nav {
-	grid-area: nav;
-}
-
-#sidebar {
-	grid-area: sidebar;
-}
-
-#main {
-	grid-area: main;
-}
-
-#footer {
-	grid-area: footer;
 }

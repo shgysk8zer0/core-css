@@ -1,0 +1,80 @@
+[data-columns] {
+	-x-column-fill: var(--multi-column-fill, balance);
+	-webkit-column-fill: var(--multi-column-fill, balance);
+	column-fill: var(--multi-column-fill, balance);
+	-webkit-column-gap: var(--multi-column-gap, 1.2em);
+	column-gap: var(--multi-column-gap, 1.2em);
+	-webkit-column-rule: var(--multi-column-rule-width, 1px) var(--multi-column-rule-style, solid) var(--multi-column-rule-color, currentColor);
+	column-rule: var(--multi-column-rule-width, 1px) var(--multi-column-rule-style, solid) var(--multi-column-rule-color, currentColor);
+}
+
+[data-columns="auto"] {
+	-webkit-column-count: auto;
+	column-count: auto;
+	column-width: var(--multi-column-width, 300px);
+}
+
+[data-columns="1"] {
+	-webkit-column-count: 1;
+	column-count: 1;
+}
+
+[data-columns="2"] {
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+[data-columns="3"] {
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+
+[data-columns="4"] {
+	-webkit-column-count: 4;
+	column-count: 4;
+}
+
+[data-columns="5"] {
+	-webkit-column-count: 5;
+	column-count: 5;
+}
+
+[data-columns="6"] {
+	-webkit-column-count: 6;
+	column-count: 6;
+}
+
+[data-columns="7"] {
+	-webkit-column-count: 7;
+	column-count: 7;
+}
+
+[data-columns="8"] {
+	-webkit-column-count: 8;
+	column-count: 8;
+}
+
+[data-columns="9"] {
+	-webkit-column-count: 9;
+	column-count: 9;
+}
+
+[data-columns="10"] {
+	-webkit-column-count: 10;
+	column-count: 10;
+}
+
+[data-columns="11"] {
+	-webkit-column-count: 11;
+	column-count: 11;
+}
+
+[data-columns="12"] {
+	-webkit-column-count: 12;
+	column-count: 12;
+}
+
+[data-columns] > .column-span-all {
+	-webkit-column-span: all;
+	column-span: all;
+}

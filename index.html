@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="smooth-scroll border-box no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Core CSS Testing</title>
+		<script type="module" src="./index.js" async=""></script>
+		<link rel="stylesheet" href="./index.css" media="screen" />
+	</head>
+	<body class="background-primary color-default font-main grid" data-layout="right-sidebar">
+		<header id="header" class="background-cover"></header>
+		<nav id="nav" class="sticky top shadow flex row background-accent color-alt">
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-accept">Accept</button>
+			<button type="button" class="btn btn-reject">Reject</button>
+			<select name="layout" id="layout-picker">
+				<option>default</option>
+				<option>wide</option>
+				<option>left-sidebar</option>
+				<option>right-sidebar</option>
+			</select>
+		</nav>
+		<aside id="sidebar" class="card shadow">
+			<ul>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+			</ul>
+		</aside>
+		<main id="main" class="card shadow">
+			<article>
+				<header>
+					<h3>Bacon Ipsum</h3>
+					<details>
+						<summary>By: <b>Chris Zuber</b><img src="https://secure.gravatar.com/avatar/43578597e449298f5488c2407c8a8ae5?s=24&d=mm" height="32" width="32" alt="Gravatar" sizes="1em" crossorigin="anonymous" class="round avatar"/></summary>
+						<div>
+							<span>Published on <time>Oct. 26, 2019</time></span>
+						</div>
+					</details>
+				</header>
+				<section data-columns="auto">
+					<bacon-ipsum></bacon-ipsum>
+					<bacon-ipsum></bacon-ipsum>
+				</section>
+			</article>
+		</main>
+		<footer id="footer">
+			<div>
+				<span>&copy;</span>
+				<time is="current-year"></time>
+			</div>
+		</footer>
+		<button type="button" class="btn btn-primary fixed" is="share-button" hidden="">
+			<svg class="current-color icon" viewbox="0 0 16 16">
+				<path d="M5.969 7.969a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm9.969 5a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm0-10a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0z" overflow="visible"></path>
+				<path d="M12.625 2.156L2.562 7.031.75 7.938l1.812.906 10.032 5.062.906-1.812-8.22-4.156 8.219-4-.875-1.782z" overflow="visible"></path>
+			</svg>
+		</button>
+	</body>
+</html>
