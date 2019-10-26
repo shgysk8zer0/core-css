@@ -5,3 +5,29 @@ button[is="share-button"], button.btn[is="share-button"] {
 	padding: 0.8rem;
 	font-size: 1.5rem;
 }
+
+#header {
+	grid-area: header;
+}
+
+#nav {
+	grid-area: nav;
+}
+
+#sidebar {
+	grid-area: sidebar;
+}
+
+#main {
+	grid-area: main;
+}
+
+#footer {
+	grid-area: footer;
+}
+
+@media (min-width: 801px) {
+	#main, #sidebar, #footer {
+		margin-top: 1.3rem;
+	}
+}
