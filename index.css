@@ -5,6 +5,7 @@
 @import url("./class-rules.css");
 @import url("./fonts.css");
 @import url("./animations.css");
+@import url("./print.css");
 
 img.avatar {
 	vertical-align: middle;

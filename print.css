@@ -1,21 +1,31 @@
 @charset "UTF-8";
 
-form, aside, nav, footer a, menu[type="context"], dialog, details, svg:not([height]), svg:not([width]) {
-	display: none;
-}
+@media print {
+	.no-print {
+		display: none !important;
+	}
 
-a {
-	color: inherit;
-}
+	.print-hidden {
+		visibility: hidden !important;
+	}
 
-article a[href^="http"]::after {
-	content: ' <' attr(href) '>';
-}
+	a {
+		color: inherit;
+	}
 
-article a[href^="//"]::after {
-	content: ' <http:' attr(href) '>';
-}
+	article a[href^="http"]::after {
+		content: ' <' attr(href) '>';
+	}
 
-abbr[title]::after {
-	content: ' (“' attr(title) '”)';
+	article a[href^="//"]::after {
+		content: ' <http:' attr(href) '>';
+	}
+
+	abbr[title]::after {
+		content: ' (“' attr(title) '”)';
+	}
+
+	body.grid:not([hidden]) {
+		display: initial;
+	}
 }

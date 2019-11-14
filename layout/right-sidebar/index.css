@@ -1,13 +1,15 @@
 @import url("../shared.css");
 
-:root[data-layout="right-sidebar"] > body.grid {
-	grid-template-areas: 'header header header' 'nav nav nav' '. main sidebar' 'footer footer footer';
-	grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
-	grid-template-columns: auto minmax(var(--main-min-width, 500px), var(--main-max-width, 1200px)) minmax(var(--sidebar-min-width, 300px), var(--sidebar-max-width, 400px));
-	grid-column-gap: var(--column-gap, 1.3rem);
+@media screen {
+	:root[data-layout="right-sidebar"] > body.grid {
+		grid-template-areas: 'header header header' 'nav nav nav' '. main sidebar' 'footer footer footer';
+		grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
+		grid-template-columns: auto minmax(var(--main-min-width, 500px), var(--main-max-width, 1200px)) minmax(var(--sidebar-min-width, 300px), var(--sidebar-max-width, 400px));
+		grid-column-gap: var(--column-gap, 1.3rem);
+	}
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	:root[data-layout="right-sidebar"] > body.grid {
 		grid-template-areas: 'header' 'nav' 'main' 'sidebar' 'footer';
 		grid-template-rows: calc(100vh - var(--nav-height, 4rem)) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
