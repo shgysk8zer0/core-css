@@ -1139,3 +1139,9 @@ button.btn-reject:active, [role="button"].btn-reject:active, [role="button"].btn
 	color: var(--button-reject-active-color, var(--button--reject-color, var(--button-active-color, var(--button-color, inherit))));
 	border: var(--button-reject-active-border, var(--button-reject-border, var(--button-active-border, var(--button-border, 0.2rem inset black))));
 }
+
+@media (max-width: 800px) {
+	.mobile-hidden {
+		display: none;
+	}
+}
