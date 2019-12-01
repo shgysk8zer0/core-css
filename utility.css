@@ -448,6 +448,20 @@
 	z-index: 4;
 }
 
+.z-top {
+
+	/* Please do not exceed this */
+
+	z-index: var(--z-top, 9999);
+}
+
+.z-max {
+
+	/* Only to be used for things such as `<dialog>` */
+
+	z-index: 2147483647;
+}
+
 .top {
 	top: 0;
 }
@@ -638,6 +652,18 @@
 
 .center {
 	text-align: center;
+}
+
+.indent {
+	text-indent: var(--indent, 4ch);
+}
+
+.indent-all {
+	text-indent: var(--indent, 4ch) each-line;
+}
+
+.indent-hanging {
+	text-indent: var(--indent, 4ch) hanging;
 }
 
 .resizeable {

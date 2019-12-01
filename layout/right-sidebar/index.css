@@ -12,7 +12,7 @@
 @media screen and (max-width: 800px) {
 	:root[data-layout="right-sidebar"] > body.grid {
 		grid-template-areas: 'header' 'nav' 'main' 'sidebar' 'footer';
-		grid-template-rows: calc(100vh - var(--nav-height, 4rem)) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
+		grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
 		grid-template-columns: auto;
 		grid-column-gap: 0;
 	}

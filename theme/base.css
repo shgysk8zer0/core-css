@@ -1,7 +1,6 @@
 :root {
 	--main-font: "Roboto";
 	--title-font: "Libertine";
-	--font-display: swap;
 	--line-height: 1.3;
 	--default-cursor: auto;
 	--link-color: inherit;
@@ -15,4 +14,9 @@
 	--button-padding: 0.4rem;
 
 	--dialog-border: none;
+	/* Max value = 2^32 - 1 */
+	--z-max: 2147483647;
+
+	/* Specify highest allowed `z-index`, other than `<dialog>`, etc. */
+	--z-top: 1000;
 }
