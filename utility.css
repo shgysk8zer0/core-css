@@ -449,12 +449,16 @@
 }
 
 .z-top {
+
 	/* Please do not exceed this */
+
 	z-index: var(--z-top, 9999);
 }
 
 .z-max {
+
 	/* Only to be used for things such as `<dialog>` */
+
 	z-index: 2147483647;
 }
 
