@@ -37,7 +37,7 @@ dialog[open] {
 	height: fit-content;
 	margin: auto;
 	padding: 1em;
-	z-index: 100;
+	z-index: 2147483647;
 }
 
 .no-dialog dialog[open] {
@@ -168,10 +168,13 @@ figure figcaption {
 
 blockquote {
 	color: var(--blockquote-color, #777);
+	background: var(--blockquote-background, inherit);
 	font-family: var(--blockquote-font, inherit);
-	font-style: italic;
-	padding: 0px 15px;
-	border-left: 4px solid #DDD;
+	font-style: var(--blockquote-font-style, italic);
+	padding: var(--blockquote-padding, 0px 15px);
+	border-color: var(--blockquote-border-color, #DDD);
+	border-width: var(--blockquote-border-width, 0 0 0 4px);
+	border-style: var(--blockquote-border-style, solid);
 }
 
 blockquote cite:not([hidden]) {
@@ -209,7 +212,7 @@ pre > code:not([hidden]) {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 2147483646;
 }
 
 [contenteditable="true"]:empty {
