@@ -516,6 +516,27 @@
 	overflow-y: scroll;
 }
 
+/*=========================== Object Fit =========================*/
+.fit-contain {
+	object-fit: contain;
+}
+
+.fit-cover {
+	object-fit: cover;
+}
+
+.fit-fill {
+	object-fit: fill;
+}
+
+.fit-none {
+	object-fit: none;
+}
+
+.fit-scale-down {
+	object-fit: scale-down;
+}
+
 /*=========================== Opacity rules ========================*/
 .opacity-100 {
 	opacity: 1;
