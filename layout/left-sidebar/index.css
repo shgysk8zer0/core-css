@@ -9,7 +9,7 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 	:root[data-layout="left-sidebar"] > body.grid {
 		grid-template-areas: 'header' 'nav' 'main' 'sidebar' 'footer';
 		grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
