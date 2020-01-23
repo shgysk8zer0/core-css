@@ -13,11 +13,9 @@
 	}
 }
 
-@media screen (max-width: 800px) {
+@media (max-width: 800px) {
 	:root[data-layout="wide"] > body.grid {
-		grid-template-areas: 'header' 'nav' 'main' 'footer';
-		grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
-		grid-template-columns: auto;
+		grid-template-columns: 4vw 92vw 4vw;
 		grid-column-gap: 0;
 	}
 }
