@@ -1,0 +1,14 @@
+@supports not (scrollbar-color: currentColor transparent) {
+	::-webkit-scrollbar {
+		background-color: var(--scrollbar-track, #c0c6c2);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--scrollbar-color, #7a7b7d);
+	}
+}
+
+:root {
+	scrollbar-color: var(--scrollbar-color, #7a7b7d) var(--scrollbar-track, #c0c6c2);
+	scrollbar-width: var(--scrollbar-width, auto);
+}

@@ -6,6 +6,13 @@
 @import url("./fonts.css");
 @import url("./animations.css");
 @import url("./print.css");
+@import url("./scrollbar.css");
+
+:root {
+	--scrollbar-color: currentColor;
+	--scrollbar-track: transparent;
+	--scrollbar-width: auto;
+}
 
 img.avatar {
 	vertical-align: middle;
