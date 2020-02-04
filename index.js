@@ -27,10 +27,6 @@ ready().then(async () => {
 	}, { passive: true });
 
 	$('#theme-picker').input(({ target }) => {
-		if (target.value === '') {
-			delete document.documentElement.dataset.theme;
-		} else {
-			document.documentElement.dataset.theme = target.value;
-		}
+		$('[data-theme]').data({ theme: target.value });
 	}, { passive: true });
 });
