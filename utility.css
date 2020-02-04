@@ -1085,6 +1085,35 @@
 	perspective: var(--perspective, 250px);
 }
 
+/* @see https://developer.mozilla.org/en-US/docs/Web/CSS/contain*/
+.contain-none {
+	contain: none;
+}
+
+.contain-strict {
+	contain: strict;
+}
+
+.contain-content {
+	contain: content;
+}
+
+.contain-size {
+	contain: size;
+}
+
+.contain-layout {
+	contain: layout;
+}
+
+.contain-style {
+	contain: style;
+}
+
+.contain-paint {
+	contain: paint;
+}
+
 .backface-visible {
 	backface-visiblity: visible;
 }

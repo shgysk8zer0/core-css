@@ -9,7 +9,7 @@
 	</head>
 	<body class="background-primary color-default font-main grid" data-layout="right-sidebar">
 		<header id="header" class="background-cover background-fixed no-print"></header>
-		<nav id="nav" class="sticky top shadow flex row background-accent color-alt no-print">
+		<nav id="nav" class="sticky top shadow flex row background-accent color-alt no-print z-top contain-content">
 			<span>
 				<label for="layout-picker" class="mobile-hidden">Layout</label>
 				<select name="layout" id="layout-picker" class="background-inherit no-border color-inherit">
@@ -29,7 +29,7 @@
 				</select>
 			</span>
 		</nav>
-		<aside id="sidebar" class="card shadow">
+		<aside id="sidebar" class="card shadow contain-content">
 			<ul class="print-hidden">
 				<li>Item 1</li>
 				<li>Item 2</li>
@@ -37,7 +37,7 @@
 				<li>Item 4</li>
 			</ul>
 		</aside>
-		<main id="main" class="card shadow">
+		<main id="main" class="card shadow contain-content">
 			<article data-columns="auto">
 				<header data-theme="dark" class="background-primary color-default card font-title">
 					<h3 class="center">Bacon Ipsum</h3>
@@ -53,18 +53,17 @@
 					<hr />
 				</header>
 				<section >
-					<bacon-ipsum></bacon-ipsum>
-					<bacon-ipsum></bacon-ipsum>
+					<bacon-ipsum paras="18"></bacon-ipsum>
 				</section>
 			</article>
 		</main>
-		<footer id="footer">
+		<footer id="footer" class="contain-content">
 			<div>
 				<span>&copy;</span>
 				<time is="current-year">2019</time>
 			</div>
 		</footer>
-		<button type="button" class="btn btn-primary fixed no-print" is="share-button" hidden="">
+		<button type="button" class="btn btn-primary z-top fixed no-print contain-content" is="share-button" hidden="">
 			<svg class="current-color icon" viewbox="0 0 16 16">
 				<path d="M5.969 7.969a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm9.969 5a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm0-10a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0z" overflow="visible"></path>
 				<path d="M12.625 2.156L2.562 7.031.75 7.938l1.812.906 10.032 5.062.906-1.812-8.22-4.156 8.219-4-.875-1.782z" overflow="visible"></path>
