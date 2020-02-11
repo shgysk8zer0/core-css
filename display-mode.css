@@ -1,0 +1,28 @@
+@media (display-mode: browser) {
+	.display-mode-standalone, .display-mode-fullscreen, .display-mode-minimal-ui {
+		display: none;
+	}
+}
+
+@media (display-mode: standalone) {
+	.display-mode-browser, .display-mode-fullscreen, .display-mode-minimal-ui {
+		display: none;
+	}
+}
+
+@media (display-mode: fullscreen) {
+	.display-mode-standalone, .display-mode-browser, .display-mode-minimal-ui {
+		display: none;
+	}
+}
+
+@media (display-mode: minimal-ui) {
+	.display-mode-standalone, .display-mode-browser, .display-mode-browser {
+		display: none;
+	}
+}
+
+:root.no-display-mode .display-mode-standalone, :root.no-display-mode
+.display-mode-fullscreen, :root.no-display-mode .display-mode-minimal-ui, {
+	display: none;
+}
