@@ -11,7 +11,11 @@ document.documentElement.classList.toggle('no-dialog', document.createElement('d
 
 ready().then(async () => {
 	$(':root').toggleClass('no-js', 'js');
+	document.documentElement.dataset.layout = document.getElementById('layout-picker').value;
 
+	$('[data-click="toggle-sidebar"]').click(() => {
+		document.getElementById('sidebar').classList.toggle('open');
+	});
 	$('#layout-picker').input(({ target }) => {
 		if (target.value === '') {
 			delete document.documentElement.dataset.layout;

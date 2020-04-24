@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="smooth-scroll border-box no-js">
+<html lang="en" dir="ltr" class="smooth-scroll border-box no-js" data-layout="sidebar-collapse">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -7,39 +7,73 @@
 		<script type="module" src="./index.js" async=""></script>
 		<link rel="stylesheet" href="./index.css" media="all" />
 	</head>
-	<body class="background-primary color-default font-main grid" data-layout="right-sidebar" data-theme="">
+	<body class="background-primary color-default font-main grid" data-theme="">
 		<header id="header" class="background-cover background-fixed no-print"></header>
-		<nav id="nav" class="sticky top shadow flex row background-accent color-alt no-print z-top contain-content">
-			<span>
-				<label for="layout-picker" class="mobile-hidden">Layout</label>
-				<select name="layout" id="layout-picker" class="background-inherit no-border color-inherit">
-					<option value="">auto</option>
-					<option>default</option>
-					<option>wide</option>
-					<option>left-sidebar</option>
-					<option selected="">right-sidebar</option>
-				</select>
-			</span>
-			<span>
-				<label for="theme-picker" class="mobile-hidden">Theme</label>
-				<select name="theme" id="theme-picker" class="background-inherit no-border color-inherit">
-					<option value="">auto</option>
-					<option>light</option>
-					<option>dark</option>
-				</select>
-			</span>
-			<span>
-				<label for="paras">Paragraphs</label>
-				<input type="number" min="1" max="500" value="18" id="paras" name="paras" placeholder="##" required="" />
-			</span>
+		<nav id="nav" class="sticky top shadow clearfix background-accent color-alt no-print z-4 contain-content">
+			<button type="button" class="float-right" data-click="toggle-sidebar">
+				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve">
+					<path stroke-width="0.2" stroke-linejoin="round" d="M 3,6L 21,6L 21,8L 3,8L 3,6 Z M 3,11L 21,11L 21,13L 3,13L 3,11 Z M 3,16L 21,16L 21,18L 3,18L 3,16 Z "/>
+				</svg>
+			</button>
 		</nav>
 		<aside id="sidebar" class="card shadow contain-content">
-			<ul class="print-hidden">
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-			</ul>
+			<div class="sticky top clearfix z-4">
+				<button type="button" class="float-right" data-click="toggle-sidebar">
+					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16">
+						<path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/>
+					</svg>
+				</button>
+			</div>
+			<details class="accordion">
+				<summary>Theme</summary>
+				<label class="block">
+					<select name="theme" id="theme-picker" class="block background-inherit no-border color-inherit">
+						<option value="">auto</option>
+						<option>light</option>
+						<option>dark</option>
+					</select>
+				</label>
+			</details>
+			<details class="accordion">
+				<summary>Layout</summary>
+				<label class="block">
+					<select name="layout" id="layout-picker" class="block no-border background-inherit color-inherit">
+						<option value="">auto</option>
+						<option>default</option>
+						<option>wide</option>
+						<option>left-sidebar</option>
+						<option selected="">sidebar-collapse</option>
+						<option>right-sidebar</option>
+					</select>
+				</label>
+			</details>
+			<details class="accordion">
+				<summary>Paragraphs</summary>
+				<label class="block">
+					<input type="number" min="1" max="500" size="3" value="18" id="paras" name="paras" placeholder="##" required="" />
+				</label>
+			</details>
+			<details class="accordion">
+				<summary>Item 1</summary>
+				<div>Subitem</div>
+				<div>Subitem</div>
+				<div>Subitem</div>
+				<div>Subitem</div>
+			</details>
+			<details class="accordion">
+				<summary>Item 2</summary>
+				<div>Subitem</div>
+				<div>Subitem</div>
+				<div>Subitem</div>
+				<div>Subitem</div>
+			</details>
+			<details class="accordion">
+				<summary>Item 3</summary>
+				<div>Subitem</div>
+				<div>Subitem</div>
+				<div>Subitem</div>
+				<div>Subitem</div>
+			</details>
 		</aside>
 		<main id="main" class="card shadow contain-content">
 			<article data-columns="auto">
