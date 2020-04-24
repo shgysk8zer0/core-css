@@ -228,3 +228,6 @@ pip-log.txt
 .netlifyfonts/
 .netlify/state.json
 fonts/
+
+# Local Netlify folder
+.netlify

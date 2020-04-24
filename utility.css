@@ -11,26 +11,32 @@
 }
 
 .width-min-content {
+	width: -moz-min-content;
 	width: min-content;
 }
 
 .width-max-content {
+	width: -moz-max-content;
 	width: max-content;
 }
 
 .width-fit-content {
+	width: -moz-fit-content;
 	width: fit-content;
 }
 
 .height-min-content {
+	height: -moz-min-content;
 	height: min-content;
 }
 
 .height-max-content {
+	height: -moz-max-content;
 	height: max-content;
 }
 
 .height-fit-content {
+	height: -moz-fit-content;
 	height: fit-content;
 }
 
@@ -130,7 +136,7 @@
 }
 
 .background-left {
-	background-positon: left;
+	background-position: left;
 }
 
 .background-right {
@@ -1115,11 +1121,11 @@
 }
 
 .backface-visible {
-	backface-visiblity: visible;
+	backface-visibility: visible;
 }
 
 .backface-hidden {
-	backface-visiblity: hidden;
+	backface-visibility: hidden;
 }
 
 .preserve-3d {
@@ -1135,7 +1141,7 @@
 }
 
 .will-change-transform {
-	wil-change: transform;
+	will-change: transform;
 }
 
 .will-change-opacity {
