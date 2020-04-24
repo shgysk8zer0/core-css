@@ -35,10 +35,6 @@ details.accordion > :not(summary) {
 	transition: border-color 400ms ease-in-out;
 }
 
-details.accordion[open] > :not(summary) {
-	animation: accordion-animation 4000ms ease-in-out;
-}
-
 details.accordion > :not(summary):hover {
 	border-color: var(--accordion-theme-color, #4688f4);
 }
@@ -46,17 +42,4 @@ details.accordion > :not(summary):hover {
 :root.no-details details.accordion > summary::before {
 	content: '';
 	display: none;
-}
-
-@keyframes accordion-animation {
-	from {
-		/* transform: translate3d(0, -100%, 0); */
-		/* visibility: visible; */
-		max-height: 0;
-	}
-
-	to {
-		max-height: 100%;
-		/* transform: translate3d(0, 0, 0); */
-	}
 }
