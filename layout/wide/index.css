@@ -4,7 +4,7 @@
 	:root[data-layout="wide"] > body.grid {
 		grid-template-areas: 'header header header' 'nav nav nav' '. main .' 'footer footer footer';
 		grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
-		grid-template-columns: auto minmax(500px, 1400px) auto;
+		grid-template-columns: 1fr minmax(var(--main-min-width, 320px), var(--main-max-width, 1200px)) 1fr;
 		grid-column-gap: var(--column-gap, 1.3rem);
 	}
 

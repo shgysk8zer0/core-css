@@ -7,11 +7,16 @@
 @import url("./animations.css");
 @import url("./print.css");
 @import url("./scrollbar.css");
+@import url("./accordion.css");
 
 :root {
-	--scrollbar-color: currentColor;
-	--scrollbar-track: transparent;
+	--scrollbar-color: var(--accept-color);
+	--scrollbar-track: var(--primary-color);
 	--scrollbar-width: auto;
+}
+
+[data-click="toggle-sidebar"] svg {
+	font-size: 48px;
 }
 
 img.avatar {
@@ -21,10 +26,6 @@ img.avatar {
 
 #header {
 	background-image: url("/neon.svg");
-}
-
-#nav {
-	justify-content: space-around;
 }
 
 #footer {
