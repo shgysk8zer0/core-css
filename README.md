@@ -1,17 +1,29 @@
 # core-css
 A collection of stylesheets that enable quick and easy styling with customization
 
-[![Build Status](https://travis-ci.org/shgysk8zer0/core-css.svg?branch=master)](https://travis-ci.org/shgysk8zer0/core-css)
-[![GitHub issues](https://img.shields.io/github/issues/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/issues)
-[![GitHub stars](https://img.shields.io/github/stars/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/stargazers)
-![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)
+[![GitHub Actions Status](https://github.com/shgysk8zer0/core-css/workflows/Node%20CI/badge.svg)](https://github.com/shgysk8zer0/core-css/actions)
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/commits/master)
+[![GitHub release](https://img.shields.io/github/release/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/releases)
+[![GitHub stars](https://img.shields.io/github/stars/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/stargazers)
+
+![GitHub followers](https://img.shields.io/github/followers/shgysk8zer0.svg?style=social)
+![GitHub forks](https://img.shields.io/github/forks/shgysk8zer0/core-css.svg?style=social)
+![GitHub stars](https://img.shields.io/github/stars/shgysk8zer0/core-css.svg?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/shgysk8zer0.svg?style=social)](https://twitter.com/shgysk8zer0)
+
+[![Donate using Liberapay](https://img.shields.io/liberapay/receives/shgysk8zer0.svg?logo=liberapay)](https://liberapay.com/shgysk8zer0/donate "Donate using Liberapay")
+![Keybase BTC](https://img.shields.io/keybase/btc/shgysk8zer0.svg)
+![Keybase PGP](https://img.shields.io/keybase/pgp/shgysk8zer0.svg)
+- - -
 
 ## Helpful Links
 - [Overview](#overview)
 - [Example](#example)
-- [Code of Conduct](docs/CODE_OF_CONDUCT.md)
-- [Contributing](docs/CONTRIBUTING.md)
+- [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
+- [Contributing](./.github/CONTRIBUTING.md)
 - [Issues](https://github.com/shgysk8zer0/core-css/issues)
 - [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
 

@@ -34,6 +34,10 @@
 	padding: var(--card-padding, 0.7em);
 }
 
+.custom-element:not(:defined) .if-defined[slot], .custom-element.if-defined:not(:defined) {
+	display: none;
+}
+
 .status-box {
 	padding: 1.2em;
 	border: 1px dashed currentColor;
