@@ -3,14 +3,14 @@
 @import url("./layout/index.css");
 @import url("./element.css");
 @import url("./class-rules.css");
-@import url("./fonts.css");
+@import url("./cdn-fonts.css");
 @import url("./animations.css");
 @import url("./print.css");
 @import url("./scrollbar.css");
 @import url("./accordion.css");
 
 :root {
-	--scrollbar-color: var(--accept-color);
+	--scrollbar-color: var(--accent-color);
 	--scrollbar-track: var(--primary-color);
 	--scrollbar-width: auto;
 }
