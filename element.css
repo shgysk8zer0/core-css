@@ -144,7 +144,7 @@ button:active, [role="button"]:active, [role="button"].active {
 }
 
 button:focus, [role="button"]:focus, .btn:focus, summary:focus, input:focus,
-select:focus, textarea:focus, .input:focus, [tabindex]:focus {
+select:focus, textarea:focus, .input:focus, [tabindex]:focus, a:focus {
 	outline-width: var(--focus-outline-width, 1px);
 	outline-style: var(--focus-outline-style, dotted);
 	outline-color: var(--focus-outline-color, currentColor);
@@ -160,7 +160,7 @@ a, [download] {
 }
 
 a:visited:hover:not([rel="bookmark"]) {
-	color: var(--visited-color, inherit);
+	color: var(--visited-color, var(--link-color, inherit));
 }
 
 img {
@@ -169,7 +169,7 @@ img {
 }
 
 figure figcaption {
-	color: dimgray;
+	color: var(--figcaption-color, dimgray);
 	text-decoration: underline;
 	font-style: italic;
 }
