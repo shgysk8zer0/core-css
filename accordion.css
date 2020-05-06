@@ -5,7 +5,7 @@ details.accordion {
 }
 
 details.accordion > summary {
-	background-color: var(--accordion-theme-color, #4688f4);
+	background-color: var(--accordion-theme-color, #1c6aea);
 	color: var(--accordion-header-color, #fefefe);
 	padding: 0.8em;
 	position: relative;
