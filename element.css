@@ -122,6 +122,7 @@ button:not([hidden]), [role="button"]:not([hidden]), .btn:not([hidden]) {
 	color: var(--button-color, initial);
 	border: var(--button-border, 1px solid #aaa);
 	border-radius: var(--button-border-radius, initial);
+	box-sizing: border-box;
 }
 
 :disabled, .disabled {
@@ -140,6 +141,10 @@ button:active, [role="button"]:active, [role="button"].active {
 	background: var(--button-active-background, var(--button-background, initial));
 	color: var(--button-active-color, var(--button-color, inherit));
 	border: var(--button-active-border, var(--button-border, 0.2rem inset black));
+}
+
+button:focus, [role="button"]:focus, .btn:focus, summary:focus, [tabindex]:focus {
+	border: var(--focus-border-width, 1px) var(--focus-border-style, dashed) var(--focus-border-color, currentColor);
 }
 
 details > summary {

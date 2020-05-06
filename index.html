@@ -10,16 +10,16 @@
 	<body class="background-primary color-default font-main grid" data-theme="">
 		<header id="header" class="background-cover background-fixed no-print"></header>
 		<nav id="nav" class="sticky top shadow clearfix background-accent color-alt no-print z-4 contain-content">
-			<button type="button" class="float-right" data-click="toggle-sidebar">
-				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve">
+			<button type="button" class="float-right" data-click="toggle-sidebar" title="Toggle Sidebar">
+				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve" aria-hidden="true">
 					<path stroke-width="0.2" stroke-linejoin="round" d="M 3,6L 21,6L 21,8L 3,8L 3,6 Z M 3,11L 21,11L 21,13L 3,13L 3,11 Z M 3,16L 21,16L 21,18L 3,18L 3,16 Z "/>
 				</svg>
 			</button>
 		</nav>
 		<aside id="sidebar" class="card shadow contain-content">
 			<div class="sticky top clearfix z-4">
-				<button type="button" class="float-right" data-click="toggle-sidebar">
-					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16">
+				<button type="button" class="float-right" data-click="toggle-sidebar" title="Toggle Sidebar">
+					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16" aria-hidden="true">
 						<path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/>
 					</svg>
 				</button>
@@ -27,7 +27,7 @@
 			<details class="accordion">
 				<summary>Theme</summary>
 				<label class="block">
-					<select name="theme" id="theme-picker" class="block background-inherit no-border color-inherit">
+					<select name="theme" aria-label="Theme Picker" id="theme-picker" class="block background-inherit no-border color-inherit">
 						<option value="">auto</option>
 						<option>light</option>
 						<option>dark</option>
@@ -37,7 +37,7 @@
 			<details class="accordion">
 				<summary>Layout</summary>
 				<label class="block">
-					<select name="layout" id="layout-picker" class="block no-border background-inherit color-inherit">
+					<select name="layout" aria-label="Layout Picker" id="layout-picker" class="block no-border background-inherit color-inherit">
 						<option value="">auto</option>
 						<option>default</option>
 						<option>wide</option>
@@ -50,7 +50,7 @@
 			<details class="accordion">
 				<summary>Paragraphs</summary>
 				<label class="block">
-					<input type="number" min="1" max="500" size="3" value="18" id="paras" name="paras" placeholder="##" required="" />
+					<input type="number" aria-label="Paragraphs" min="1" max="500" size="3" value="18" id="paras" name="paras" placeholder="##" required="" />
 				</label>
 			</details>
 			<details class="accordion">
@@ -101,8 +101,8 @@
 				<time is="current-year">2019</time>
 			</div>
 		</footer>
-		<button type="button" class="btn btn-primary z-top fixed no-print contain-content" is="share-button" hidden="">
-			<svg class="current-color icon" viewbox="0 0 16 16">
+		<button type="button" class="btn btn-primary z-top fixed no-print contain-content" is="share-button" aria-label="Share page" hidden="">
+			<svg class="current-color icon" viewbox="0 0 16 16" aria-hidden="true">
 				<path d="M5.969 7.969a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm9.969 5a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm0-10a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0z" overflow="visible"></path>
 				<path d="M12.625 2.156L2.562 7.031.75 7.938l1.812.906 10.032 5.062.906-1.812-8.22-4.156 8.219-4-.875-1.782z" overflow="visible"></path>
 			</svg>
