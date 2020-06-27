@@ -43,6 +43,6 @@
     "stylelint-config-standard": "^17.0.0"
   },
   "dependencies": {
-    "netlify-cli": "^2.30.0"
+    "netlify-cli": "^2.54.0"
   }
 }
