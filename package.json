@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/shgysk8zer0/core-css#readme",
   "devDependencies": {
-    "stylelint": "^8.1.1",
+    "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-standard": "^18.3.0"
   },
