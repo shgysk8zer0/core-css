@@ -1,7 +1,7 @@
 # core-css
 A collection of stylesheets that enable quick and easy styling with customization
 
-[![GitHub Actions Status](https://github.com/shgysk8zer0/core-css/workflows/Node%20CI/badge.svg)](https://github.com/shgysk8zer0/core-css/actions)
+[![Node CI](https://github.com/shgysk8zer0/core-css/workflows/Node%20CI/badge.svg)](https://github.com/shgysk8zer0/core-css/actions)
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/pulls)
