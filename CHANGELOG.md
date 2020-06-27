@@ -12,11 +12,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - GitHub Actions Super Linter & config
 - Dependabot config
+- Dependabot & Super Linter badges in README
 - Add CHANGELOG
 
 ### Changed
 - Various issue tempaltes, etc. (markdown lint issues)
 - Update node modules using `npm update` & `npm audit fix`
+
+### Fixed
+- Syntax error in README (no tabs)
 
 ### Removed
 - Travis-CI config file

@@ -1,7 +1,10 @@
 # core-css
 A collection of stylesheets that enable quick and easy styling with customization
 
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=shgysk8zer0/core-css)](https://dependabot.com)
 [![Node CI](https://github.com/shgysk8zer0/core-css/workflows/Node%20CI/badge.svg)](https://github.com/shgysk8zer0/core-css/actions)
+[![Super Linter](https://github.com/shgysk8zer0/core-css/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/shgysk8zer0/core-css/actions?query=workflow%3A%22Lint+Code+Base%22)
+
 [![GitHub license](https://img.shields.io/github/license/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/shgysk8zer0/core-css.svg)](https://github.com/shgysk8zer0/core-css/pulls)
@@ -60,43 +63,43 @@ font stylesheet(s) you want instead.
 :root {
   /*================= Font Size and loading =================*/
   --desktop-rem: 1.3vw;
-	--tablet-rem: 1.5vw;
-	--mobile-rem: 3.3vw;
-	--main-font: "Roboto";
-	--title-font: "Ubuntu";
-	--header-font: "Alice";
-	--article-font: "Ubuntu";
-	--article-header-font: var(--header-font);
-	--font-display: optional;
+  --tablet-rem: 1.5vw;
+  --mobile-rem: 3.3vw;
+  --main-font: "Roboto";
+  --title-font: "Ubuntu";
+  --header-font: "Alice";
+  --article-font: "Ubuntu";
+  --article-header-font: var(--header-font);
+  --font-display: optional;
 
-	/*================= Set color vars here =================*/
-	--default-color: #010101;
-	--alt-color: #FAFAFA;
-	--primary-color: #E0E0E0;
-	--link-color: var(--accent-color);
-	--accent-color: #135f9d;
-	--accent-color-2: #0d4a7c;
-	--border-color: #2D2D2D;
+  /*================= Set color vars here =================*/
+  --default-color: #010101;
+  --alt-color: #FAFAFA;
+  --primary-color: #E0E0E0;
+  --link-color: var(--accent-color);
+  --accent-color: #135f9d;
+  --accent-color-2: #0d4a7c;
+  --border-color: #2D2D2D;
 
   /*================= Button styles and config =================*/
-	--button-background: var(--accent-color);
-	--button-active-background: var(--accent-color-2);
-	--button-disabled-background: var(--button-active-background);
-	--button-border: border;
-	--button-disabled-border: var(--button-border);
-	--button-active-border: var(--button-disabled-border);
-	--button-color: var(--alt-color);
-	--button-active-color: var(--button-color);
+  --button-background: var(--accent-color);
+  --button-active-background: var(--accent-color-2);
+  --button-disabled-background: var(--button-active-background);
+  --button-border: border;
+  --button-disabled-border: var(--button-border);
+  --button-active-border: var(--button-disabled-border);
+  --button-color: var(--alt-color);
+  --button-active-color: var(--button-color);
   --button-border-radius: 4px;
   --button-accept-background: #1e8709;
   --button-reject-background: #b41e1e;
 
-	/*================== Animation properties ==================*/
-	--animation-stagger: 150ms;
+  /*================== Animation properties ==================*/
+  --animation-stagger: 150ms;
 
-	/* ================= Syntax Highlighting ====================*/
-	--highlight-color: black;
-	--highlight-background: #efefef;
+  /* ================= Syntax Highlighting ====================*/
+  --highlight-color: black;
+  --highlight-background: #efefef;
   --highlight-literal-number-color: #CCA418;
 }
 ```
