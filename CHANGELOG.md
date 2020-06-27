@@ -7,10 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 <!-- markdownlint-disable -->
 
-## [v2.0.6] - 2020-06-27
+## [v2.2.0] - 2020-06-27
 
 ### Changed
 - Update dependencies
+- Switch from `netlify-cli` to `http-server`
 
 ### Fixed
 - Remove submodule config from Dependabot
