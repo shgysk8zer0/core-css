@@ -13,7 +13,7 @@
 	:root:not([data-layout]) > body.grid, :root[data-layout="default"] > body.grid, body.grid {
 		grid-template-areas: 'header' 'nav' 'main' 'sidebar' 'footer';
 		grid-template-rows: calc(100vh - var(--nav-height, 4rem)) var(--nav-height, 4rem) minmax(75vh, auto) minmax(200px, auto) minmax(300px, auto);
-		grid-template-columns: auto;
+		grid-template-columns: 100%;
 		grid-column-gap: 0;
 	}
 }
