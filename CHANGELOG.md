@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 <!-- markdownlint-disable -->
+## [v2.2.2] - 2020-07-09
+
+### Fixed
+- Fix setting column / page width on mobile layouts [#81](https://github.com/shgysk8zer0/core-css/issues/81)
+
 ## [v2.2.1] - 2020-06-27
 
 ### Changed
