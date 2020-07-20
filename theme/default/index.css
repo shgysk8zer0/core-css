@@ -1,7 +1,6 @@
 @import url("../base.css");
 @import url("./light.css");
 @import url("./dark.css");
-@import url("../base.css");
 
 :root, [data-theme="light"] {
 	--default-color: var(--default-color-light);
