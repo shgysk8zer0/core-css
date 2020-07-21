@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `outline-offset` settable via `--focus-outline-offset`
+
+### Changed
+- Do not set default styles for `[role="button"]` elements
+
 ### Fixed
 - Duplicate `@import` of base theme stylesheet [#84](https://github.com/shgysk8zer0/core-css/issues/84)
 

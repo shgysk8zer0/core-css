@@ -57,14 +57,6 @@ dialog + .backdrop, dialog::backdrop {
 	background: var(--backdrop-background, rgba(0, 0, 0, 0.7));
 }
 
-/*._dialog_overlay {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}*/
-
 dialog.modal {
 	position: fixed;
 	top: 50%;
@@ -107,14 +99,12 @@ body {
 	line-height: var(--line-height, normal);
 }
 
-a, button:not(:disabled), [role="button"], input[type="submit"],
-input[type="reset"], input[type="image"], [data-share], [data-click],
-[data-close], [data-remove], [data-show], [data-show-modal], [data-scroll-to],
-[data-toggle-hidden], [data-fullscreen] {
+a, button:not(:disabled), [role="button"]:not([disabled]), input[type="submit"],
+input[type="reset"], input[type="image"] {
 	cursor: var(--pointer, pointer);
 }
 
-button:not([hidden]), [role="button"]:not([hidden]), .btn:not([hidden]) {
+button:not([hidden]), .btn:not([hidden]) {
 	display: inline-block;
 	padding: var(--button-padding, 0.3em);
 	background: var(--button-background, initial);
@@ -125,29 +115,30 @@ button:not([hidden]), [role="button"]:not([hidden]), .btn:not([hidden]) {
 	box-sizing: border-box;
 }
 
-:disabled, .disabled {
+:disabled, .disabled, [disabled] {
 	cursor: not-allowed;
 	pointer-events: none;
 }
 
-button:disabled, [role="button"]:disabled, [role="button"].disabled {
+button:disabled, .btn.disabled,  {
 	background: var(--button-disabled-background, var(--button-background, initial));
 	color: var(--button-disabled-color, var(--button-color, inherit));
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
 	border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
 }
 
-button:active, [role="button"]:active, [role="button"].active {
+button:active, .btn:active, .btn.active {
 	background: var(--button-active-background, var(--button-background, initial));
 	color: var(--button-active-color, var(--button-color, inherit));
 	border: var(--button-active-border, var(--button-border, 0.2rem inset black));
 }
 
-button:focus, [role="button"]:focus, .btn:focus, summary:focus, input:focus,
+button:focus, .btn:focus, summary:focus, input:focus,
 select:focus, textarea:focus, .input:focus, [tabindex]:focus, a:focus {
-	outline-width: var(--focus-outline-width, 1px);
+	outline-width: var(--focus-outline-width, thin);
 	outline-style: var(--focus-outline-style, dotted);
 	outline-color: var(--focus-outline-color, currentColor);
+	outline-offset: var(--focus-outline-offset, 0);
 }
 
 details > summary {
@@ -185,20 +176,16 @@ blockquote {
 	border-style: var(--blockquote-border-style, solid);
 }
 
-blockquote cite:not([hidden]) {
-	display: block;
-}
-
 blockquote cite::before {
 	content: var(--cite-prefix, ' — ');
 }
 
 code:not([hidden]) {
 	display: inline-block;
-	padding: 0.1rem;
-	font-size: 0.9rem;
+	padding: var(--code-padding, 0.1rem);
+	font-size: var(--code-font-size, 0.9rem);
 	font-family: var(--code-font, monospace);
-	border-radius: 0.2em;
+	border-radius: var(--code-border-radius, 0.2em);
 	white-space: pre;
 	background-color: var(--code-background, inherit);
 }
