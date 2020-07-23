@@ -4,11 +4,11 @@
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: var(--scrollbar-color, #7a7b7d);
+		background-color: var(--scrollbar-color, var(--accent-color, #7a7b7d));
 	}
 
 	::-webkit-scrollbar-track {
-		background-color: var(--scrollbar-track, #c0c6c2);
+		background-color: var(--scrollbar-track, var(--primamary-color, #c0c6c2));
 	}
 
 	/* Disabled config for scrollbar buttons */
@@ -43,6 +43,6 @@
 }
 
 :root {
-	scrollbar-color: var(--scrollbar-color, #7a7b7d) var(--scrollbar-track, #c0c6c2);
+	scrollbar-color: var(--scrollbar-color, var(--accent-color, #7a7b7d)) var(--scrollbar-track, var(--primary-color, #c0c6c2));
 	scrollbar-width: var(--scrollbar-width, auto);
 }

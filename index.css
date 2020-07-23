@@ -1,19 +1,4 @@
 @charset "UTF-8";
-@import url("./theme/default/index.css");
-@import url("./layout/index.css");
-@import url("./element.css");
-@import url("./class-rules.css");
-@import url("./cdn-fonts.css");
-@import url("./animations.css");
-@import url("./print.css");
-@import url("./scrollbar.css");
-@import url("./accordion.css");
-
-:root {
-	--scrollbar-color: var(--accent-color);
-	--scrollbar-track: var(--primary-color);
-	--scrollbar-width: auto;
-}
 
 [data-click="toggle-sidebar"] svg {
 	font-size: 48px;
