@@ -18,14 +18,10 @@
 	}
 
 	article a[href^="//"]::after {
-		content: ' <http:' attr(href) '>';
+		content: ' <https:' attr(href) '>';
 	}
 
 	abbr[title]::after {
 		content: ' (“' attr(title) '”)';
-	}
-
-	body.grid:not([hidden]) {
-		display: initial;
 	}
 }

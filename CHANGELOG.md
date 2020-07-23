@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - `outline-offset` settable via `--focus-outline-offset`
+- Light & dark theme stylesheets, also useful with `<link rel="stylesheet" media="(prefers-color-scheme: dark)" title="Auto Light/Dark">`
+`<link rel="alternate stylesheet" title="{COLOR} Theme">`
+ 
 
 ### Changed
 - Do not set default styles for `[role="button"]` elements
