@@ -10,13 +10,13 @@
       "port": 8080
     },
     "dir": {
-      "css": "./*.css"
+      "css": "'./**.css'"
     }
   },
   "scripts": {
     "start": "http-server ${npm_package_config_serve_path} -p ${npm_package_config_serve_port} -a ${npm_package_config_serve_domain} -o",
-    "test": "stylelint ${npm_package_config_dir_css}",
-    "fix": "stylelint ${npm_package_config_dir_css} --fix"
+    "test": "stylelint './**.css'",
+    "fix": "stylelint './**.css' --fix"
   },
   "repository": {
     "type": "git",

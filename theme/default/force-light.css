@@ -16,6 +16,14 @@
 		--button-active-color: var(--button-active-color-light);
 		--button-active-border: var(--button-active-border-light);
 
+		--button-primary-background: var(--button-primary-background-light);
+		--button-primary-color: var(--button-primary-color-light);
+		--button-primary-border: var(--button-primary-border-light);
+
+		--button-primary-active-background: var(--button-primary-active-background-light);
+		--button-primary-active-color: var(--button-primary-active-color-light);
+		--button-primary-active-border: var(--button-primary-active-border-light);
+
 		--button-disabled-background: var(--button-disabled-background-light);
 		--button-disabled-color: var(--button-disabled-color-light);
 		--button-disabled-border: var(--button-disabled-border-light);

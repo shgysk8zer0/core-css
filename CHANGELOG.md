@@ -7,14 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.3.0]
+
 ### Added
 - `outline-offset` settable via `--focus-outline-offset`
 - Light & dark theme stylesheets, also useful with `<link rel="stylesheet" media="(prefers-color-scheme: dark)" title="Auto Light/Dark">`
 `<link rel="alternate stylesheet" title="{COLOR} Theme">`
- 
+- Stylesheet containing rules for forms via `.form-group` classes
+- Rules for `.btn.btn-primar` via `--button-primary-*` custom properties
 
 ### Changed
 - Do not set default styles for `[role="button"]` elements
+- Default theme and button colors
+- Use stylelint on all CSS in project
 
 ### Fixed
 - Duplicate `@import` of base theme stylesheet [#84](https://github.com/shgysk8zer0/core-css/issues/84)
