@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Do not set default styles for `[role="button"]` elements
 - Default theme and button colors
+- Use stylelint on all CSS in project
 
 ### Fixed
 - Duplicate `@import` of base theme stylesheet [#84](https://github.com/shgysk8zer0/core-css/issues/84)
