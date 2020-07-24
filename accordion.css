@@ -10,11 +10,14 @@ details.accordion > summary {
 	padding: 0.8em;
 	position: relative;
 	z-index: 1;
-	list-style: none;
 	font-weight: 800;
 }
 
-details.accordion > summary::marker {
+details.accordion.no-marker > summary {
+	list-style: none;
+}
+
+details.accordion.no-marker > summary::marker {
 	display: none;
 }
 
@@ -22,7 +25,7 @@ details.accordion > * {
 	border-bottom: 1px solid var(--accordion-border-color, #6a6a6a);
 }
 
-details.accordion > summary::-webkit-details-marker {
+details.accordion.no-marker > summary::-webkit-details-marker {
 	display: none;
 }
 
@@ -39,7 +42,7 @@ details.accordion > :not(summary):hover {
 	border-color: var(--accordion-theme-color, var(--button-primary-active-background));
 }
 
-:root.no-details details.accordion > summary::before {
+:root.no-details details.accordion.no-marker > summary::before {
 	content: '';
 	display: none;
 }

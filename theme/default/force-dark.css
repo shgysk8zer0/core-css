@@ -13,6 +13,10 @@
 		--button-color: var(--button-color-dark);
 		--button-border: var(--button-border-dark);
 
+		--button-default-background: var(--button-default-background-dark);
+		--button-default-color: var(--button-default-color-dark);
+		--button-default-border: var(--button-default-border-dark);
+
 		--button-primary-background: var(--button-primary--background-dark);
 		--button-primary-color: var(--button-primary-color-dark);
 		--button-primary-border: var(--button-primary-border-dark);
@@ -31,8 +35,10 @@
 
 		--button-accept-background: var(--button-accept-background-dark);
 		--button-accept-active-background: var(--button-accept-active-background-dark);
+		--button-accept-active-border: var(--button-accept-border-dark, var(--button-border-dark));
 
 		--button-reject-background: var(--button-reject-background-dark);
 		--button-reject-active-background: var(--button-reject-active-background-dark);
+		--button-reject-active-border: var(--button-reject-border-dark, var(--button-border-dark));
 	}
 }
