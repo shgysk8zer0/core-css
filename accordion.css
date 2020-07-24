@@ -5,8 +5,8 @@ details.accordion {
 }
 
 details.accordion > summary {
-	background-color: var(--accordion-theme-color, #1c6aea);
-	color: var(--accordion-header-color, #fefefe);
+	background-color: var(--accordion-theme-color, var(--button-primary-background));
+	color: var(--accordion-header-color, var(--button-primary-color));
 	padding: 0.8em;
 	position: relative;
 	z-index: 1;
@@ -27,8 +27,8 @@ details.accordion > summary::-webkit-details-marker {
 }
 
 details.accordion > :not(summary) {
-	background-color: var(--accordion-body-background,  #343434);
-	color: var(--accordion-body-color, #fefefe);
+	background-color: var(--accordion-body-background,  var(--primary-color));
+	color: var(--accordion-body-color, var(--default-color));
 	padding: 0.6em 1.7em;
 	border-left: 8px solid transparent;
 	transform-origin: top;
@@ -36,7 +36,7 @@ details.accordion > :not(summary) {
 }
 
 details.accordion > :not(summary):hover {
-	border-color: var(--accordion-theme-color, #4688f4);
+	border-color: var(--accordion-theme-color, var(--button-primary-active-background));
 }
 
 :root.no-details details.accordion > summary::before {
