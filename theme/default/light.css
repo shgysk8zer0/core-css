@@ -5,8 +5,8 @@
 	--contrast-color-light: #4c4c4c;
 	--alt-color-light: #fefefe;
 
-	--button-background-light: #007bff;
-	--button-color-light: #fafafa;
+	--button-background-light: var(--accent-color-light);
+	--button-color-light: var(--alt-color-light);
 	--button-border-light: none;
 
 	--button-primary-background-light: var(--button-background-light, #007bff);
