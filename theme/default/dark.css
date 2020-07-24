@@ -5,8 +5,8 @@
 	--contrast-color-dark: #AAAAAA;
 	--alt-color-dark: #FAFAFA;
 
-	--button-background-dark: #007bff;
-	--button-color-dark: #fafafa;
+	--button-background-dark: var(--accent-color-dark);
+	--button-color-dark: var(--alt-color-dark);
 	--button-border-dark: none;
 
 	--button-primary-background-dark: var(--button-background-dark, #007bff);
