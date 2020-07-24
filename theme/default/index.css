@@ -31,9 +31,11 @@
 
 	--button-accept-background: var(--button-accept-background-light);
 	--button-accept-active-background: var(--button-accept-active-background-light);
+	--button-accept-active-border: var(--button-accept-border-light, var(--button-border-light));
 
 	--button-reject-background: var(--button-reject-background-light);
 	--button-reject-active-background: var(--button-reject-active-background-light);
+	--button-accept-active-border: var(--button-reject-border-light, var(--button-border-light));
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -48,7 +50,7 @@
 		--button-color: var(--button-color-dark);
 		--button-border: var(--button-border-dark);
 
-		--button-primary-background: var(--button-primary--background-dark);
+		--button-primary-background: var(--button-primary-background-dark);
 		--button-primary-color: var(--button-primary-color-dark);
 		--button-primary-border: var(--button-primary-border-dark);
 
@@ -66,9 +68,11 @@
 
 		--button-accept-background: var(--button-accept-background-dark);
 		--button-accept-active-background: var(--button-accept-active-background-dark);
+		--button-accept-active-border: var(--button-accept-border-light, var(--button-border-light));
 
 		--button-reject-background: var(--button-reject-background-dark);
 		--button-reject-active-background: var(--button-reject-active-background-dark);
+		--button-reject-active-border: var(--button-reject-border-light, var(--button-border-light));
 	}
 }
 
@@ -102,8 +106,10 @@
 
 		--button-accept-background: var(--button-accept-background-dark);
 		--button-accept-active-background: var(--button-accept-active-background-dark);
+		--button-accept-active-border: var(--button-accept-border-dark, var(--button-border-dark));
 
 		--button-reject-background: var(--button-reject-background-dark);
 		--button-reject-active-background: var(--button-reject-active-background-dark);
+		--button-reject-active-border: var(--button-reject-border-dark, var(--button-border-dark));
 	}
 }

@@ -20,9 +20,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Do not set default styles for `[role="button"]` elements
 - Default theme and button colors
 - Use stylelint on all CSS in project
+- Do not always remove `::marker` from `details.accordion`
 
 ### Fixed
 - Duplicate `@import` of base theme stylesheet [#84](https://github.com/shgysk8zer0/core-css/issues/84)
+- Add missing `--button-*` custom properties [#91](https://github.com/shgysk8zer0/core-css/issues/91)
+- Fix `resize` on `<textarea>` for `.form-group` [#91](https://github.com/shgysk8zer0/core-css/issues/91)
 
 ## [v2.2.2] - 2020-07-09
 
