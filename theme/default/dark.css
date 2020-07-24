@@ -3,23 +3,23 @@
 	--primary-color-dark: #2a2a2e;
 	--accent-color-dark: #007bff;
 	--contrast-color-dark: #AAAAAA;
-	--alt-color-dark: #DCDCDC;
+	--alt-color-dark: #FAFAFA;
 
-	--button-primary-background-dark: #007bff;
-	--button-primary-color-dark: #fafafa;
-	--button-primary-border-dark: none;
+	--button-background-dark: #007bff;
+	--button-color-dark: #fafafa;
+	--button-border-dark: none;
 
-	--button-primary-active-background-dark: #2660BC;
-	--button-primary-active-color-dark: var(--button-primary-color-dark);
-	--button-primary-active-border-dark: var(--button-primary-border-dark);
-
-	--button-background-dark: var(--button-primary-background-dark);
-	--button-color-dark: var(--button-primary-color-dark);
-	--button-border-dark: var(--button-primary-border-dark);
+	--button-primary-background-dark: var(--button-background-dark, #007bff);
+	--button-primary-color-dark: var(--button-color-dark, #fafafa);
+	--button-primary-border-dark: var(--button-border-dark, none);
 
 	--button-active-background-dark: var(--button-primary-active-background-dark);
 	--button-active-color-dark: var(--button-primary-active-color-dark);
 	--button-active-border-dark: var(--button-primary-active-border-dark);
+
+	--button-primary-active-background-dark: var(--button-active-background-dark, #2660BC);
+	--button-primary-active-color-dark: var(--button-active-color-dark, var(--button-primary-color-dark));
+	--button-primary-active-border-dark: var(--button-active-border-dark, var(--button-primary-border-dark));
 
 	--button-disabled-background-dark: #787878;
 	--button-disabled-color-dark: #4e4e4e;

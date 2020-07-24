@@ -5,21 +5,21 @@
 	--contrast-color-light: #4c4c4c;
 	--alt-color-light: #fefefe;
 
-	--button-primary-background-light: #007bff;
-	--button-primary-border-light: none;
-	--button-primary-color-light: #fefefe;
+	--button-background-light: #007bff;
+	--button-color-light: #fafafa;
+	--button-border-light: none;
 
-	--button-primary-active-color-light: var(--button-primary-color-light);
-	--button-primary-active-background-light: #5C93EA;
-	--button-primary-active-border-light: none;
+	--button-primary-background-light: var(--button-background-light, #007bff);
+	--button-primary-border-light: var(--button-border-light, none);
+	--button-primary-color-light: var(--button-color-light, #fefefe);
 
-	--button-color-light: var(--button-primary-color-light);
-	--button-background-light: var(--button-primary-background-light);
-	--button-border-light: var(--button-primary-border-light);
-
-	--button-active-background-light: var(--button-primary-active-background-light);
+	--button-active-background-light: #2660BC;
 	--button-active-color-light: var(--button-primary-active-color-light);
 	--button-active-border-light: var(--button-primary-border-light);
+
+	--button-primary-active-background-light: var(--button-active-background-light, #2660BC);
+	--button-primary-active-color-light: var(--button-primary-color-light, var(--button-primary-color-light));
+	--button-primary-active-border-light: var(--button-active-border-light, none);
 
 	--button-disabled-background-light: #787878;
 	--button-disabled-color-light: #4e4e4e;

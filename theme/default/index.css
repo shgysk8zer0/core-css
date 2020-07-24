@@ -11,6 +11,7 @@
 
 	--button-background: var(--button-background-light);
 	--button-color: var(--button-color-light);
+	--button-border: var(--button-border-light);
 
 	--button-primary-background: var(--button-primary-background-light);
 	--button-primary-color: var(--button-primary-color-light);
@@ -45,6 +46,7 @@
 
 		--button-background: var(--button-background-dark);
 		--button-color: var(--button-color-dark);
+		--button-border: var(--button-border-dark);
 
 		--button-primary-background: var(--button-primary--background-dark);
 		--button-primary-color: var(--button-primary-color-dark);
@@ -78,14 +80,13 @@
 		--contrast-color: var(--contrast-color-dark);
 		--alt-color: var(--alt-color-dark);
 
+		--button-background: var(--button-primary-background-dark);
+		--button-color: var(--button-primary-color-dark);
+		--button-border: var(--button-primary-border-dark);
 
 		--button-primary-background: var(--button-primary--background-dark);
 		--button-primary-color: var(--button-primary-color-dark);
 		--button-primary-border: var(--button-primary-border-dark);
-
-		--button-background: var(--button-primary-background-dark);
-		--button-color: var(--button-primary-color-dark);
-		--button-border: var(--button-primary-border-dark);
 
 		--button-primary-active-background: var(--button-primary-active-background-dark);
 		--button-primary-active-color: var(--button-primary-active-color-dark);
