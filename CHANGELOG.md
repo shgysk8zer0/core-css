@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v2.3.0]
+## [v2.3.0] - 2020-07-24
 
 ### Added
 - `outline-offset` settable via `--focus-outline-offset`
