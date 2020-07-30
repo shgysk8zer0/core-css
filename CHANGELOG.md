@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+- Applying styles to `<button>`s without the `.btn` class
+
 ## [v2.3.0] - 2020-07-24
 
 ### Added
