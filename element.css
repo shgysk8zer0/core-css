@@ -104,7 +104,7 @@ input[type="reset"], input[type="image"] {
 	cursor: var(--pointer, pointer);
 }
 
-button:not([hidden]), .btn:not([hidden]) {
+.btn:not([hidden]) {
 	display: inline-block;
 	padding: var(--button-padding, 0.3em);
 	background: var(--button-background, initial);
@@ -120,20 +120,20 @@ button:not([hidden]), .btn:not([hidden]) {
 	pointer-events: none;
 }
 
-button:disabled, .btn.disabled,  {
+.btn.disabled,  {
 	background: var(--button-disabled-background, var(--button-background, initial));
 	color: var(--button-disabled-color, var(--button-color, inherit));
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
 	border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
 }
 
-button:active, .btn:active, .btn.active {
+.btn:active, .btn.active {
 	background: var(--button-active-background, var(--button-background, initial));
 	color: var(--button-active-color, var(--button-color, inherit));
 	border: var(--button-active-border, var(--button-border, 0.2rem inset black));
 }
 
-button:focus, .btn:focus, summary:focus, input:focus,
+.btn:focus, summary:focus, input:focus,
 select:focus, textarea:focus, .input:focus, [tabindex]:focus, a:focus {
 	outline-width: var(--focus-outline-width, thin);
 	outline-style: var(--focus-outline-style, dotted);
