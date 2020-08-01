@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Styles for `<table class="themed-table">`
+- Missing rules for `overflow: hidden`
 
 ### Removed
 - Applying styles to `<button>`s without the `.btn` class
