@@ -115,12 +115,16 @@ input[type="reset"], input[type="image"] {
 	box-sizing: border-box;
 }
 
+.btn.round {
+	border-radius: 50%;
+}
+
 :disabled, .disabled, [disabled] {
 	cursor: not-allowed;
 	pointer-events: none;
 }
 
-.btn.disabled,  {
+.btn:disabled, .btn.disabled {
 	background: var(--button-disabled-background, var(--button-background, initial));
 	color: var(--button-disabled-color, var(--button-color, inherit));
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;

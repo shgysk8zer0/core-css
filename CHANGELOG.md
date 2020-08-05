@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Use optional `--viewport-height` when setting header height in layout, dealing with URL bar
 
+### Fixed
+- `<button class="btn round">` now has `border-radius: 50%` is it expected
+
 ## [v2.3.1] - 2020-08-01
 
 ### Added
