@@ -1,5 +1,33 @@
-.hidden {
+.hidden, .visibility-hidden {
 	visibility: hidden;
+}
+
+.visibility-initial {
+	visibility: initial;
+}
+
+.visibility-collapse {
+	visibility: collapse;
+}
+
+.content-visibility-auto {
+	content-visibility: auto;
+}
+
+@supports not (content-visibility: auto) {
+	.content-visibility-auto {
+		contain: layout style paint;
+	}
+}
+
+.content-visibility-hidden {
+	content-visibility: hidden;
+}
+
+@supports not (content-visibility: hidden) {
+	.content-visibility-hidden {
+		visibility: hidden;
+	}
 }
 
 .width-viewport {
