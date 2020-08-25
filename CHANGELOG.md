@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- CSS containment and visibility rules (`content-visibility` and more `visibility` rules)
+
 ### Changed
 - Use optional `--viewport-height` when setting header height in layout, dealing with URL bar
 

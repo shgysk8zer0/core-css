@@ -50,29 +50,29 @@ jobs:
       - name: Lint Code Base
         uses: docker://github/super-linter:v3
         env:
-          # @TODO Add HTML when/if available
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
           VALIDATE_YAML: true
           VALIDATE_JSON: true
-          VALIDATE_XML: true
+          # VALIDATE_XML: true
           VALIDATE_MD: true
+          # VALIDATE_HTML: true
           VALIDATE_BASH: true
-          VALIDATE_PERL: false
-          VALIDATE_PHP: false
-          VALIDATE_PYTHON: false
-          VALIDATE_RUBY: false
-          VALIDATE_COFFEE: false
-          VALIDATE_ANSIBLE: false
-          VALIDATE_JAVASCRIPT_ES: false
-          VALIDATE_JAVASCRIPT_STANDARD: false
-          VALIDATE_TYPESCRIPT_ES: false
-          VALIDATE_TYPESCRIPT_STANDARD: false
-          VALIDATE_DOCKER: false
-          VALIDATE_GO: false
-          VALIDATE_TERRAFORM: false
-          VALIDATE_CSS: false
+          # VALIDATE_PERL: true
+          # VALIDATE_PHP_BUILTIN: true
+          # VALIDATE_PYTHON: true
+          # VALIDATE_RUBY: true
+          # VALIDATE_COFFEE: true
+          # VALIDATE_ANSIBLE: true
+          # VALIDATE_JAVASCRIPT_ES: true
+          # VALIDATE_JAVASCRIPT_STANDARD: true
+          # VALIDATE_TYPESCRIPT_ES: true
+          # VALIDATE_TYPESCRIPT_STANDARD: true
+          # VALIDATE_DOCKER: true
+          # VALIDATE_GO: true
+          # VALIDATE_TERRAFORM: true
+          # VALIDATE_CSS: true
           # ANSIBLE_DIRECTORY:
-          ACTIONS_RUNNER_DEBUG: false
+          # ACTIONS_RUNNER_DEBUG: true
           # DEFAULT_WORKSPACE:
-
