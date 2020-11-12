@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - CSS containment and visibility rules (`content-visibility` and more `visibility` rules)
+- Color Palette (`.xml`) files
 
 ### Changed
 - Use optional `--viewport-height` when setting header height in layout, dealing with URL bar
