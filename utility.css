@@ -188,27 +188,27 @@
 }
 
 .background-primary {
-	background: var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 .background-highlight {
-	background: var(--highlight-color);
+	background-color: var(--highlight-color);
 }
 
 .background-alt {
-	background: var(--alt-color);
+	background-color: var(--alt-color);
 }
 
 .background-accent {
-	background: var(--accent-color);
+	background-color: var(--accent-color);
 }
 
 .background-contrast {
-	background: var(--contrast-color);
+	background-color: var(--contrast-color);
 }
 
 .background-compliment {
-	background: var(--compliment-color);
+	background-color: var(--compliment-color);
 }
 
 .blend-mode-normal {
@@ -1201,50 +1201,50 @@
 }
 
 .btn.btn-primary {
-	background: var(--button-primary-background, var(--button-background));
+	background-color: var(--button-primary-background, var(--button-background));
 	color: var(--button-primary-color, var(--button-color));
 }
 
 .btn.btn-primary:active {
-	background: var(--button-primary-active-background, var(--button-background));
+	background-color: var(--button-primary-active-background, var(--button-background));
 	color: var(--button-primary-active-color, var(--button-color));
 }
 
 .btn.btn-default {
-	background: var(--button-default-background, #DFDFDF);
+	background-color: var(--button-default-background, #DFDFDF);
 	color: var(--button-default-color, #585858);
 }
 
 .btn.btn-accept {
-	background: var(--button-accept-background, var(--button-background, initial));
+	background-color: var(--button-accept-background, var(--button-background, initial));
 	color: var(--button-accept-color, var(--button-color, initial));
 }
 
 .btn.btn-accept:disabled, .btn.btn-accept.disabled {
-	background: var(--button-accept-disabled-background, var(--button-accept-background, var(--button-disabled-background, var(--button-background, initial))));
+	background-color: var(--button-accept-disabled-background, var(--button-accept-background, var(--button-disabled-background, var(--button-background, initial))));
 	color: var(--button-accept-disabled-color, var(--button--accept-color, var(--button-disabled-color, var(--button-color, inherit))));
 	border: var(--button-accept-disabled-border, var(--button-accept-border, var(--button-disabled-border, var(--button-border, 0.2rem inset black))));
 }
 
 .btn.btn-accept:active, .btn.btn-accept.active {
-	background: var(--button-accept-active-background, var(--button-accept-background, var(--button-active-background, var(--button-background, initial))));
+	background-color: var(--button-accept-active-background, var(--button-accept-background, var(--button-active-background, var(--button-background, initial))));
 	color: var(--button-accept-active-color, var(--button--accept-color, var(--button-active-color, var(--button-color, inherit))));
 	border: var(--button-accept-active-border, var(--button-accept-border, var(--button-active-border, var(--button-border, 0.2rem inset black))));
 }
 
 .btn.btn-reject {
-	background: var(--button-reject-background, var(--button-background, initial));
+	background-color: var(--button-reject-background, var(--button-background, initial));
 	color: var(--button-reject-color, var(--button-color, initial));
 }
 
 .btn.btn-reject:disabled, .btn.btn-reject.disabled, .btn.btn-reject[disabled] {
-	background: var(--button-reject-disabled-background, var(--button-reject-background, var(--button-disabled-background, var(--button-background, initial))));
+	background-color: var(--button-reject-disabled-background, var(--button-reject-background, var(--button-disabled-background, var(--button-background, initial))));
 	color: var(--button-reject-disabled-color, var(--button--reject-color, var(--button-disabled-color, var(--button-color, inherit))));
 	border: var(--button-reject-disabled-border, var(--button-reject-border, var(--button-disabled-border, var(--button-border, 0.2rem inset black))));
 }
 
 .btn.btn-reject:active, .btn.btn-reject.active {
-	background: var(--button-reject-active-background, var(--button-reject-background, var(--button-active-background, var(--button-background, initial))));
+	background-color: var(--button-reject-active-background, var(--button-reject-background, var(--button-active-background, var(--button-background, initial))));
 	color: var(--button-reject-active-color, var(--button--reject-color, var(--button-active-color, var(--button-color, inherit))));
 	border: var(--button-reject-active-border, var(--button-reject-border, var(--button-active-border, var(--button-border, 0.2rem inset black))));
 }

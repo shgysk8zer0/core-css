@@ -104,10 +104,11 @@ input[type="reset"], input[type="image"] {
 	cursor: var(--pointer, pointer);
 }
 
+/* @TODO Do not apply color/background to `.btn` alone */
 .btn:not([hidden]) {
 	display: inline-block;
 	padding: var(--button-padding, 0.3em);
-	background: var(--button-background, initial);
+	background-color: var(--button-background, initial);
 	font-family: var(--button-font, inherit);
 	color: var(--button-color, initial);
 	border: var(--button-border, 1px solid #aaa);
@@ -150,7 +151,7 @@ details > summary {
 }
 
 a, [download] {
-	color: var(--link-color, inherit);
+	color: var(--link-color, currentColor);
 	text-decoration: var(--link-decoration, none);
 }
 

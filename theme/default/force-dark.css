@@ -8,6 +8,8 @@
 		--accent-color: var(--accent-color-dark);
 		--contrast-color: var(--contrast-color-dark);
 		--alt-color: var(--alt-color-dark);
+		--scrollbar-color: var(--accent-color-dark);
+		--scrollbar-track: var(--primary-color-dark);
 
 		--button-background: var(--button-background-dark);
 		--button-color: var(--button-color-dark);
