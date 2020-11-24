@@ -12,16 +12,16 @@
 	"name": "--mobile-rem",
 	"syntax": "<length>",
 	"inherits": true,
-	"initial-value": "20px",
+	"initial-value": "20px"
 }, {"name": "--link-color",
 	"syntax": "<color>",
 	"inherits": true,
-	"initial-value": "#0000ff",
+	"initial-value": "#0000ff"
 }, {
 	"name": "--default-color",
 	"syntax": "<color>",
 	"inherits": true,
-	"initial-value": "#343434",
+	"initial-value": "#343434"
 }, {
 	"name": "--primary-color",
 	"syntax": "<color>",
@@ -90,7 +90,7 @@
 	"name": "--button-accept-active-background-light",
 	"syntax": "<color>",
 	"inherits": true,
-	"inital-value": "#157a0c"
+	"initial-value": "#157a0c"
 }, {
 	"name": "--button-accept-color",
 	"syntax": "<color>",
