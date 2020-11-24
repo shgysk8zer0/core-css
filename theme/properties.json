@@ -1,129 +1,129 @@
 [{
-  "name": "--desktop-rem",
-  "syntax": "<length>",
-  "inherits": true,
-  "initial-value": "1.3vmax"
+	"name": "--desktop-rem",
+	"syntax": "<length>",
+	"inherits": true,
+	"initial-value": "1.3vmax"
 }, {
-  "name": "--tablet-rem",
-  "syntax": "<length>",
-  "inherits": true,
-  "initial-value": "1.6vmax"
+	"name": "--tablet-rem",
+	"syntax": "<length>",
+	"inherits": true,
+	"initial-value": "1.6vmax"
 }, {
-  "name": "--mobile-rem",
-  "syntax": "<length>",
-  "inherits": true,
-  "initial-value": "20px",
+	"name": "--mobile-rem",
+	"syntax": "<length>",
+	"inherits": true,
+	"initial-value": "20px",
 }, {"name": "--link-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#0000ff",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#0000ff",
 }, {
-  "name": "--default-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#343434",
+	"name": "--default-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#343434",
 }, {
-  "name": "--primary-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fafafa"
+	"name": "--primary-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fafafa"
 }, {
-  "name": "--accent-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#007bff"
+	"name": "--accent-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#007bff"
 }, {
-  "name": "--alt-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fefefe"
+	"name": "--alt-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fefefe"
 }, {
-  "name": "--contrast-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#4c4c4c"
+	"name": "--contrast-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#4c4c4c"
 }, {"name": "--button-default-background",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#dfdfdf"
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#dfdfdf"
 }, {
-  "name": "--button-default-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#585858"
+	"name": "--button-default-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#585858"
 }, {
-  "name": "--button-primary-background",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#007bff"
+	"name": "--button-primary-background",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#007bff"
 }, {
-  "name": "--button-primary-active-background",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#2660BC"
+	"name": "--button-primary-active-background",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#2660BC"
 }, {
-  "name": "--button-primary-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fefefe"
+	"name": "--button-primary-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fefefe"
 }, {
-  "name": "--button-primary-active-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fefefe"
+	"name": "--button-primary-active-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fefefe"
 }, {
-  "name": "--button-disabled-background",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#787878"
+	"name": "--button-disabled-background",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#787878"
 }, {
-  "name": "--button-disabled-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fefefe"
+	"name": "--button-disabled-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fefefe"
 }, {
-  "name": "--button-accept-background",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#28a745"
+	"name": "--button-accept-background",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#28a745"
 }, {
-  "name": "--button-accept-active-background-light",
-  "syntax": "<color>",
-  "inherits": true,
-  "inital-value": "#157a0c"
+	"name": "--button-accept-active-background-light",
+	"syntax": "<color>",
+	"inherits": true,
+	"inital-value": "#157a0c"
 }, {
-  "name": "--button-accept-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fefefe"
+	"name": "--button-accept-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fefefe"
 }, {
-  "name": "--button-reject-background",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#dc3545"
+	"name": "--button-reject-background",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#dc3545"
 }, {
-  "name": "--button-reject-active-background-light",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#7a0c0c"
+	"name": "--button-reject-active-background-light",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#7a0c0c"
 }, {
-  "name": "--button-reject-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#fefefe"
+	"name": "--button-reject-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#fefefe"
 }, {
-  "name": "--scrollbar-color",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#7a7b7d"
+	"name": "--scrollbar-color",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#7a7b7d"
 }, {
-  "name": "--scrollbar-track",
-  "syntax": "<color>",
-  "inherits": true,
-  "initial-value": "#c0c6c2"
+	"name": "--scrollbar-track",
+	"syntax": "<color>",
+	"inherits": true,
+	"initial-value": "#c0c6c2"
 }, {
-  "name": "--scrollbar-width",
-  "syntax": "<scrollbar-width>",
-  "inherits": true,
-  "initial-value": "auto",
+	"name": "--scrollbar-width",
+	"syntax": "<scrollbar-width>",
+	"inherits": true,
+	"initial-value": "auto",
 }]

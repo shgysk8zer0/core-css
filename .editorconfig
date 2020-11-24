@@ -9,12 +9,12 @@ end_of_line = lf
 insert_final_newline = true
 charset = utf-8
 
-[*.{html,xml,svg,js,css,php}]
+[*.{html,xml,svg,js,css,php,json}]
 indent_style = tab
 trim_trailing_whitespace = true
 max_line_length = 80
 
-[*.{md,markdown,yml,json}]
+[*.{md,markdown,yml}]
 indent_style = space
 indent_size = 2
 
