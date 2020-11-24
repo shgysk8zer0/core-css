@@ -1,0 +1,46 @@
+@import url("../base.css");
+@import url("./dark.css");
+
+@media screen {
+	:root[data-theme="light"], :root:not([data-theme="light"]) {
+		--default-color: var(--default-color-dark);
+		--primary-color: var(--primary-color-dark);
+		--accent-color: var(--accent-color-dark);
+		--contrast-color: var(--contrast-color-dark);
+		--alt-color: var(--alt-color-dark);
+		--scrollbar-color: #dedede;
+		--scrollbar-track: #2d2d2d;
+
+		--button-background: var(--button-background-dark);
+		--button-color: var(--button-color-dark);
+		--button-border: var(--button-border-dark);
+
+		--button-default-background: var(--button-default-background-dark);
+		--button-default-color: var(--button-default-color-dark);
+		--button-default-border: var(--button-default-border-dark);
+
+		--button-primary-background: var(--button-primary--background-dark);
+		--button-primary-color: var(--button-primary-color-dark);
+		--button-primary-border: var(--button-primary-border-dark);
+
+		--button-primary-active-background: var(--button-primary-active-background-dark);
+		--button-primary-active-color: var(--button-primary-active-color-dark);
+		--button-primary-active-border: var(--button-primary-active-border-dark);
+
+		--button-active-background: var(--button-active-background-dark);
+		--button-active-color: var(--button-active-color-dark);
+		--button-active-border: var(--button-active-dark);
+
+		--button-disabled-background: var(--button-disabled-background-dark);
+		--button-disabled-color: var(--button-disabled-color-dark);
+		--button-disabled-border: var(--button-disabled-border-dark);
+
+		--button-accept-background: var(--button-accept-background-dark);
+		--button-accept-active-background: var(--button-accept-active-background-dark);
+		--button-accept-active-border: var(--button-accept-border-dark, var(--button-border-dark));
+
+		--button-reject-background: var(--button-reject-background-dark);
+		--button-reject-active-background: var(--button-reject-active-background-dark);
+		--button-reject-active-border: var(--button-reject-border-dark, var(--button-border-dark));
+	}
+}

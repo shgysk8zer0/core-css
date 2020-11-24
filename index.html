@@ -5,11 +5,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>Core CSS Testing</title>
 		<script type="module" src="/index.js" async=""></script>
-		<link rel="stylesheet" href="/theme/default/force-light.css" title="Auto Light/Dark Mode" media="(prefers-color-scheme: light)" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="/theme/default/force-dark.css" title="Auto Light/Dark Mode" media="(prefers-color-scheme: dark)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/theme/base.css" media="all" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/theme/adwaita/force-light.css" title="Auto Light/Dark Mode" media="(prefers-color-scheme: light)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/theme/adwaita/force-dark.css" title="Auto Light/Dark Mode" media="(prefers-color-scheme: dark)" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="alternate stylesheet" href="/theme/default/force-light.css" title="Light Mode" media="all" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="alternate stylesheet" href="/theme/default/force-dark.css" title="Dark Mode" media="all" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/layout/index.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/theme/properties.css" referrerpolicy="no-referrer" media="all" />
 		<link rel="stylesheet" href="/element.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/class-rules.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/cdn-fonts.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,18 +21,24 @@
 		<link rel="stylesheet" href="/print.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/accordion.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
-	<body class="background-primary color-default font-main grid" data-theme="">
+	<body class="background-primary color-default font-main grid">
 		<header id="header" class="background-cover background-fixed no-print"></header>
-		<nav id="nav" class="sticky top shadow clearfix background-accent color-alt no-print z-4 contain-content">
-			<button type="button" class="btn btn-primary float-right" data-click="toggle-sidebar" title="Toggle Sidebar">
+		<nav id="nav" class="sticky top shadow clearfix background-primary color-alt no-print z-4 contain-content">
+			<button type="button" class="btn">Vanilla</button>
+			<button type="button" class="btn btn-primary float-right no-border" data-click="toggle-sidebar" title="Toggle Sidebar">
 				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve" aria-hidden="true">
 					<path stroke-width="0.2" stroke-linejoin="round" d="M 3,6L 21,6L 21,8L 3,8L 3,6 Z M 3,11L 21,11L 21,13L 3,13L 3,11 Z M 3,16L 21,16L 21,18L 3,18L 3,16 Z "/>
 				</svg>
 			</button>
+			<button type="button" class="btn btn-default">Default</button>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-accept">Accept</button>
+			<button type="button" class="btn btn-reject">Reject</button>
+			<a href="#">Link</a>
 		</nav>
 		<aside id="sidebar" class="card shadow contain-content">
 			<div class="sticky top clearfix z-4">
-				<button type="button" class="float-right" data-click="toggle-sidebar" title="Toggle Sidebar">
+				<button type="button" class="float-right btn btn-primary" data-click="toggle-sidebar" title="Toggle Sidebar">
 					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16" aria-hidden="true">
 						<path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/>
 					</svg>
@@ -113,7 +121,7 @@
 				<time is="current-year">2019</time>
 			</div>
 		</footer>
-		<button type="button" class="btn btn-primary round z-top fixed no-print contain-content custom-element if-defined" is="share-button" aria-label="Share page" hidden="">
+		<button type="button" class="btn btn-primary round z-top fixed no-print contain-content custom-element if-defined no-border" is="share-button" aria-label="Share page" hidden="">
 			<svg class="current-color icon" viewbox="0 0 16 16" aria-hidden="true">
 				<path d="M5.969 7.969a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm9.969 5a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0zm0-10a2.969 2.969 0 1 1-5.938 0 2.969 2.969 0 1 1 5.938 0z" overflow="visible"></path>
 				<path d="M12.625 2.156L2.562 7.031.75 7.938l1.812.906 10.032 5.062.906-1.812-8.22-4.156 8.219-4-.875-1.782z" overflow="visible"></path>

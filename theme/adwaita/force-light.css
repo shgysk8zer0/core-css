@@ -1,0 +1,42 @@
+@import url("../base.css");
+@import url("./light.css");
+
+@media screen {
+	:root[data-theme="dark"], :root:not([data-theme="dark"]) {
+		--default-color: var(--default-color-light);
+		--primary-color: var(--primary-color-light);
+		--accent-color: var(--accent-color-light);
+		--contrast-color: var(--contrast-color-light);
+		--alt-color: var(--alt-color-light);
+		--scrollbar-color: #515151;
+		--scrollbar-track: #dedede;
+
+		--button-background: var(--button-background-light);
+		--button-color: var(--button-color-light);
+		--button-border: var(--button-border-light);
+
+		--button-active-background: var(--button-active-background-light);
+		--button-active-color: var(--button-active-color-light);
+		--button-active-border: var(--button-active-border-light);
+
+		--button-primary-background: var(--button-primary-background-light);
+		--button-primary-color: var(--button-primary-color-light);
+		--button-primary-border: var(--button-primary-border-light);
+
+		--button-primary-active-background: var(--button-primary-active-background-light);
+		--button-primary-active-color: var(--button-primary-active-color-light);
+		--button-primary-active-border: var(--button-primary-active-border-light);
+
+		--button-disabled-background: var(--button-disabled-background-light);
+		--button-disabled-color: var(--button-disabled-color-light);
+		--button-disabled-border: var(--button-disabled-border-light);
+
+		--button-accept-background: var(--button-accept-background-light);
+		--button-accept-active-background: var(--button-accept-active-background-light);
+		--button-accept-active-border: var(--button-accept-border-light, var(--button-border-light));
+
+		--button-reject-background: var(--button-reject-background-light);
+		--button-reject-active-background: var(--button-reject-active-background-light);
+		--button-reject-active-border: var(--button-reject-border-light, var(--button-border-light));
+	}
+}
