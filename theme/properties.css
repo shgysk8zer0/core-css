@@ -1,0 +1,155 @@
+@property --desktop-rem {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 1.3vmax;
+}
+
+@property --tablet-rem {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 1.6vmax;
+}
+
+@property --mobile-rem {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 20px;
+}
+
+@property --link-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #0000ff;
+}
+
+@property --default-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #343434;
+}
+
+@property --primary-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fafafa;
+}
+
+@property --accent-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #007bff;
+}
+
+@property --alt-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --contrast-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #4c4c4c;
+}
+
+@property --button-default-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #dfdfdf;
+}
+
+@property --button-default-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #585858;
+}
+
+@property --button-primary-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #007bff;
+}
+
+@property --button-primary-active-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #2660BC;
+}
+
+@property --button-primary-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-primary-active-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-disabled-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #787878;
+}
+
+@property --button-disabled-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-accept-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #28a745;
+}
+
+@property --button-accept-active-background-light {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #157a0c;
+}
+
+@property --button-accept-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-reject-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #dc3545;
+}
+
+@property --button-reject-active-background-light {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #7a0c0c;
+}
+
+@property --button-reject-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --scrollbar-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #7a7b7d;
+}
+
+@property --scrollbar-track {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #c0c6c2;
+}
+
+@property --scrollbar-width {
+	syntax: "<scrollbar-width>";
+	inherits: true;
+	initial-value: auto;
+}

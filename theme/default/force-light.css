@@ -8,6 +8,8 @@
 		--accent-color: var(--accent-color-light);
 		--contrast-color: var(--contrast-color-light);
 		--alt-color: var(--alt-color-light);
+		--scrollbar-color: var(--accent-color-light);
+		--scrollbar-track: var(--primary-color-light);
 
 		--button-background: var(--button-background-light);
 		--button-color: var(--button-color-light);
