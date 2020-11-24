@@ -40,7 +40,7 @@
 	--button-accept-active-border: var(--button-reject-border-light, var(--button-border-light));
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media all and (prefers-color-scheme: dark) {
 	:root:not([data-theme="light"]) {
 		--default-color: var(--default-color-dark);
 		--primary-color: var(--primary-color-dark);
@@ -80,13 +80,15 @@
 	}
 }
 
-@media screen {
+@media all {
 	[data-theme="dark"] {
 		--default-color: var(--default-color-dark);
 		--primary-color: var(--primary-color-dark);
 		--accent-color: var(--accent-color-dark);
 		--contrast-color: var(--contrast-color-dark);
 		--alt-color: var(--alt-color-dark);
+		--scrollbar-color: var(--accent-color-dark);
+		--scrollbar-track: var(--primary-color-dark);
 
 		--button-background: var(--button-primary-background-dark);
 		--button-color: var(--button-primary-color-dark);
