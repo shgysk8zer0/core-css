@@ -125,5 +125,5 @@
 	"name": "--scrollbar-width",
 	"syntax": "<scrollbar-width>",
 	"inherits": true,
-	"initial-value": "auto",
+	"initial-value": "auto"
 }]
