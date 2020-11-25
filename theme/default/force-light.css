@@ -1,7 +1,7 @@
 @import url("../base.css");
 @import url("./light.css");
 
-@media screen {
+@media all {
 	:root[data-theme="dark"], :root:not([data-theme="dark"]) {
 		--default-color: var(--default-color-light);
 		--primary-color: var(--primary-color-light);
