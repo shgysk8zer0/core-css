@@ -1,0 +1,97 @@
+:root {
+	--button-default-background-light: #efefef;
+	--button-default-border-light: 1px solid #767676;
+	--button-default-color-light: #040404;
+
+	--button-default-hover-background-light: var(--button-default-background-light);
+	--button-default-hover-border-dark: var(--button-default-border-light);
+	--button-default-hover-color-dark: var(--button-default-color-light);
+
+	--button-default-hover-background-dark: var(--button-default-hover-background-light);
+	--button-default-hover-border-dark: var(--button-default-hover-border-light);
+	--button-default-hover-color-dark: var(--button-default-hover-color-light);
+
+	--button-default-active-background-light: #dadada;
+	--button-default-active-border-light: var(--button-default-border-light);
+	--button-default-active-color-light: var(--button-default-color-light);
+
+	--button-default-active-background-dark: var(--button-default-active-background-light);
+	--button-default-active-border-dark: var(--button-default-active-border-light);
+	--button-default-active-color-dark: var(--button-default-active-color-light);
+
+	--button-primary-background-light: #007bff;
+	--button-primary-border-light: none;
+	--button-primary-color-light: #fefefe;
+
+	--button-primary-background-dark: var(--button-primary-background-light);
+	--button-primary-border-dark: var(--button-primary-border-light);
+	--button-primary-color-dark: var(--button-primary-color-light);
+
+	--button-primary-hover-background-light: #006bdd;
+	--button-primary-hover-color-light: var(--button-primary-color-light);
+	--button-primary-hover-border-light: var(--button-primary-border-light);
+
+	--button-primary-hover-background-dark: var(--button-primary-hover-background-light);
+	--button-primary-hover-border-dark: var(--button-primary-hover-border-light);
+	--button-primary-hover-color-dark: var(--button-primary-hover-color-light);
+
+	--button-primary-active-background-light: #003670;
+	--button-primary-active-color-light: var(--button-primary-color-light, var(--button-primary-color-light));
+	--button-primary-active-border-light: var(--button-active-border-light, none);
+
+	--button-primary-active-background-dark: var(--button-primary-active-background-light);
+	--button-primary-active-border-dark: var(--button-primary-active-border-light);
+	--button-primary-active-color-dark: var(--button-primary-active-color-light);
+
+	--button-disabled-background-light: #787878;
+	--button-disabled-color-light: #4e4e4e;
+	--button-disabled-border-light: var(--button-border-light);
+
+	--button-accept-background-light: #28a745;
+	--button-accept-border-light: none;
+	--button-accept-color-light: #fefefe;
+
+	--button-accept-background-dark: var(--button-accept-background-light);
+	--button-accept-border-dark: var(--button-accept-border-light);
+	--button-accept-color-dark: var(--button-accept-color-light);
+
+	--button-accept-hover-background-light: #1F8236;
+	--button-accept-hover-border-light: none;
+	--button-accept-hover-color-light: #fefefe;
+
+	--button-accept-hover-background-dark: var(--button-accept-hover-background-light);
+	--button-accept-hover-border-dark: var(--button-accept-hover-border-light);
+	--button-accept-hover-color-dark: var(--button-hover-accept-color-light);
+
+	--button-accept-active-background-light: #196A2C;
+	--button-accept-active-border-light: var(--button-accept-border-light);
+	--button-accept-active-color-light: var(--button-accept-color-light);
+
+	--button-accept-active-background-dark: var(--button-accept-active-background-light);
+	--button-accept-active-border-dark: var(--button-accept-active-border-light);
+	--button-accept-active-color-dark: var(--button-accept-active-color-light);
+
+	--button-reject-background-light: #dc3545;
+	--button-reject-border-light: none;
+	--button-reject-color-light: #fefefe;
+
+	--button-reject-background-dark: var(--button-reject-background-light);
+	--button-reject-border-dark: var(--button-reject-border-light);
+	--button-reject-color-dark: var(--button-reject-color-light);
+
+	--button-reject-hover-background-light: #AD2A36;
+	--button-reject-hover-border-light: none;
+	--button-reject-hover-color-light: #fefefe;
+
+	--button-reject-hover-background-dark: var(--button-reject-hover-background-light);
+	--button-reject-hover-border-dark: var(--button-reject-hover-border-light);
+	--button-reject-hover-color-dark: var(--button-reject-hover-color-light);
+
+	--button-reject-active-background-light: #7a0c0c;
+	--button-reject-active-border-light: var(--button-reject-border-light);
+	--button-reject-active-color-light: var(--button-reject-color-light);
+
+	--button-reject-active-background-dark: var(--button-reject-active-background-light);
+	--button-reject-active-border-dark: var(--button-reject-active-border-light);
+	--button-reject-active-color-dark: var(--button-reject-active-color-light);
+}

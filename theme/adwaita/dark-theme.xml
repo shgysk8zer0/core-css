@@ -19,10 +19,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 	<color name="accent-color-dark" value="#007bff" />
 	<color name="contrast-color-dark" value="#AAAAAA" />
 	<color name="alt-color-dark" value="#FAFAFA" />
-	<color name="button-default-background-dark" value="#DFDFDF" />
-	<color name="button-default-hover-background-dark" value="#DFDFDF" />
-	<color name="button-default-active-background-dark" value="#dadada" />
-	<color name="button-default-color-dark" value="#585858" />
+	<color name="button-default-background-dark" value="#2d2d2d" />
+	<color name="button-default-hover-background-dark" value="#212121" />
+	<color name="button-default-active-background-dark" value="#1B1B1B" />
+	<color name="button-default-color-dark" value="#EEEEEC" />
 	<color name="button-primary-background-dark" value="#2660BC" />
 	<color name="button-primary-hover-background-dark" value="#006bdd" />
 	<color name="button-primary-active-background-dark" value="#003670" />

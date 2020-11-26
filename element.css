@@ -126,16 +126,8 @@ input[type="reset"], input[type="image"] {
 }
 
 .btn:disabled, .btn.disabled {
-	background: var(--button-disabled-background, var(--button-background, initial));
-	color: var(--button-disabled-color, var(--button-color, inherit));
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
 	border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
-}
-
-.btn:active, .btn.active {
-	background: var(--button-active-background, var(--button-background, initial));
-	color: var(--button-active-color, var(--button-color, inherit));
-	border: var(--button-active-border, var(--button-border, 0.2rem inset black));
 }
 
 .btn:focus, summary:focus, input:focus,

@@ -1,0 +1,65 @@
+@import url("./base.css");
+
+@media all {
+	:root[data-theme="dark"], :root:not([data-theme="dark"]) {
+		--default-color: var(--default-color-light);
+		--primary-color: var(--primary-color-light);
+		--accent-color: var(--accent-color-light);
+		--contrast-color: var(--contrast-color-light);
+		--alt-color: var(--alt-color-light);
+		--scrollbar-color: var(--scrollbar-color-light, var(--accent-color-light));
+		--scrollbar-track: var(--scrollbar-track-light, var(--primary-color-light));
+
+		--button-default-background: var(--button-default-background-light);
+		--button-default-color: var(--button-default-color-light);
+		--button-default-border: var(--button-default-border-light);
+
+		--button-default-hover-background: var(--button-default-hover-background-light);
+		--button-default-hover-color: var(--button-default-hover-color-light);
+		--button-default-hover-border: var(--button-default-hover-border-light);
+
+		--button-default-active-background: var(--button-default-active-background-light, var(--button-default-background-light));
+		--button-default-active-color: var(--button-default-active-background-color, var(--button-default-color-light));
+		--button-default-active-border: var(--button-default-active-border-light, var(--button-default-border-light));
+
+		--button-primary-background: var(--button-primary-background-light);
+		--button-primary-color: var(--button-primary-color-light);
+		--button-primary-border: var(--button-primary-border-light);
+
+		--button-primary-hover-background: var(--button-primary-hover-background-light);
+		--button-primary-hover-color: var(--button-primary-hover-color-light);
+		--button-primary-hover-border: var(--button-primary-hover-border-light);
+
+		--button-primary-active-background: var(--button-primary-active-background-light);
+		--button-primary-active-color: var(--button-primary-active-color-light);
+		--button-primary-active-border: var(--button-primary-active-border-light);
+
+		--button-disabled-background: var(--button-disabled-background-light);
+		--button-disabled-color: var(--button-disabled-color-light);
+		--button-disabled-border: var(--button-disabled-border-light);
+
+		--button-accept-background: var(--button-accept-background-light);
+		--button-accept-border: var(--button-accept-border-light, var(--button-primary-border-light));
+		--button-accept-color: var(--button-accept-color-light, var(--button-primary-color-light));
+
+		--button-accept-hover-background: var(--button-accept-hover-background-light, var(--button-accept-active-background-light));
+		--button-accept-hover-border: var(--button-accept-hover-border-light, var(--button-accept-active-background-light));
+		--button-accept-hover-color: var(--button-accept-hover-color-light, var(--button-accept-active-color-light));
+
+		--button-accept-active-background: var(--button-accept-active-background-light);
+		--button-accept-active-border: var(--button-accept-active-border-light, var(--button-accept-border-light, var(--button-primary-border-light)));
+		--button-accept-active-color: var(--button-accept-active-color-light, var(--button-accept-color-light, var(--button-primary-color-light)));
+
+		--button-reject-background: var(--button-reject-background-light);
+		--button-reject-border: var(--button-reject-border-light, var(--button-primary-border-light));
+		--button-reject-color: var(--button-reject-color-light, var(--button-primary-color-light));
+
+		--button-reject-hover-background: var(--button-reject-hover-background-light, var(--button-reject-active-background-light));
+		--button-reject-hover-border: var(--button-reject-hover-border-light, var(--button-reject-active-background-light));
+		--button-reject-hover-color: var(--button-reject-hover-color-light, var(--button-reject-active-color-light));
+
+		--button-reject-active-background: var(--button-reject-active-background-light);
+		--button-reject-active-border: var(--button-reject-active-border-light, var(--button-reject-border-light, var(--button-primary-border-light)));
+		--button-reject-active-color: var(--button-reject-active-color-light, var(--button-reject-color-light, var(--button-primary-color-light)));
+	}
+}

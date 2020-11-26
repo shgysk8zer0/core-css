@@ -1,0 +1,22 @@
+:root {
+	--default-color-light: #343434;
+	--primary-color-light: #fafafa;
+	--accent-color-light: #007bff;
+	--contrast-color-light: #4c4c4c;
+	--link-color: currentColor;
+	--alt-color-light: #fefefe;
+	--scrollbar-color-light: #515151;
+	--scrollbar-track-light: #dedede;
+
+	--button-default-background-light: #EEECEA;
+	--button-default-border-light: 1px solid #bfbfbf;
+	--button-default-color-light: #2E3436;
+
+	--button-default-background-hover-light: #E1E1E1;
+	--button-default-border-hover-light: var(--button-default-border-light);
+	--button-default-color-hover-light: var(--button-default-color-light);
+
+	--button-default-active-background-light: #D2D3D4;
+	--button-default-active-border-light: var(--button-default-border-light);
+	--button-default-active-color-light: var(--button-default-color-light);
+}

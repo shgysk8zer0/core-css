@@ -7,12 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.4.0] - 2020-11-25
+
 ### Added
 - CSS containment and visibility rules (`content-visibility` and more `visibility` rules)
 - Color Palette (`.xml`) files
+- New Adwaita theme
+- Custom property type declarations via `@property` rules [WIP]
+- Shared colors in stylesheet for styled buttons
+- Rules for `:hover` state for styled buttons
 
 ### Changed
 - Use optional `--viewport-height` when setting header height in layout, dealing with URL bar
+- Move light/dark switching stylesheets to `themes/` base directory for sharing
+- Set `background-color` instead of `background` when styling buttons
+- Generally make rules compatibile with `@property` declarations
+- Update palettes accordingly
 
 ### Fixed
 - `<button class="btn round">` now has `border-radius: 50%` is it expected

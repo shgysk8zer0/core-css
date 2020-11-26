@@ -1,0 +1,65 @@
+@import url("./base.css");
+
+@media all {
+	:root[data-theme="light"], :root:not([data-theme="light"]) {
+		--default-color: var(--default-color-dark);
+		--primary-color: var(--primary-color-dark);
+		--accent-color: var(--accent-color-dark);
+		--contrast-color: var(--contrast-color-dark);
+		--alt-color: var(--alt-color-dark);
+		--scrollbar-color: var(--scrollbar-color-dark, var(--accent-color-dark));
+		--scrollbar-track: var(--scrollbar-track-dark, var(--primary-color-dark));
+
+		--button-default-background: var(--button-default-background-dark);
+		--button-default-color: var(--button-default-color-dark);
+		--button-default-border: var(--button-default-border-dark);
+
+		--button-default-hover-background: var(--button-default-hover-background-dark);
+		--button-default-hover-color: var(--button-default-hover-color-dark);
+		--button-default-hover-border: var(--button-default-hover-border-dark);
+
+		--button-default-active-background: var(--button-default-active-background-dark, var(--button-default-background-dark));
+		--button-default-active-color: var(--button-default-active-background-color, var(--button-default-color-dark));
+		--button-default-active-border: var(--button-default-active-border-dark, var(--button-default-border-dark));
+
+		--button-primary-background: var(--button-primary-background-dark);
+		--button-primary-color: var(--button-primary-color-dark);
+		--button-primary-border: var(--button-primary-border-dark);
+
+		--button-primary-hover-background: var(--button-primary-hover-background-dark);
+		--button-primary-hover-color: var(--button-primary-hover-color-dark);
+		--button-primary-hover-border: var(--button-primary-hover-border-dark);
+
+		--button-primary-active-background: var(--button-primary-active-background-dark);
+		--button-primary-active-color: var(--button-primary-active-color-dark);
+		--button-primary-active-border: var(--button-primary-active-border-dark);
+
+		--button-disabled-background: var(--button-disabled-background-dark);
+		--button-disabled-color: var(--button-disabled-color-dark);
+		--button-disabled-border: var(--button-disabled-border-dark);
+
+		--button-accept-background: var(--button-accept-background-dark);
+		--button-accept-border: var(--button-accept-border-dark, var(--button-primary-border-dark));
+		--button-accept-color: var(--button-accept-color-dark, var(--button-primary-color-dark));
+
+		--button-accept-hover-background: var(--button-accept-hover-background-dark, var(--button-accept-active-background-dark));
+		--button-accept-hover-border: var(--button-accept-hover-border-dark, var(--button-accept-active-background-dark));
+		--button-accept-hover-color: var(--button-accept-hover-color-dark, var(--button-accept-active-color-dark));
+
+		--button-accept-active-background: var(--button-accept-active-background-dark);
+		--button-accept-active-border: var(--button-accept-active-border-dark, var(--button-accept-border-dark, var(--button-primary-border-dark)));
+		--button-accept-active-color: var(--button-accept-active-color-dark, var(--button-accept-color-dark, var(--button-primary-color-dark)));
+
+		--button-reject-background: var(--button-reject-background-dark);
+		--button-reject-border: var(--button-reject-border-dark, var(--button-primary-border-dark));
+		--button-reject-color: var(--button-reject-color-dark, var(--button-primary-color-dark));
+
+		--button-reject-hover-background: var(--button-reject-hover-background-dark, var(--button-reject-active-background-dark));
+		--button-reject-hover-border: var(--button-reject-hover-border-dark, var(--button-reject-active-background-dark));
+		--button-reject-hover-color: var(--button-reject-hover-color-dark, var(--button-reject-active-color-dark));
+
+		--button-reject-active-background: var(--button-reject-active-background-dark);
+		--button-reject-active-border: var(--button-reject-active-border-dark, var(--button-reject-border-dark, var(--button-primary-border-dark)));
+		--button-reject-active-color: var(--button-reject-active-color-dark, var(--button-reject-color-dark, var(--button-primary-color-dark)));
+	}
+}

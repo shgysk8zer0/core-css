@@ -1,0 +1,22 @@
+:root {
+	--default-color-dark: #EEEEEC;
+	--primary-color-dark: #212121;
+	--accent-color-dark: #007bff;
+	--contrast-color-dark: #AAAAAA;
+	--alt-color-dark: #FAFAFA;
+	--scrollbar-color-dark: #dedede;
+	--scrollbar-track-dark: #2d2d2d;
+	--link-color: currentColor;
+
+	--button-default-background-dark: #2d2d2d;
+	--button-default-border-dark: 1px solid #070707;
+	--button-default-color-dark: #EEEEEC;
+
+	--button-default-hover-background-dark: #212121;
+	--button-default-hover-border-dark: var(--button-default-border-dark);
+	--button-default-hover-color-dark: var(--button-default-color-dark);
+
+	--button-default-active-background-dark: #1B1B1B;
+	--button-default-active-border-dark: var(--button-default-border-dark);
+	--button-default-active-color-dark: var(--button-default-color-dark);
+}
