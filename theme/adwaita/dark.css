@@ -6,6 +6,7 @@
 	--alt-color-dark: #FAFAFA;
 	--scrollbar-color-dark: #dedede;
 	--scrollbar-track-dark: #2d2d2d;
+	--link-color: currentColor;
 
 	--button-default-background-dark: #2d2d2d;
 	--button-default-border-dark: 1px solid #070707;

@@ -3,6 +3,7 @@
 	--primary-color-light: #fafafa;
 	--accent-color-light: #007bff;
 	--contrast-color-light: #4c4c4c;
+	--link-color: currentColor;
 	--alt-color-light: #fefefe;
 	--scrollbar-color-light: #515151;
 	--scrollbar-track-light: #dedede;
