@@ -19,11 +19,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 	<color name="accent-color-light" value="#007bff" />
 	<color name="contrast-color-light" value="#4c4c4c" />
 	<color name="alt-color-light" value="#fefefe" />
-	<color name="button-active-background-light" value="#2660BC" />
+	<color name="button-default-background-light" value="#DFDFDF" />
+	<color name="button-default-hover-background-light" value="#DFDFDF" />
+	<color name="button-default-active-background-light" value="#dadada" />
+	<color name="button-default-color-light" value="#585858" />
+	<color name="button-primary-background-light" value="#2660BC" />
+	<color name="button-primary-hover-background-light" value="#006bdd" />
+	<color name="button-primary-active-background-light" value="#003670" />
+	<color name="button-primary-background-light" value="#DFDFDF" />
 	<color name="button-disabled-background-light" value="#787878" />
 	<color name="button-disabled-color-light" value="#4e4e4e" />
 	<color name="button-accept-background-light" value="#28a745" />
+	<color name="button-accept-hover-background-light" value="#1F8236" />
 	<color name="button-accept-active-background-light" value="#157a0c" />
+	<color name="button-accept-background-light" value="#DFDFDF" />
 	<color name="button-reject-background-light" value="#dc3545" />
+	<color name="button-reject-hover-background-light" value="#AD2A36" />
 	<color name="button-reject-active-background-light" value="#7a0c0c" />
+	<color name="button-reject-background-light" value="#DFDFDF" />
 </palette>

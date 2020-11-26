@@ -55,10 +55,34 @@
 @property --button-default-background {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: #dfdfdf;
+	initial-value: #efefef;
 }
 
 @property --button-default-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #040404;
+}
+
+@property --button-default-hover-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #dfdfdf;
+}
+
+@property --button-default-hover-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #585858;
+}
+
+@property --button-default-active-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #dfdfdf;
+}
+
+@property --button-default-active-color {
 	syntax: "<color>";
 	inherits: true;
 	initial-value: #585858;
@@ -73,7 +97,13 @@
 @property --button-primary-active-background {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: #2660BC;
+	initial-value: #003670;
+}
+
+@property --button-primary-hover-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #006bdd;
 }
 
 @property --button-primary-color {
@@ -83,6 +113,12 @@
 }
 
 @property --button-primary-active-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-primary-hover-color {
 	syntax: "<color>";
 	inherits: true;
 	initial-value: #fefefe;
@@ -106,13 +142,31 @@
 	initial-value: #28a745;
 }
 
-@property --button-accept-active-background-light {
+@property --button-accept-active-background {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: #157a0c;
+	initial-value: #196A2C;
+}
+
+@property --button-accept-hover-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #1F8236;
 }
 
 @property --button-accept-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-accept-active-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-accept-hover-color {
 	syntax: "<color>";
 	inherits: true;
 	initial-value: #fefefe;
@@ -124,13 +178,31 @@
 	initial-value: #dc3545;
 }
 
-@property --button-reject-active-background-light {
+@property --button-reject-active-background {
 	syntax: "<color>";
 	inherits: true;
 	initial-value: #7a0c0c;
 }
 
+@property --button-reject-hover-background {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #AD2A36;
+}
+
 @property --button-reject-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-reject-active-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #fefefe;
+}
+
+@property --button-reject-hover-color {
 	syntax: "<color>";
 	inherits: true;
 	initial-value: #fefefe;

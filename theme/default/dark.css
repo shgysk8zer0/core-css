@@ -4,34 +4,6 @@
 	--accent-color-dark: #007bff;
 	--contrast-color-dark: #AAAAAA;
 	--alt-color-dark: #FAFAFA;
-
-	--button-background-dark: var(--accent-color-dark);
-	--button-color-dark: var(--alt-color-dark);
-	--button-border-dark: none;
-
-	--button-default-background-dark: #DFDFDF;
-	--button-default-color-dark: #585858;
-	--button-default-border-dark: initial;
-
-	--button-primary-background-dark: var(--button-background-dark, #007bff);
-	--button-primary-color-dark: var(--button-color-dark, #fafafa);
-	--button-primary-border-dark: var(--button-border-dark, none);
-
-	--button-active-background-dark: #2660BC;
-	--button-active-color-dark: var(--alt-color-dark);
-	--button-active-border-dark: var(--button-border);
-
-	--button-primary-active-background-dark: var(--button-active-background-dark, #2660BC);
-	--button-primary-active-color-dark: var(--button-active-color-dark, var(--button-primary-color-dark));
-	--button-primary-active-border-dark: var(--button-active-border-dark, var(--button-primary-border-dark));
-
-	--button-disabled-background-dark: #787878;
-	--button-disabled-color-dark: #4e4e4e;
-	--button-disabled-border-dark: var(--button-border-dark);
-
-	--button-accept-background-dark: #28a745;
-	--button-accept-active-background-dark: #157a0c;
-
-	--button-reject-background-dark: #dc3545;
-	--button-reject-active-background-dark: #7a0c0c;
+	--scrollbar-color: var(--accent-color-dark);
+	--scrollbar-track-dark: var(--primary-color-dark);
 }

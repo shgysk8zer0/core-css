@@ -20,12 +20,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 	<color name="contrast-color-dark" value="#AAAAAA" />
 	<color name="alt-color-dark" value="#FAFAFA" />
 	<color name="button-default-background-dark" value="#DFDFDF" />
+	<color name="button-default-hover-background-dark" value="#DFDFDF" />
+	<color name="button-default-active-background-dark" value="#dadada" />
 	<color name="button-default-color-dark" value="#585858" />
-	<color name="button-active-background-dark" value="#2660BC" />
+	<color name="button-primary-background-dark" value="#2660BC" />
+	<color name="button-primary-hover-background-dark" value="#006bdd" />
+	<color name="button-primary-active-background-dark" value="#003670" />
+	<color name="button-primary-background-dark" value="#DFDFDF" />
 	<color name="button-disabled-background-dark" value="#787878" />
 	<color name="button-disabled-color-dark" value="#4e4e4e" />
 	<color name="button-accept-background-dark" value="#28a745" />
+	<color name="button-accept-hover-background-dark" value="#1F8236" />
 	<color name="button-accept-active-background-dark" value="#157a0c" />
+	<color name="button-accept-background-dark" value="#DFDFDF" />
 	<color name="button-reject-background-dark" value="#dc3545" />
+	<color name="button-reject-hover-background-dark" value="#AD2A36" />
 	<color name="button-reject-active-background-dark" value="#7a0c0c" />
+	<color name="button-reject-background-dark" value="#DFDFDF" />
 </palette>
