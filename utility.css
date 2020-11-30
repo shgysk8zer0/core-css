@@ -68,6 +68,14 @@
 	height: fit-content;
 }
 
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 50%;
+}
+
 /*============================= Color rules ========================*/
 
 .current-color {
@@ -788,8 +796,16 @@
 		align-self: center;
 	}
 
-	.flex .justify-space-around {
+	.flex.justify-space-around {
 		justify-content: space-around;
+	}
+
+	.flex.justify-space-between {
+		justify-content: space-between;
+	}
+
+	.flex.justify-center {
+		justify-content: center;
 	}
 
 	.flex .grow-0 {
