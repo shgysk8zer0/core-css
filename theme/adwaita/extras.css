@@ -1,6 +1,6 @@
 /* ===================== Adwaita Theme Gradients ====================== */
 
-.adwaita-toolbar {
+:root:not([data-theme="dark"]) .adwaita-toolbar {
 	background-image: linear-gradient(#ededed, #dad6d2);
 	border-bottom: 1px solid #bfb8b1;
 	color: var(--primary-color);
