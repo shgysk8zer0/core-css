@@ -14,7 +14,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>
 -->
 <palette id="default-theme" name="Default Theme">
-	<color name="default-color-light" value="#343434" />
+	<color name="default-color-light" value="#2E3436" />
 	<color name="primary-color-light" value="#fafafa" />
 	<color name="accent-color-light" value="#007bff" />
 	<color name="contrast-color-light" value="#4c4c4c" />
@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 	<color name="button-reject-hover-background-light" value="#AD2A36" />
 	<color name="button-reject-active-background-light" value="#7a0c0c" />
 	<color name="button-reject-background-light" value="#DFDFDF" />
-	<color name="default-color-dark" value="#BBBBBB" />
+	<color name="default-color-dark" value="#dadada" />
 	<color name="primary-color-dark" value="#2a2a2e" />
 	<color name="accent-color-dark" value="#007bff" />
 	<color name="contrast-color-dark" value="#AAAAAA" />

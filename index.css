@@ -9,6 +9,10 @@ img.avatar {
 	margin-left: 1.2em;
 }
 
+#nav.flex {
+	gap: 8px;
+}
+
 #header {
 	background-image: url("/neon.svg");
 }
