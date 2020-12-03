@@ -5,17 +5,22 @@ import 'https://cdn.kernvalley.us/components/current-year.js';
 import 'https://cdn.kernvalley.us/components/bacon-ipsum.js';
 import 'https://cdn.kernvalley.us/components/toast-message.js';
 import 'https://cdn.kernvalley.us/components/gravatar-img.js';
+import 'https://cdn.kernvalley.us/components/github/user.js';
+import { toggleClass } from 'https://cdn.kernvalley.us/js/std-js/data-handlers.js';
 import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 
-document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
+$(document.documentElement).toggleClass({
+	'no-dialog': document.createElement('dialog') instanceof HTMLUnknownElement,
+	'no-details': document.createElement('details') instanceof HTMLUnknownElement,
+	'no-js': false,
+	'jsj': true,
+});
 
 ready().then(async () => {
-	$(':root').toggleClass('no-js', 'js');
 	document.documentElement.dataset.layout = document.getElementById('layout-picker').value;
 
-	$('[data-click="toggle-sidebar"]').click(() => {
-		document.getElementById('sidebar').classList.toggle('open');
-	});
+	$('[data-toggle-class]').click(toggleClass);
+
 	$('#layout-picker').input(({ target }) => {
 		if (target.value === '') {
 			delete document.documentElement.dataset.layout;

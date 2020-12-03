@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-[data-click="toggle-sidebar"] svg {
-	font-size: 48px;
+.menu-open-btn {
+	width: 2.8rem;
+	font-size: 1.4em;
 }
 
 img.avatar {
