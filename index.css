@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#menu-open-btn {
+.menu-open-btn {
 	width: 2.8rem;
 	font-size: 1.4em;
 }

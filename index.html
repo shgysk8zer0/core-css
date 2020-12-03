@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="smooth-scroll border-box no-js" data-theme="auto" data-layout="sidebar-collapse">
+<html lang="en" dir="ltr" class="smooth-scroll border-box no-js" data-theme="auto" data-layout="mobile-toggle-sidebar">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -32,8 +32,13 @@
 			<button type="button" class="btn btn-primary grow-1">Primary</button>
 			<button type="button" class="btn btn-accept grow-1">Accept</button>
 			<button type="button" class="btn btn-reject grow-1">Reject</button>
-			<a href="#" role="button" class="btn btn-primary inline-block grow-1">Link</a>
-			<button type="button" id="menu-open-btn" class="btn btn-default float-right layout-sidebar-collapse" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
+			<a href="#" role="button" class="btn btn-primary inline-block grow-1" hidden="">Link</a>
+			<button type="button" class="btn btn-default float-right layout-sidebar-collapse menu-open-btn" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
+				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve" aria-hidden="true">
+					<path stroke-width="0.2" stroke-linejoin="round" d="M 3,6L 21,6L 21,8L 3,8L 3,6 Z M 3,11L 21,11L 21,13L 3,13L 3,11 Z M 3,16L 21,16L 21,18L 3,18L 3,16 Z "/>
+				</svg>
+			</button>
+			<button type="button" class="btn btn-default float-right layout-mobile-toggle-sidebar menu-open-btn" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
 				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve" aria-hidden="true">
 					<path stroke-width="0.2" stroke-linejoin="round" d="M 3,6L 21,6L 21,8L 3,8L 3,6 Z M 3,11L 21,11L 21,13L 3,13L 3,11 Z M 3,16L 21,16L 21,18L 3,18L 3,16 Z "/>
 				</svg>
@@ -41,6 +46,13 @@
 		</nav>
 		<aside id="sidebar" class="card shadow contain-content">
 			<div class="sticky top clearfix z-4 adwaita-toolbar layout-sidebar-collapse">
+				<button type="button" class="btn btn-default float-right" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
+					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16" aria-hidden="true">
+						<path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/>
+					</svg>
+				</button>
+			</div>
+			<div class="sticky top clearfix z-4 adwaita-toolbar layout-mobile-toggle-sidebar">
 				<button type="button" class="btn btn-default float-right" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
 					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16" aria-hidden="true">
 						<path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/>
@@ -73,7 +85,8 @@
 						<option>default</option>
 						<option disabled="">wide</option>
 						<option>left-sidebar</option>
-						<option selected="">sidebar-collapse</option>
+						<option>sidebar-collapse</option>
+						<option selected="">mobile-toggle-sidebar</option>
 						<option>right-sidebar</option>
 					</select>
 				</div>

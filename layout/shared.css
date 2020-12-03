@@ -42,3 +42,13 @@ body > button.btn[is="share-button"] {
 :root:not([data-layout="sidebar-collapse"]) .layout-sidebar-collapse {
 	display: none;
 }
+
+:root:not([data-layout="mobile-toggle-sidebar"]) .layout-mobile-toggle-sidebar {
+	display: none;
+}
+
+@media (min-width: 800px) {
+	.layout-mobile-toggle-sidebar, .btn.layout-mobile-toggle-sidebar:not([hidden]) {
+		display: none;
+	}
+}
