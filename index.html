@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="smooth-scroll border-box no-js" data-theme="auto" data-layout="default">
+<html lang="en" dir="ltr" class="smooth-scroll border-box no-js" data-theme="auto" data-layout="sidebar-collapse">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Core CSS Testing</title>
 		<script type="module" src="/index.js" async=""></script>
 		<link rel="stylesheet" href="/theme/properties.css" referrerpolicy="no-referrer" media="all" />
-		<link rel="stylesheet" href="/theme/default/index.css" media="all" title="Default Theme" referrerpolicy="no-referrer" />
-		<link rel="alternate stylesheet" href="/theme/adwaita/index.css" media="all" title="Adwaita Theme" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/theme/adwaita/index.css" media="all" title="Adwaita Theme" referrerpolicy="no-referrer" />
+		<link rel="alternate stylesheet" href="/theme/default/index.css" media="all" title="Default Theme" referrerpolicy="no-referrer" />
 		<!-- <link rel="stylesheet" href="/theme/adwaita/light.css" media="all" referrerpolicy="no-referrer" /> -->
 		<!-- <link rel="stylesheet" href="/theme/adwaita/dark.css" media="all" referrerpolicy="no-referrer" /> -->
 		<!-- <link rel="stylesheet" href="/theme/light-dark.css" title="Auto Light/Dark Mode" media="all" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="/class-rules.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/cdn-fonts.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/scrollbar.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="/forms.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/index.css" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" />
 		<link rel="stylesheet" href="/animations.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="/print.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,54 +27,62 @@
 	<body class="background-primary color-default font-main grid relative">
 		<header id="header" class="background-cover background-fixed no-print"></header>
 		<nav id="nav" class="sticky top shadow background-primary color-alt adwaita-toolbar no-print z-4 contain-content flex row no-wrap">
-			<span><button>Vanilla</button></span>
+			<span class="mobile-hidden"><button>Vanilla</button></span>
 			<button type="button" class="btn btn-default grow-1">Default</button>
 			<button type="button" class="btn btn-primary grow-1">Primary</button>
 			<button type="button" class="btn btn-accept grow-1">Accept</button>
 			<button type="button" class="btn btn-reject grow-1">Reject</button>
-			<a href="#">Link</a>
-			<button type="button" class="btn btn-primary float-right no-border" data-click="toggle-sidebar" title="Toggle Sidebar">
+			<a href="#" role="button" class="btn btn-primary inline-block grow-1">Link</a>
+			<button type="button" id="menu-open-btn" class="btn btn-default float-right layout-sidebar-collapse" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
 				<svg class="current-color icon" width="24" height="24" viewBox="0 0 24.00 24.00" enable-background="new 0 0 24.00 24.00" xml:space="preserve" aria-hidden="true">
 					<path stroke-width="0.2" stroke-linejoin="round" d="M 3,6L 21,6L 21,8L 3,8L 3,6 Z M 3,11L 21,11L 21,13L 3,13L 3,11 Z M 3,16L 21,16L 21,18L 3,18L 3,16 Z "/>
 				</svg>
 			</button>
 		</nav>
 		<aside id="sidebar" class="card shadow contain-content">
-			<div class="sticky top clearfix z-4">
-				<button type="button" class="float-right btn btn-primary" data-click="toggle-sidebar" title="Toggle Sidebar">
+			<div class="sticky top clearfix z-4 adwaita-toolbar layout-sidebar-collapse">
+				<button type="button" class="btn btn-default float-right" data-selector="#sidebar" data-toggle-class="open" data-click="toggle-sidebar" title="Toggle Sidebar">
 					<svg class="current-color icon" width="12" height="16" viewBox="0 0 12 16" aria-hidden="true">
 						<path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/>
 					</svg>
 				</button>
 			</div>
+			<header>
+				<div class="center">
+					<svg width="320" height="320" fill="currentColor" viewBox="0 0 16 16">
+						<path d="M10.555 8.094C9.849 8.717 9.015 9 8 9c-1.016 0-1.853-.29-2.559-.914-1.109.363-2.436 1.288-2.437 2.902L3 14c0 .554.446 1 1 1h8c.554 0 1-.446 1-1v-3c0-1.387-1.102-2.556-2.445-2.906z"/>
+						<path d="M11 5a3 3 0 1 1-6 0 3 3 0 1 1 6 0z" overflow="visible"/>
+					</svg>
+				</div>
+			</header>
 			<details class="accordion">
 				<summary>Theme</summary>
-				<label class="block">
-					<select name="theme" aria-label="Theme Picker" id="theme-picker" class="block background-inherit no-border color-inherit">
+				<div class="form-group">
+					<select name="theme" aria-label="Theme Picker" id="theme-picker" class="input">
 						<option value="">auto</option>
 						<option>light</option>
 						<option>dark</option>
 					</select>
-				</label>
+				</div>
 			</details>
 			<details class="accordion">
 				<summary>Layout</summary>
-				<label class="block">
-					<select name="layout" aria-label="Layout Picker" id="layout-picker" class="block no-border background-inherit color-inherit">
+				<div class="form-group">
+					<select name="layout" aria-label="Layout Picker" id="layout-picker" class="block input">
 						<option value="">auto</option>
 						<option>default</option>
-						<option>wide</option>
+						<option disabled="">wide</option>
 						<option>left-sidebar</option>
 						<option selected="">sidebar-collapse</option>
 						<option>right-sidebar</option>
 					</select>
-				</label>
+				</div>
 			</details>
 			<details class="accordion">
 				<summary>Paragraphs</summary>
-				<label class="block">
-					<input type="number" aria-label="Paragraphs" min="1" max="500" size="3" value="18" id="paras" name="paras" placeholder="##" required="" />
-				</label>
+				<div class="form-group">
+					<input type="number" aria-label="Paragraphs" min="1" max="500" size="3" value="18" id="paras" class="input" name="paras" placeholder="##" required="" />
+				</div>
 			</details>
 			<details class="accordion">
 				<summary>Item 1</summary>
@@ -118,10 +127,12 @@
 			</article>
 		</main>
 		<footer id="footer" class="contain-content">
-			<div>
-				<span>&copy;</span>
-				<time is="current-year">2019</time>
-			</div>
+			<github-user user="shgysk8zer0" loading="lazy">
+				<div slot="footer">
+					<span>&copy;</span>
+					<time is="current-year">2019</time>
+				</div>
+			</github-user>
 		</footer>
 		<button type="button" class="btn btn-primary round z-top fixed no-print contain-content custom-element if-defined no-border" is="share-button" aria-label="Share page" hidden="">
 			<svg class="current-color icon" viewbox="0 0 16 16" aria-hidden="true">

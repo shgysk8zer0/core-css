@@ -30,3 +30,15 @@ body > button.btn[is="share-button"] {
 		margin-top: 1.3rem;
 	}
 }
+
+:root:not([data-layout="left-sidebar"]) .layout-left-sidebar {
+	display: none;
+}
+
+:root:not([data-layout="right-sidebar"]) .layout-right-sidebar {
+	display: none;
+}
+
+:root:not([data-layout="sidebar-collapse"]) .layout-sidebar-collapse {
+	display: none;
+}
