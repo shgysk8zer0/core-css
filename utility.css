@@ -1348,6 +1348,13 @@
 	color: var(--button-reject-active-color, var(--button--reject-color, var(--button-active-color)));
 }
 
+.btn.btn-outline {
+	color: var(--button-outline-color, var(--accent-color, #007bff));
+	background-color: var(--button-outline-background, transparent);
+	border: var(--button-outline-border, 2px solid currentColor);
+	border-radius: var(--button-outline-border-radius, 12px);
+}
+
 @media (max-width: 800px) {
 	.mobile-hidden {
 		display: none;
