@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Remove setting backgrounds on plain `.btn`s
 
+### Fixed
+- Fix small gap in `.sticky.top`
+
 ## [2.4.0] - 2020-11-25
 
 ### Added
