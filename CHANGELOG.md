@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Styles for `.btn.btn-outline`
+- More `order-*` rules
+- Alternate and shoter classes for flex justify rules
+- More `.btn-outline` classes
+
+### Changed
+- WIP removal of setting color for `.btn-outline`
+
+### Removed
+- Remove setting backgrounds on plain `.btn`s
 
 ## [2.4.0] - 2020-11-25
 

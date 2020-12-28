@@ -792,16 +792,28 @@
 		flex-wrap: wrap;
 	}
 
+	.flex.no-wrap {
+		flex-wrap: nowrap;
+	}
+
+	.flex.wrap-reverse {
+		flex-wrap: wrap-reverse;
+	}
+
 	.flex .center {
 		align-self: center;
 	}
 
-	.flex.justify-space-around {
+	.flex.justify-space-around, .flex.space-around {
 		justify-content: space-around;
 	}
 
-	.flex.justify-space-between {
+	.flex.justify-space-between, .flex.space-between {
 		justify-content: space-between;
+	}
+
+	.flex.justify-space-evenly, .flex.space-evenly {
+		justify-content: space-evenly;
 	}
 
 	.flex.justify-center {
@@ -977,6 +989,14 @@
 
 .order-4 {
 	order: 4;
+}
+
+.order-5 {
+	order: 5;
+}
+
+.order-6 {
+	order: 6;
 }
 
 .cols-auto {
@@ -1353,6 +1373,28 @@
 	background-color: var(--button-outline-background, transparent);
 	border: var(--button-outline-border, 2px solid currentColor);
 	border-radius: var(--button-outline-border-radius, 12px);
+}
+
+.btn.btn-outline.accent {
+	color: var(--button-outline-color, var(--accent-color, #007bff));
+}
+
+.btn.btn-outline.primary
+
+.btn.btn-outline.current-color {
+	color: inherit;
+}
+
+.btn.btn-outline.primary {
+	color: var(--button-primary-background);
+}
+
+.btn.btn-outline.accept {
+	color: var(--button-accept-background);
+}
+
+.btn.btn-outline.reject {
+	color: var(--button-reject-background);
 }
 
 @media (max-width: 800px) {

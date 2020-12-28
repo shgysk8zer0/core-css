@@ -108,16 +108,17 @@ input[type="reset"], input[type="image"] {
 .btn:not([hidden]) {
 	display: inline-block;
 	padding: var(--button-padding, 0.3em);
-	background-color: var(--button-background, initial);
 	font-family: var(--button-font, inherit);
-	color: var(--button-color, initial);
-	border: var(--button-border, 1px solid #aaa);
 	border-radius: var(--button-border-radius, initial);
 	box-sizing: border-box;
 }
 
 .btn.round {
 	border-radius: 50%;
+}
+
+.btn.rounded, .btn.outline.rounded {
+	border-radius: var(--button-rounded-border-radius, 2em);
 }
 
 :disabled, .disabled, [disabled] {
