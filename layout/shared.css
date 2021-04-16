@@ -25,6 +25,11 @@ body > button.btn[is="share-button"] {
 	grid-area: footer;
 }
 
+/* Prevents `nav.sticky` from covering `:target` (no Safari support) */
+body.grid #nav.sticky.top ~ :target, body.grid #nav.sticky.top ~ * :target {
+	scroll-margin-top: var(--scroll-margin, calc(var(--nav-height, 4rem) + 10px));
+}
+
 @media (min-width: 801px) {
 	#main, #sidebar, #footer {
 		margin-top: 1.3rem;
