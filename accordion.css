@@ -25,10 +25,6 @@ details.accordion > * {
 	border-bottom: 1px solid var(--accordion-border-color, #6a6a6a);
 }
 
-details.accordion.no-marker > summary::-webkit-details-marker {
-	display: none;
-}
-
 details.accordion > :not(summary) {
 	background-color: var(--accordion-body-background,  var(--primary-color));
 	color: var(--accordion-body-color, var(--default-color));
