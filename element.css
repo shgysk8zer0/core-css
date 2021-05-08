@@ -102,10 +102,6 @@ dialog.modal {
 	content: '';
 }
 
-summary.block::-webkit-details-marker {
-	display: none;
-}
-
 body {
 	margin: 0;
 	padding: 0;
