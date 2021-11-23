@@ -16,6 +16,19 @@
 }
 
 @font-face {
+	font-family: "Rye";
+	font-style: normal;
+	font-weight: 400;
+	src: url("/fonts/rye.eot"); /* IE9 Compat Modes */
+	src: local("Rye"),
+	url("/fonts/rye.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("/fonts/rye.woff2") format("woff2"), /* Super Modern Browsers */
+	url("/fonts/rye.woff") format("woff"), /* Modern Browsers */
+	url("/fonts/rye.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("/fonts/rye.svg#Rye") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
 	font-family: "Comfortaa";
 	font-weight: 400;
 	font-style: normal;
