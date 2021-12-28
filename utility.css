@@ -507,6 +507,11 @@
 	top: 0;
 }
 
+.top-titlebar {
+	top: 0;
+	top: env(titlebar-area-height, 0);
+}
+
 /* Avoids small gap on top that sometimes occurs */
 .sticky.top {
 	top: -1px;
@@ -785,23 +790,27 @@
 		display: flex;
 	}
 
-	.flex.row {
+	.inline-flex:not([hidden]) {
+		display: inline-flex;
+	}
+
+	.flex.row, .inline-flex.row {
 		flex-direction: row;
 	}
 
-	.flex.column {
+	.flex.column, .inline-flex.column {
 		flex-direction: column;
 	}
 
-	.flex.wrap {
+	.flex.wrap, .inline-flex.wrap {
 		flex-wrap: wrap;
 	}
 
-	.flex.no-wrap {
+	.flex.no-wrap, .inline-flex.no-wrap {
 		flex-wrap: nowrap;
 	}
 
-	.flex.wrap-reverse {
+	.flex.wrap-reverse, .inline-flex.wrap-reverse {
 		flex-wrap: wrap-reverse;
 	}
 
@@ -809,67 +818,67 @@
 		align-self: center;
 	}
 
-	.flex.justify-space-around, .flex.space-around {
+	.flex.justify-space-around, .flex.space-around, .inline-flex.justify-space-around, .inline-flex.space-around {
 		justify-content: space-around;
 	}
 
-	.flex.justify-space-between, .flex.space-between {
+	.flex.justify-space-between, .flex.space-between, .inline-flex.justify-space-between, .inline-flex.space-between {
 		justify-content: space-between;
 	}
 
-	.flex.justify-space-evenly, .flex.space-evenly {
+	.flex.justify-space-evenly, .flex.space-evenly, .inline-flex.justify-space-evenly, .inline-flex.space-evenly {
 		justify-content: space-evenly;
 	}
 
-	.flex.justify-center {
+	.flex.justify-center, .inline-flex.justify-center {
 		justify-content: center;
 	}
 
-	.flex .grow-0 {
+	.flex .grow-0, .inline-flex .grow-0 {
 		flex-grow: 0;
 	}
 
-	.flex .grow-1 {
+	.flex .grow-1, .inline-flex .grow-1 {
 		flex-grow: 1;
 	}
 
-	.flex .grow-2 {
+	.flex .grow-2, , .inline-flex .grow-2 {
 		flex-grow: 2;
 	}
 
-	.flex .grow-3 {
+	.flex .grow-3, .inline-flex .grow-3 {
 		flex-grow: 3;
 	}
 
-	.flex .grow-4 {
+	.flex .grow-4, .inline-flex .grow-4 {
 		flex-grow: 4;
 	}
 
-	.flex .grow-5 {
+	.flex .grow-5, , .inline-flex .grow-5 {
 		flex-grow: 5;
 	}
 
-	.flex .shrink-0 {
+	.flex .shrink-0, .inline-flex .shrink-0 {
 		flex-shrink: 0;
 	}
 
-	.flex .shrink-1 {
+	.flex .shrink-1, .inline-flex .shrink-1 {
 		flex-shrink: 1;
 	}
 
-	.flex .shrink-2 {
+	.flex .shrink-2, .inline-flex .shrink-2 {
 		flex-shrink: 2;
 	}
 
-	.flex .shrink-3 {
+	.flex .shrink-3, .inline-flex .shrink-3 {
 		flex-shrink: 3;
 	}
 
-	.flex .shrink-4 {
+	.flex .shrink-4, .inline-flex .shrink-4 {
 		flex-shrink: 4;
 	}
 
-	.flex .shrink-5 {
+	.flex .shrink-5, .inline-flex .shrink-5 {
 		flex-shrink: 5;
 	}
 }
