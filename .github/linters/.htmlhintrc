@@ -19,7 +19,7 @@
     "spec-char-escape": true,
     "id-unique": true,
     "src-not-empty": true,
-    "title-require": true,
+    "title-require": false,
     "alt-require": true,
     "doctype-html5": true,
     "id-class-value": "dash",
