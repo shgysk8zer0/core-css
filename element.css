@@ -3,22 +3,6 @@
 	max-width: 100%;
 }
 
-:root:not([data-color-scheme]) {
-	color-scheme: light-dark;
-}
-
-[data-color-scheme="light"] {
-	color-scheme: light;
-}
-
-[data-color-scheme="dark"] {
-	color-scheme: dark;
-}
-
-[data-color-scheme="normal"] {
-	color-scheme: normal;
-}
-
 [data-before]::before {
 	content: attr(data-before);
 }
