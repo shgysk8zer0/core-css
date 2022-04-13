@@ -22,4 +22,13 @@
 
 	/* Specify highest allowed `z-index`, other than `<dialog>`, etc. */
 	--z-top: 1000;
+	color-scheme: light dark;
+}
+
+[data-theme="light"] {
+	color-scheme: light;
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
 }
