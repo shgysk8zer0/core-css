@@ -1,3 +1,19 @@
+.system-ui {
+	font-family: system-ui, sans-serif;
+}
+
+.ui-sans-serif {
+	font-family: ui-sans-serif, sans-serif;
+}
+
+.ui-serif {
+	font-family: ui-serif, serif;
+}
+
+.ui-monospace {
+	font-family: ui-monospace, monospace;
+}
+
 .hidden, .visibility-hidden {
 	visibility: hidden;
 }
