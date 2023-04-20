@@ -228,3 +228,7 @@ ol > ol > ol > ol {
 ol > ol > ol > ol > ol {
 	list-style-type: lower-roman;
 }
+
+[inert] {
+	pointer-events: none;
+}
