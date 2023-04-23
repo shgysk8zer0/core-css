@@ -26,9 +26,23 @@
 	visibility: collapse;
 }
 
+.visually-hidden:not(:focus-within) {
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	contain: layout style paint;
+}
+
 .content-visibility-auto {
 	content-visibility: auto;
 }
+
+.content-visibility-auto:focus-within {
+	content-visibility: visible;
+};
 
 @supports not (content-visibility: auto) {
 	.content-visibility-auto {

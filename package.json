@@ -14,9 +14,15 @@
     }
   },
   "scripts": {
-    "start": "http-server ${npm_package_config_serve_path} -p ${npm_package_config_serve_port} -a ${npm_package_config_serve_domain} -o",
+    "start": "http-server ${npm_package_config_serve_path} -c-1 --port ${npm_package_config_serve_port} --gzip true --brotli true -a ${npm_package_config_serve_domain} -o",
+    "preversion": "npm test",
     "test": "stylelint './**.css'",
-    "fix": "stylelint './**.css' --fix"
+    "fix": "stylelint './**.css' --fix",
+    "create:lock": "npm i --package-lock-only --ignore-scripts",
+    "version:bump": "npm run version:bump:patch",
+    "version:bump:patch": "npm version --no-git-tag-version patch",
+    "version:bump:minor": "npm version --no-git-tag-version minor",
+    "version:bump:major": "npm version --no-git-tag-version major"
   },
   "repository": {
     "type": "git",

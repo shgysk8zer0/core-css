@@ -102,6 +102,7 @@ input[type="reset"], input[type="image"] {
 
 /* @TODO Do not apply color/background to `.btn` alone */
 .btn:not([hidden]) {
+	appearance: button;
 	display: inline-block;
 	padding: var(--button-padding, 0.3em);
 	font-family: var(--button-font, inherit);
