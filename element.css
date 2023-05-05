@@ -118,12 +118,12 @@ input[type="reset"], input[type="image"] {
 	border-radius: var(--button-rounded-border-radius, 2em);
 }
 
-:disabled, .disabled, [disabled] {
+:disabled, .disabled, [disabled], ._state--disabled {
 	cursor: not-allowed;
 	pointer-events: none;
 }
 
-.btn:disabled, .btn.disabled {
+.btn:disabled, .btn.disabled, .btn._state--disabled {
 	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
 	border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
 }
