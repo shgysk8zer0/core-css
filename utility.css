@@ -1376,7 +1376,7 @@
 	border: var(--button-accept-hover-border, var(--button-accept-active-border, var(--button-primary-hover-border, var(--button-primary-active-border, var(--button-primary-border)))));
 }
 
-.btn.btn-accept:disabled, .btn.btn-accept.disabled {
+.btn.btn-accept:disabled, .btn.btn-accept._state--disabled, .btn.btn-accept.disabled {
 	background-color: var(--button-accept-disabled-background, var(--button-accept-background, var(--button-disabled-background, var(--button-background,))));
 	border: var(--button-accept-disabled-border, var(--button-accept-border, var(--button-disabled-border)));
 	color: var(--button-accept-disabled-color, var(--button--accept-color, var(--button-disabled-color)));
@@ -1400,7 +1400,7 @@
 	color: var(--button-reject-hover-color, var(--button-reject-active-color, var(--button-primary-hover-color, var(--button-primary-active-color, var(--button-primary-color)))));
 }
 
-.btn.btn-reject:disabled, .btn.btn-reject.disabled, .btn.btn-reject[disabled] {
+.btn.btn-reject:disabled, .btn.btn-reject._state--disabled, .btn.btn-reject.disabled, .btn.btn-reject[disabled] {
 	background-color: var(--button-reject-disabled-background, var(--button-reject-background, var(--button-disabled-background, var(--button-background))));
 	border: var(--button-reject-disabled-border, var(--button-reject-border, var(--button-disabled-border)));
 	color: var(--button-reject-disabled-color, var(--button--reject-color, var(--button-disabled-color)));

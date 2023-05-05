@@ -1,4 +1,4 @@
-body > button.btn[is="share-button"] {
+body > button.btn[is="share-button"], body > share-button.btn:not([hidden]) {
 	bottom: 1rem;
 	right: 1rem;
 	padding: 0.8rem;
