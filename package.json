@@ -45,7 +45,7 @@
   "homepage": "https://github.com/shgysk8zer0/core-css#readme",
   "devDependencies": {
     "http-server": "^14.1.1",
-    "stylelint": "^15.6.1",
+    "stylelint": "^15.6.2",
     "stylelint-config-recommended": "^12.0.0",
     "stylelint-config-standard": "^33.0.0"
   },
