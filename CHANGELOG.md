@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - WIP removal of setting color for `.btn-outline`
+- Switch to using `@shgysk8zer0/css-utils`
 
 ### Removed
 - Remove setting backgrounds on plain `.btn`s
