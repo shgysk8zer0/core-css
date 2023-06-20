@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.4.3] - 2023-06-20
+
+### Fixed
+- Do not ignore *all* `index.css`, only in project root
+
 ## [v2.4.2] - 2023-06-20
 
 ### Changed
