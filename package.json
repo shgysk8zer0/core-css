@@ -1,8 +1,8 @@
 {
   "name": "core-css",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "A collection of stylesheets that enable quick and easy styling with customization",
-  "private": true,
+  "private": false,
   "config": {
     "serve": {
       "domain": "localhost",
@@ -16,6 +16,7 @@
   "scripts": {
     "start": "http-server ${npm_package_config_serve_path} -c-1 --port ${npm_package_config_serve_port} --gzip true --brotli true -a ${npm_package_config_serve_domain} -o",
     "preversion": "npm test",
+    "prepare": "npm test",
     "test": "stylelint './**.css'",
     "fix": "stylelint './**.css' --fix",
     "create:lock": "npm i --package-lock-only --ignore-scripts",
