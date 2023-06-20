@@ -7,11 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.4.2] - 2023-06-20
+
+### Changed
+- Renamed package to `@shgysk8zer0/core-css` 
+
+## [v2.4.1] - 2023-06-20
+
 ### Added
 - Styles for `.btn.btn-outline`
 - More `order-*` rules
 - Alternate and shoter classes for flex justify rules
 - More `.btn-outline` classes
+- Setup for publishing on npm
 
 ### Changed
 - WIP removal of setting color for `.btn-outline`
