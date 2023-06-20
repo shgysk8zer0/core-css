@@ -1,0 +1,12 @@
+.github/
+.gitattributes
+.nvmrc
+.editorconfig
+*.json
+*.js
+*.html
+*.svg
+*.xml
+.stylelintignore
+*.html
+index.css
