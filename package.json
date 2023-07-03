@@ -1,8 +1,9 @@
 {
   "name": "@shgysk8zer0/core-css",
-  "version": "2.4.3",
+  "version": "2.5.0",
   "description": "A collection of stylesheets that enable quick and easy styling with customization",
   "private": false,
+  "type": "module",
   "config": {
     "serve": {
       "domain": "localhost",
@@ -19,11 +20,11 @@
     "prepare": "npm test",
     "test": "stylelint './**.css'",
     "fix": "stylelint './**.css' --fix",
-    "create:lock": "npm i --package-lock-only --ignore-scripts",
+    "create:lock": "npm i --package-lock-only --ignore-scripts --no-audit --no-fund",
     "version:bump": "npm run version:bump:patch",
-    "version:bump:patch": "npm version --no-git-tag-version patch",
-    "version:bump:minor": "npm version --no-git-tag-version minor",
-    "version:bump:major": "npm version --no-git-tag-version major"
+    "version:bump:patch": "npm version --no-git-tag-version patch && npm run create:lock",
+    "version:bump:minor": "npm version --no-git-tag-version minor && npm run create:lock",
+    "version:bump:major": "npm version --no-git-tag-version major && npm run create:lock"
   },
   "repository": {
     "type": "git",
@@ -40,12 +41,22 @@
   ],
   "author": "Chris Zuber <admin@kernvalley.us>",
   "license": "MIT",
+  "funding": [
+    {
+      "type": "librepay",
+      "url": "https://liberapay.com/shgysk8zer0"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/shgysk8zer0"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/shgysk8zer0/core-css/issues"
   },
   "homepage": "https://github.com/shgysk8zer0/core-css#readme",
   "devDependencies": {
-    "@shgysk8zer0/css-utils": "^1.0.0",
+    "@shgysk8zer0/css-utils": "^1.2.0",
     "http-server": "^14.1.1"
   }
 }
