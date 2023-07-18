@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v2.5.0] - 2023-07-03
 
 ### Changed
-- Update to node 200
+- Update to node 20
+- Implement CSS Nesting
 - Update GH Action for npm publish
 - Update npm scripts for versioning and locks
 
