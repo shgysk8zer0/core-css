@@ -2,40 +2,40 @@ details.accordion {
 	position: relative;
 	z-index: 0;
 	overflow: hidden;
-}
 
-details.accordion > summary {
-	background-color: var(--accordion-theme-color, var(--button-primary-background));
-	color: var(--accordion-header-color, var(--button-primary-color));
-	padding: 0.8em;
-	position: relative;
-	z-index: 1;
-	font-weight: 800;
-}
+	& > summary {
+		background-color: var(--accordion-theme-color, var(--button-primary-background));
+		color: var(--accordion-header-color, var(--button-primary-color));
+		padding: 0.8em;
+		position: relative;
+		z-index: 1;
+		font-weight: 800;
+	}
 
-details.accordion.no-marker > summary {
-	list-style: none;
-}
+	&.no-marker > summary {
+		list-style: none;
+	}
 
-details.accordion.no-marker > summary::marker {
-	display: none;
-}
+	&.no-marker > summary::marker {
+		display: none;
+	}
 
-details.accordion > * {
-	border-bottom: 1px solid var(--accordion-border-color, #6a6a6a);
-}
+	& > * {
+		border-bottom: 1px solid var(--accordion-border-color, #6a6a6a);
+	}
 
-details.accordion > :not(summary) {
-	background-color: var(--accordion-body-background,  var(--primary-color));
-	color: var(--accordion-body-color, var(--default-color));
-	padding: 0.6em 1.7em;
-	border-left: 8px solid transparent;
-	transform-origin: top;
-	transition: border-color 400ms ease-in-out;
-}
+	& > :not(summary) {
+		background-color: var(--accordion-body-background,  var(--primary-color));
+		color: var(--accordion-body-color, var(--default-color));
+		padding: 0.6em 1.7em;
+		border-left: 8px solid transparent;
+		transform-origin: top;
+		transition: border-color 400ms ease-in-out;
+	}
 
-details.accordion > :not(summary):hover {
-	border-color: var(--accordion-theme-color, var(--button-primary-active-background));
+	& > :not(summary):hover {
+		border-color: var(--accordion-theme-color, var(--button-primary-active-background));
+	}
 }
 
 :root.no-details details.accordion.no-marker > summary::before {

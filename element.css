@@ -108,14 +108,26 @@ input[type="reset"], input[type="image"] {
 	font-family: var(--button-font, inherit);
 	border-radius: var(--button-border-radius, initial);
 	box-sizing: border-box;
-}
 
-.btn.round {
-	border-radius: 50%;
-}
+	&.round {
+		border-radius: 50%;
+	}
 
-.btn.rounded, .btn.outline.rounded {
-	border-radius: var(--button-rounded-border-radius, 2em);
+	&.rounded, &.outline.rounded {
+		border-radius: var(--button-rounded-border-radius, 2em);
+	}
+
+	&:disabled, &.disabled, &._state--disabled {
+		box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
+		border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
+	}
+
+	&:focus {
+		outline-width: var(--focus-outline-width, thin);
+		outline-style: var(--focus-outline-style, dotted);
+		outline-color: var(--focus-outline-color, currentColor);
+		outline-offset: var(--focus-outline-offset, 0);
+	}
 }
 
 :disabled, .disabled, [disabled], ._state--disabled {
@@ -123,12 +135,7 @@ input[type="reset"], input[type="image"] {
 	pointer-events: none;
 }
 
-.btn:disabled, .btn.disabled, .btn._state--disabled {
-	box-shadow: 0 0 0.3rem var(--shadow-color, rgba(0,0,0,0.4)) inset;
-	border: var(--button-disabled-border, var(--button-border, 0.2rem inset black));
-}
-
-.btn:focus, summary:focus, input:focus,
+summary:focus, input:focus,
 select:focus, textarea:focus, .input:focus, [tabindex]:focus, a:focus {
 	outline-width: var(--focus-outline-width, thin);
 	outline-style: var(--focus-outline-style, dotted);
