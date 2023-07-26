@@ -5,11 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.5.2] - 2023-07-25
+
+### Added
+- Add Bootstrap Palette
+
+### Changed
+- Move palettes and related classes to `palettes/`
+
+### Removed
+- Delete theme/palette XML files (previously used by Gnome Builder)
+
 ## [v2.5.1] - 2023-07-25
 
 ### Added
-- Add color palatte custom properties and classes (color, background, border)
-
+- Add (Gnome) color palette custom properties and classes (color, background, border)
 ## [v2.5.0] - 2023-07-03
 
 ### Changed

@@ -1,0 +1,11 @@
+:root {
+	--default-color-light: var(--bs-dark);
+	--primary-color-light: var(--bs-light);
+	--accent-color-light: var(--bs-primary);
+	--contrast-color-light: var(--bs-gray-200);
+	--alt-color-light: #FAFAFA;
+	--scrollbar-color: var(--bs-primary);
+	--scrollbar-track-light: var(--bs-light);
+	--button-accept-background-light: var(--bs-success);
+	--button-reject-background-light: var(--bs-danger);
+}
