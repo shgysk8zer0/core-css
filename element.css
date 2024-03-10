@@ -240,3 +240,29 @@ ol > ol > ol > ol > ol {
 [inert] {
 	pointer-events: none;
 }
+
+@supports not selector(:popover-open) {
+	:is([popover]:not(._popover-open)) {
+		display: none;
+	}
+
+	:is([popover]._popover-open) {
+		position: fixed;
+		z-index: 2147483647;
+		margin: auto;
+		inset: 0;
+		border: 3px solid currentColor;
+		height: fit-content;
+		width: fit-content;
+		padding: 0.25em;
+		background-color: #ffffff;
+		color: #070707;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:is([popover]._popover-open) {
+			background-color: #1c1b22;
+			color: #fbfbfe;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 {
   "name": "@shgysk8zer0/core-css",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "description": "A collection of stylesheets that enable quick and easy styling with customization",
   "private": false,
   "type": "module",
