@@ -1,59 +1,61 @@
-body > button.btn[is="share-button"], body > share-button.btn:not([hidden]) {
-	bottom: 1rem;
-	right: 1rem;
-	padding: 0.8rem;
-	font-size: 1.5rem;
-}
-
-#header {
-	grid-area: header;
-}
-
-#nav {
-	grid-area: nav;
-}
-
-#sidebar {
-	grid-area: sidebar;
-}
-
-#main {
-	grid-area: main;
-}
-
-#footer {
-	grid-area: footer;
-}
-
-/* Prevents `nav.sticky` from covering `:target` (no Safari support) */
-body.grid #nav.sticky.top ~ :target, body.grid #nav.sticky.top ~ * :target {
-	scroll-margin-top: var(--scroll-margin, calc(var(--nav-height, 4rem) + 10px));
-}
-
-@media (min-width: 801px) {
-	#main, #sidebar, #footer {
-		margin-top: 1.3rem;
+@layer layout.core-css {
+	body > button.btn[is="share-button"], body > share-button.btn:not([hidden]) {
+		bottom: 1rem;
+		right: 1rem;
+		padding: 0.8rem;
+		font-size: 1.5rem;
 	}
-}
 
-:root:not([data-layout="left-sidebar"]) .layout-left-sidebar {
-	display: none;
-}
+	#header {
+		grid-area: header;
+	}
 
-:root:not([data-layout="right-sidebar"]) .layout-right-sidebar {
-	display: none;
-}
+	#nav {
+		grid-area: nav;
+	}
 
-:root:not([data-layout="sidebar-collapse"]) .layout-sidebar-collapse {
-	display: none;
-}
+	#sidebar {
+		grid-area: sidebar;
+	}
 
-:root:not([data-layout="mobile-toggle-sidebar"]) .layout-mobile-toggle-sidebar {
-	display: none;
-}
+	#main {
+		grid-area: main;
+	}
 
-@media (min-width: 800px) {
-	.layout-mobile-toggle-sidebar, .btn.layout-mobile-toggle-sidebar:not([hidden]) {
+	#footer {
+		grid-area: footer;
+	}
+
+	/* Prevents `nav.sticky` from covering `:target` (no Safari support) */
+	body.grid #nav.sticky.top ~ :target, body.grid #nav.sticky.top ~ * :target {
+		scroll-margin-top: var(--scroll-margin, calc(var(--nav-height, 4rem) + 10px));
+	}
+
+	@media (min-width: 801px) {
+		#main, #sidebar, #footer {
+			margin-top: 1.3rem;
+		}
+	}
+
+	:root:not([data-layout="left-sidebar"]) .layout-left-sidebar {
 		display: none;
+	}
+
+	:root:not([data-layout="right-sidebar"]) .layout-right-sidebar {
+		display: none;
+	}
+
+	:root:not([data-layout="sidebar-collapse"]) .layout-sidebar-collapse {
+		display: none;
+	}
+
+	:root:not([data-layout="mobile-toggle-sidebar"]) .layout-mobile-toggle-sidebar {
+		display: none;
+	}
+
+	@media (min-width: 800px) {
+		.layout-mobile-toggle-sidebar, .btn.layout-mobile-toggle-sidebar:not([hidden]) {
+			display: none;
+		}
 	}
 }

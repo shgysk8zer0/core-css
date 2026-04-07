@@ -1,67 +1,71 @@
 @import url("./utility.css");
 
-.clearfix::after {
-	clear: both;
-	content: '';
-	display: block;
-}
-
-.shadow {
-	box-shadow: var(--shadow-x, 0) var(--shadow-y, 2px) var(--shadow-blur, 10px) var(--shadow-spread, 0) var(--shadow-color, rgba(0,0,0,.2));
-}
-
-.shadow-dark {
-	box-shadow: var(--shadow-x, 0) var(--shadow-y, 2px) var(--shadow-blur, 10px) var(--shadow-spread, 0) var(--shadow-dark-color, rgba(0,0,0,.6));
-}
-
-.icon, .icon * {
-	color: inherit;
-	max-width: 100%;
-	max-height: 100%;
-	width: var(--icon-size, 1em);
-	height: var(--icon-size, 1em);
-	vertical-align: middle;
-}
-
-.round {
-	border-radius: 50%;
-}
-
-.card {
-	border: var(--card-border, 1px solid #ccc);
-	border-radius: var(--card-radius, 2px);
-	background: var(--card-bg, var(--primary-color, white));
-	padding: var(--card-padding, 0.7em);
-}
-
-.custom-element:not(:defined) .if-defined[slot], .custom-element.if-defined:not(:defined) {
-	display: none;
-}
-
-.status-box {
-	padding: 1.2em;
-	border: 1px dashed currentColor;
-	text-align: center;
-	margin-top: 0.7em;
-	border-radius: 8px;
-
-	&.alert, &.error {
-		color: var(--alert-color, #6f0606);
-		background-color: var(--alert-background, #e88a8a);
+@layer utilities.core-css.rules {
+	.clearfix::after {
+		clear: both;
+		content: '';
+		display: block;
 	}
 
-	&.warn {
-		color: var(--warn-color, #51430c);
-		background-color: var(--warn-background, #f0d155);
+	.shadow {
+		box-shadow: var(--shadow-x, 0) var(--shadow-y, 2px) var(--shadow-blur, 10px) var(--shadow-spread, 0) var(--shadow-color, rgba(0,0,0,.2));
 	}
 
-	&.info {
-		color: var(--info-color, #555553);
-		background-color: var(--info-background, #d2d2d2);
+	.shadow-dark {
+		box-shadow: var(--shadow-x, 0) var(--shadow-y, 2px) var(--shadow-blur, 10px) var(--shadow-spread, 0) var(--shadow-dark-color, rgba(0,0,0,.6));
 	}
 
-	&.success {
-		color: var(--success-color, #1d4f01);
-		background-color: var(--success-background, #8cee69);
+	.icon, .icon * {
+		color: inherit;
+		max-width: 100%;
+		max-height: 100%;
+		width: var(--icon-size, 1em);
+		height: var(--icon-size, 1em);
+		vertical-align: middle;
+	}
+
+	.round {
+		border-radius: 50%;
+	}
+}
+
+@layer components.core-css {
+	.card {
+		border: var(--card-border, 1px solid #ccc);
+		border-radius: var(--card-radius, 2px);
+		background: var(--card-bg, var(--primary-color, white));
+		padding: var(--card-padding, 0.7em);
+	}
+
+	.custom-element:not(:defined) .if-defined[slot], .custom-element.if-defined:not(:defined) {
+		display: none;
+	}
+
+	.status-box {
+		padding: 1.2em;
+		border: 1px dashed currentColor;
+		text-align: center;
+		margin-top: 0.7em;
+		border-radius: 8px;
+
+		&.alert, &.error {
+			color: var(--alert-color, #6f0606);
+			background-color: var(--alert-background, #e88a8a);
+		}
+
+		&.warn {
+			color: var(--warn-color, #51430c);
+			background-color: var(--warn-background, #f0d155);
+		}
+
+		&.info {
+			color: var(--info-color, #555553);
+			background-color: var(--info-background, #d2d2d2);
+		}
+
+		&.success {
+			color: var(--success-color, #1d4f01);
+			background-color: var(--success-background, #8cee69);
+		}
 	}
 }
