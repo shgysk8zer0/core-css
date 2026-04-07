@@ -1,9 +1,11 @@
-:root {
-	--default-color-dark: #BBBBBB;
-	--primary-color-dark: #2a2a2e;
-	--accent-color-dark: #007bff;
-	--contrast-color-dark: #AAAAAA;
-	--alt-color-dark: #FAFAFA;
-	--scrollbar-color: var(--accent-color-dark);
-	--scrollbar-track-dark: var(--primary-color-dark);
+@layer base.core-css.theme {
+	:root {
+		--default-color-dark: #BBBBBB;
+		--primary-color-dark: #2a2a2e;
+		--accent-color-dark: #007bff;
+		--contrast-color-dark: #AAAAAA;
+		--alt-color-dark: #FAFAFA;
+		--scrollbar-color: var(--accent-color-dark);
+		--scrollbar-track-dark: var(--primary-color-dark);
+	}
 }

@@ -1,21 +1,23 @@
 @import url("../shared.css");
 
-@media screen {
-	:root[data-layout="wide"] > body.grid {
-		grid-template-areas: 'header header header' 'nav nav nav' '. main .' 'footer footer footer';
-		grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
-		grid-template-columns: 1fr minmax(var(--main-min-width, 320px), var(--main-max-width, 1200px)) 1fr;
-		grid-column-gap: var(--column-gap, 1.3rem);
+@layer layout.core-css {
+	@media screen {
+		:root[data-layout="wide"] > body.grid {
+			grid-template-areas: 'header header header' 'nav nav nav' '. main .' 'footer footer footer';
+			grid-template-rows: minmax(var(--header-height, 400px), auto) var(--nav-height, 4rem) minmax(var(--main-height, 75vh), auto) minmax(var(--footer-height, 300px), auto);
+			grid-template-columns: 1fr minmax(var(--main-min-width, 320px), var(--main-max-width, 1200px)) 1fr;
+			grid-column-gap: var(--column-gap, 1.3rem);
+		}
+
+		:root[data-layout="wide"] #sidebar {
+			display: none;
+		}
 	}
 
-	:root[data-layout="wide"] #sidebar {
-		display: none;
-	}
-}
-
-@media (max-width: 800px) {
-	:root[data-layout="wide"] > body.grid {
-		grid-template-columns: 4vw 92vw 4vw;
-		grid-column-gap: 0;
+	@media (max-width: 800px) {
+		:root[data-layout="wide"] > body.grid {
+			grid-template-columns: 4vw 92vw 4vw;
+			grid-column-gap: 0;
+		}
 	}
 }

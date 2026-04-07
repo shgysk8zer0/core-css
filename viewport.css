@@ -1,44 +1,46 @@
-@-moz-viewport {
-	width: auto;
-	width: device-width;
-	height: auto;
-	height: device-height;
-	zoom: 1;
-	user-zoom: fixed;
-}
+@layer layout.core-css.viewport {
+	@-moz-viewport {
+		width: auto;
+		width: device-width;
+		height: auto;
+		height: device-height;
+		zoom: 1;
+		user-zoom: fixed;
+	}
 
-@-webkit-viewport {
-	width: auto;
-	width: device-width;
-	height: auto;
-	height: device-height;
-	zoom: 1;
-	user-zoom: fixed;
-}
+	@-webkit-viewport {
+		width: auto;
+		width: device-width;
+		height: auto;
+		height: device-height;
+		zoom: 1;
+		user-zoom: fixed;
+	}
 
-@-o-viewport {
-	width: auto;
-	width: device-width;
-	height: auto;
-	height: device-height;
-	zoom: 1;
-	user-zoom: fixed;
-}
+	@-o-viewport {
+		width: auto;
+		width: device-width;
+		height: auto;
+		height: device-height;
+		zoom: 1;
+		user-zoom: fixed;
+	}
 
-@-ms-viewport {
-	width: auto;
-	width: device-width;
-	height: auto;
-	height: device-height;
-	zoom: 1;
-	user-zoom: fixed;
-}
+	@-ms-viewport {
+		width: auto;
+		width: device-width;
+		height: auto;
+		height: device-height;
+		zoom: 1;
+		user-zoom: fixed;
+	}
 
-@viewport {
-	width: auto;
-	width: device-width;
-	height: auto;
-	height: device-height;
-	zoom: 1;
-	user-zoom: fixed;
+	@viewport {
+		width: auto;
+		width: device-width;
+		height: auto;
+		height: device-height;
+		zoom: 1;
+		user-zoom: fixed;
+	}
 }

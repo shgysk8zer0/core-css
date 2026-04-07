@@ -1,17 +1,19 @@
-@media (min-width:1000px) {
-	:root {
-		font-size: var(--desktop-rem, 1.3vmax);
+@layer base.core-css.fonts {
+	@media (min-width:1000px) {
+		:root {
+			font-size: var(--desktop-rem, 1.3vmax);
+		}
 	}
-}
 
-@media (max-width:999px) and (min-width:500px) {
-	:root {
-		font-size: var(--tablet-rem, 1.5vmax);
+	@media (max-width:999px) and (min-width:500px) {
+		:root {
+			font-size: var(--tablet-rem, 1.5vmax);
+		}
 	}
-}
 
-@media (max-width: 499px) {
-	:root {
-		font-size: var(--mobile-rem, 2.3vmax);
+	@media (max-width: 499px) {
+		:root {
+			font-size: var(--mobile-rem, 2.3vmax);
+		}
 	}
 }

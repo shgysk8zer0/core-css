@@ -1,48 +1,50 @@
-@supports not (scrollbar-color: currentColor transparent) {
-	::-webkit-scrollbar {
-		display: block;
+@layer base.core-css.scrollbar {
+	@supports not (scrollbar-color: currentColor transparent) {
+		::-webkit-scrollbar {
+			display: block;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: var(--scrollbar-color, var(--accent-color, #7a7b7d));
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: var(--scrollbar-track, var(--primary-color, #c0c6c2));
+		}
+
+		/* Disabled config for scrollbar buttons */
+		/* ::-webkit-scrollbar-button:single-button { */
+		/* 	background-color: var(--scrollbar-track, #c0c6c2); */
+		/* 	color: var(--scrollbar-color, #7a7b7d); */
+		/* 	border-width: 8px; */
+		/* 	display: block; */
+		/* 	border-style: solid; */
+		/* 	border-color: currentColor; */
+		/* } */
+
+		/* Up */
+		/* ::-webkit-scrollbar-button:single-button:vertical:decrement { */
+		/* 	border-color: transparent transparent currentColor transparent; */
+		/* } */
+
+		/* Down */
+		/* ::-webkit-scrollbar-button:single-button:vertical:increment { */
+		/* 	border-color: currentColor transparent transparent transparent; */
+		/* } */
+
+		/* Left */
+		/* ::-webkit-scrollbar-button:single-button:horizontal:increment { */
+		/* 	border-color: transparent transparent transparent currentColor; */
+		/* } */
+
+		/* Right */
+		/* ::-webkit-scrollbar-button:single-button:horizontal:decrement { */
+		/* 	border-color: transparent currentColor transparent transparent; */
+		/* } */
 	}
 
-	::-webkit-scrollbar-thumb {
-		background-color: var(--scrollbar-color, var(--accent-color, #7a7b7d));
+	:root {
+		scrollbar-color: var(--scrollbar-color, var(--accent-color, #7a7b7d)) var(--scrollbar-track, var(--primary-color, #c0c6c2));
+		scrollbar-width: var(--scrollbar-width, auto);
 	}
-
-	::-webkit-scrollbar-track {
-		background-color: var(--scrollbar-track, var(--primary-color, #c0c6c2));
-	}
-
-	/* Disabled config for scrollbar buttons */
-	/* ::-webkit-scrollbar-button:single-button { */
-	/* 	background-color: var(--scrollbar-track, #c0c6c2); */
-	/* 	color: var(--scrollbar-color, #7a7b7d); */
-	/* 	border-width: 8px; */
-	/* 	display: block; */
-	/* 	border-style: solid; */
-	/* 	border-color: currentColor; */
-	/* } */
-
-	/* Up */
-	/* ::-webkit-scrollbar-button:single-button:vertical:decrement { */
-	/* 	border-color: transparent transparent currentColor transparent; */
-	/* } */
-
-	/* Down */
-	/* ::-webkit-scrollbar-button:single-button:vertical:increment { */
-	/* 	border-color: currentColor transparent transparent transparent; */
-	/* } */
-
-	/* Left */
-	/* ::-webkit-scrollbar-button:single-button:horizontal:increment { */
-	/* 	border-color: transparent transparent transparent currentColor; */
-	/* } */
-
-	/* Right */
-	/* ::-webkit-scrollbar-button:single-button:horizontal:decrement { */
-	/* 	border-color: transparent currentColor transparent transparent; */
-	/* } */
-}
-
-:root {
-	scrollbar-color: var(--scrollbar-color, var(--accent-color, #7a7b7d)) var(--scrollbar-track, var(--primary-color, #c0c6c2));
-	scrollbar-width: var(--scrollbar-width, auto);
 }

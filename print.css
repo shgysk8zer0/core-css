@@ -1,27 +1,29 @@
 @charset "UTF-8";
 
-@media print {
-	.no-print {
-		display: none !important;
-	}
+@layer layout.core-css.print {
+	@media print {
+		.no-print {
+			display: none;
+		}
 
-	.print-hidden {
-		visibility: hidden !important;
-	}
+		.print-hidden {
+			visibility: hidden;
+		}
 
-	a {
-		color: inherit;
-	}
+		a {
+			color: inherit;
+		}
 
-	article a[href^="http"]::after {
-		content: ' <' attr(href) '>';
-	}
+		article a[href^="http"]::after {
+			content: ' <' attr(href) '>';
+		}
 
-	article a[href^="//"]::after {
-		content: ' <https:' attr(href) '>';
-	}
+		article a[href^="//"]::after {
+			content: ' <https:' attr(href) '>';
+		}
 
-	abbr[title]::after {
-		content: ' (“' attr(title) '”)';
+		abbr[title]::after {
+			content: ' (“' attr(title) '”)';
+		}
 	}
 }
